@@ -86,13 +86,13 @@
         "projectTitle": "Projet N°5: Piiquante",
         "projectDescription": "Construire une API sécurisée pour une application d'avis gastronomiques.",
         "projectObjective": [
-          { "objectif": "Savoir découper une maquette en éléments HTML." },
+          { "objectif": "Création du Backend avec Node.js et Express" },
           {
-            "objectif": "Développer la page en HTML et mise en forme de celle-ci avec CSS."
+            "objectif": "Sécurisation du Backend"
           },
-          { "objectif": "Réaliser des animations en CSS." },
-          { "objectif": "Responsivité du site" },
-          { "objectif": "Utilisation du préprocesseur SASS." }
+          {
+            "objectif": "Gestion de la base de données MongoDB (Login, Mot de Passe, Profil et Avis"
+          }
         ],
         "projectCode": "https://github.com/MS241268/P6-Piiquante",
         "projectUrl": ""
