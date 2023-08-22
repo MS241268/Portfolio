@@ -1,0 +1,98 @@
+/* .projectsContainer{
+	width:inherit;
+	padding:20px 10px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+	justify-items: stretch;
+	margin-top: 30px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.project{
+	justify-self: stretch;
+	align-self: stretch;
+	padding: 15px;
+	border-radius: 25px;
+	box-shadow: 12px 12px 20px 1px rgba(31, 78, 121, 0.8);
+	background-color: rgba(31, 78, 121, 0.936);
+}
+
+.imgContainer{
+	width:70%;
+	height: 120px;
+	margin: auto;
+	overflow: hidden;
+}
+
+.projectIcon{
+	width:80%;
+	height: 100px;
+	padding-top: 25px;
+	margin-left: 30px;
+	object-fit:contain;
+}
+
+.projectTitle{
+	font-weight: bold;
+	font-size: 35px;
+	height: 50px;
+	margin: 50px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	background-color: rgba(38, 108, 174, 0.936);
+	object-fit: contain;
+}
+
+.pragraphTitle{
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 30px;
+	border-radius: 10px;
+	background-color: rgba(38, 108, 174, 0.936);
+}
+
+.projectDescription{
+	text-align: center;
+	font-size: 18px;
+	padding: 0px 20px;
+	margin-bottom:25px;
+	overflow-x: scroll;
+	overflow-y: scroll;
+}
+
+.projectOjective{
+	max-height: 600px;
+	text-align: center;
+	font-size: 18px;
+	padding: 0px 20px;
+	margin-bottom:25px;
+	overflow-x: scroll;
+	overflow-y: scroll;
+}
+
+.linkContainer{
+	height: 40px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.linkContainer :hover{
+	scale: 1.3;
+	border: 3px solid white
+}
+
+.projectLink{
+	width: 70px;
+	height: 40px;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	background-color: rgba(38, 108, 174, 0.936);
+} */

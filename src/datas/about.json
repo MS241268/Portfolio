@@ -1,0 +1,186 @@
+[
+  {
+    "title": "Qui suis je ?",
+    "description": "J'ai 54 ans et j'ai travaillé pendant près de 30 ans dans les télécommunications. J'ai commencé ma carrière professionnelle en tant que technicien de maintenance puis comme responsable technique régional. Mon équipe et moi avions pour principales activités la maintenance et le déploiement des hubs backbone et des plateformes d'accès (Hubs TV,VOD,Intenet et VOIP) pour les réseaux de télédistribution coaxiaux et fibre optique (FTTH) ainsi que le suivi de la soutraitance pour la maintenance du transport fibre optique backbone et des réseaux de télédistribution situés en aval des plateformes d'accès. Courant de l'année 2021, ma société m'apprenait que j'étais éligible à un plan de départ volontaire et que dans le cadre de celui-ci, je pouvais bénéficier d'un congé de reclassement pour une reconversion professionnelle. J'ai vu dans cette proposition, une réelle opportunité pour donner un nouvel élan à ma carrière. J'ai donc suivi une formation de Développeur Web à distance auprès de OpenClassrooms pendant 1 an et me voici à présent motivé pour un nouveau challenge et prêt à écrire un nouveau chapitre de ma carrière dans ce domaine excitant et captivant..."
+  },
+  {
+    "title": "Mes projets",
+    "description": "Les projets ci-dessous sont issus de ma formation chez OpenClassrooms. Chaque projet a été présenté, expliqué et évalué par des mentors évaluateurs et sont tous factices:",
+    "details": [
+      {
+        "projectIcon": "./assets/projectIcons/Booki.png",
+        "projectTitle": "Projet N°1: Booki",
+        "projectDescription": "Transformer une maquette au format SVG d'un site d'hébergement en site web avec HTML5 & CSS3.",
+        "projectObjective": [
+          { "objectif": "Savoir découper une maquette en éléments HTML5." },
+          {
+            "objectif": "Développer la page en HTML5 et mise en forme de celle-ci avec CSS3."
+          },
+          { "objectif": "Valider le code HTML5 et CSS3 sur le sit de W3C" },
+          { "objectif": "Adapter le site à toutes les largeurs d'écrans" }
+        ],
+        "projectCode": "https://github.com/MS241268/P2-Booki",
+        "projectUrl": "https://ms241268.github.io/P2-Booki/"
+      },
+      {
+        "projectIcon": "./assets/projectIcons/Ohmyfood.png",
+        "projectTitle": "Projet N°2: Ohmyfood",
+        "projectDescription": "Transformer une maquette au format PNG en site web avec HTML5 & CSS3. Dynamiser une page web avec des animations CSS.",
+        "projectObjective": [
+          { "objectif": "Savoir découper une maquette en éléments HTML5." },
+          {
+            "objectif": "Développer la page en HTM5L et mise en forme de celle-ci avec CSS3."
+          },
+          { "objectif": "Réaliser des animations en CSS3." },
+          { "objectif": "Valider le code HTML5 et CSS3 sur le sit de W3C." },
+          { "objectif": "Adapter le site à toutes les largeurs d'écrans." },
+          { "objectif": "Utiliser le préprocesseur SASS." },
+          { "objectif": "Gérer les repositories Git & GitHub" }
+        ],
+        "projectCode": "https://github.com/MS241268/ohmyfood",
+        "projectUrl": "https://ms241268.github.io/ohmyfood/"
+      },
+      {
+        "projectIcon": "./assets/projectIcons/LaPanthere.png",
+        "projectTitle": "Projet N°3: La panthère",
+        "projectDescription": "Optimiser un site de web design existant.",
+        "projectObjective": [
+          {
+            "objectif": "Refonte d'un site existant afin d'en améliorer l'accessibilité et le référencement"
+          },
+          { "objectif": "Réaliser une fiche d'audit du site existant." },
+          {
+            "objectif": "Utiliser l'outil lighthouse dans DEVTOOLS afin de mesurer les performances du site."
+          },
+          { "objectif": "Valider le code HTML5 et CSS3 sur le sit de W3C." }
+        ],
+        "projectCode": "https://github.com/MS241268/P4-LaPanthere",
+        "projectUrl": "https://ms241268.github.io/P4-LaPanthere/"
+      },
+      {
+        "projectIcon": "./assets/projectIcons/Kanap.png",
+        "projectTitle": "Projet N°4: Kanap",
+        "projectDescription": "Construire un site e-commerce en JavaScript.",
+
+        "projectObjective": [
+          {
+            "objectif": "Approvisionner un panier: Choix, Quantité et options pour chaque produit."
+          },
+          {
+            "objectif": "Modifier un panier: Suppression produit(s), Modification quantité, Modification des options."
+          },
+          { "objectif": "Calculer un sous-total et total d'un panier." },
+          {
+            "objectif": "Obtenir un numéro de commande après validation du panier."
+          },
+          {
+            "objectif": "Elaborer un plan test pour valider toute les fonctionnalités."
+          }
+        ],
+        "projectCode": "https://github.com/MS241268/P5-Kanap",
+        "projectUrl": "https://kanap-keyq.onrender.com/",
+        "warning": "Le site étant hébergé gratuitement (lenteur du serveur), il se peut que les produits ne s'affichent pas: Rafraîchissez la page. Si vous obtenez une erreur FETCH cliquez sur OK et rafraîchissez à nouveau."
+      },
+      {
+        "projectIcon": "./assets/projectIcons/Piiquante.png",
+        "projectTitle": "Projet N°5: Piiquante",
+        "projectDescription": "Construire une API sécurisée pour une application d'avis gastronomiques.",
+        "projectObjective": [
+          { "objectif": "Savoir découper une maquette en éléments HTML." },
+          {
+            "objectif": "Développer la page en HTML et mise en forme de celle-ci avec CSS."
+          },
+          { "objectif": "Réaliser des animations en CSS." },
+          { "objectif": "Responsivité du site" },
+          { "objectif": "Utilisation du préprocesseur SASS." }
+        ],
+        "projectCode": "https://github.com/MS241268/P6-Piiquante",
+        "projectUrl": ""
+      },
+      {
+        "projectIcon": "./assets/projectIcons/Kasa.svg",
+        "projectTitle": "Projet N°6: Kasa",
+        "projectDescription": "Créer une application web de location immobilière avec la bibliothèque React.",
+        "projectObjective": [
+          { "objectif": "Créer une SPA (Single Page Application)." },
+          { "objectif": "Créer des composants React JS." },
+          {
+            "objectif": "Implémenter les différentes routes pour la navigation sur le site."
+          },
+          {
+            "objectif": "Intégrer les composants dans le code de chaque page."
+          },
+          { "objectif": "Adapter le site à toutes les largeurs d'écrans." }
+        ],
+        "projectCode": "https://github.com/MS241268/P7-Kasa",
+        "projectUrl": "https://ms241268.github.io/P7-Kasa/"
+      }
+    ]
+  },
+  {
+    "title": "Mes compétences",
+    "description": "Liste des différentes compétences acquises lors de ma formation:",
+    "icons": [
+      {
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+        "iconName": "Html5",
+        "progress": 50
+      },
+      {
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+        "iconName": "Css3",
+        "progress": 50
+      },
+      {
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+        "iconName": "Javascript",
+        "progress": 50
+      },
+      {
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        "iconName": "React JS",
+        "progress": 50
+      },
+      {
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+        "iconName": "VS Code",
+        "progress": 60
+      },
+      {
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
+        "iconName": "Sass",
+        "progress": 50
+      },
+      {
+        "icon": "./assets/languageIcons/gsap.svg",
+        "iconName": "Gsap",
+        "progress": 50
+      },
+      {
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+        "iconName": "Node JS",
+        "progress": 40
+      },
+      {
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+        "iconName": "Express",
+        "progress": 40
+      },
+      {
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+        "iconName": "MongoDB",
+        "progress": 50
+      },
+      {
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+        "iconName": "Git",
+        "progress": 60
+      },
+      {
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+        "iconName": "GitHub",
+        "progress": 60
+      }
+    ]
+  }
+]

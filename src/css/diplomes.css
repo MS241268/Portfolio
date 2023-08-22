@@ -1,0 +1,22 @@
+.degreesSection {
+  margin: 60px 0px;
+}
+
+.banner {
+  position: relative;
+  max-width: 1440px;
+  margin: 60px 0px;
+  background-color: rgba(38, 108, 174, 0.936);
+  border-radius: 25px;
+  border: 3px solid rgba(31, 78, 121, 0.936);
+  box-shadow: 12px 12px 20px 1px rgba(31, 78, 121, 0.8);
+}
+
+.h1TitleDegreesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin: 60px 0px;
+}
