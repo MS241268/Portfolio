@@ -8,7 +8,7 @@
     "description": "Les projets ci-dessous sont issus de ma formation chez OpenClassrooms. Chaque projet a été présenté, expliqué et évalué par des mentors évaluateurs et sont tous factices:",
     "details": [
       {
-        "projectIcon": "./assets/projecticons/Booki.png",
+        "projectIcon": "./assets/projectIcons/Booki.png",
         "projectTitle": "Projet N°1: Booki",
         "projectDescription": "Transformer une maquette au format SVG d'un site d'hébergement en site web avec HTML5 & CSS3.",
         "projectObjective": [
@@ -91,7 +91,7 @@
             "objectif": "Sécurisation du Backend"
           },
           {
-            "objectif": "Gestion de la base de données MongoDB (Login, Mot de Passe, Profil et Avis"
+            "objectif": "Gestion de la base de données MongoDB (Login, Mot de Passe, Profil et Avis Utilisateurs)"
           }
         ],
         "projectCode": "https://github.com/MS241268/P6-Piiquante",
