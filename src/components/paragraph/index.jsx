@@ -202,7 +202,7 @@ function Paragraph() {
               <h3 className="projectTitle">{det.projectTitle}</h3>
               <h4 className="pragraphTitle">DESCRIPTION du PROJET</h4>
               <p className="projectDescription">{det.projectDescription}</p>
-              <h4 className="pragraphTitle">OBJECTIF</h4>
+              <h4 className="pragraphTitle">OBJECTIFS</h4>
               {/* {console.log((parag.details[index]).projectObjective )} */}
 
               {Array.isArray(parag.details[index].projectObjective) ? (
