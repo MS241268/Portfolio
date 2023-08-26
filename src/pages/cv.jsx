@@ -1,6 +1,7 @@
 import Title from '../components/title';
 import '../css/cv.css';
 import { FaHandPointRight } from 'react-icons/fa';
+import { GiDiploma } from 'react-icons/gi';
 
 function Cv() {
   return (
@@ -15,11 +16,25 @@ function Cv() {
         <section className="leftSection">
           <h2>MES ÉTUDES</h2>
           <ul className="studies">
-            <li>Lorem ipsum dolor adipisicing elit</li>
-            <li> sit amet consectetur</li>
-            <li> Unde tempora possimus ut eligendi quisquam</li>
-            <li>reiciendis perferendis necessitatibus</li>
-            <li>quia totam quae</li>
+            <li>
+              <GiDiploma className="degreeStyle" />
+              Lorem ipsum dolor adipisicing elit
+            </li>
+            <li>
+              <GiDiploma className="degreeStyle" /> sit amet consectetur
+            </li>
+            <li>
+              <GiDiploma className="degreeStyle" /> Unde tempora possimus ut
+              eligendi quisquam
+            </li>
+            <li>
+              <GiDiploma className="degreeStyle" />
+              reiciendis perferendis necessitatibus
+            </li>
+            <li>
+              <GiDiploma className="degreeStyle" />
+              quia totam quae
+            </li>
           </ul>
           <h2>MES ATOUTS</h2>
           <ul className="studies">
@@ -71,12 +86,11 @@ function Cv() {
             </li>
             <li>
               <FaHandPointRight className="handStyle" />
-              Management équipes internes jusqu’à 20 personnes en iterne et
-              sous-traitance.
+              Management jusqu’à 20 personnes en interne et sous-traitance.
             </li>
             <li>
-              <FaHandPointRight className="handStyle" />" Communication
-              (animation réunion, présentation rapport).
+              <FaHandPointRight className="handStyle" />
+              Communication (animation réunion, présentation rapport).
             </li>
             <li>
               <FaHandPointRight className="handStyle" />

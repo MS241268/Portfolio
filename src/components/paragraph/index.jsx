@@ -3,6 +3,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 // import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 import { FaDirections } from 'react-icons/fa';
+import { PiWarningFill } from 'react-icons/pi';
 import { useLayoutEffect } from 'react';
 import Datas from '../../datas/about';
 
@@ -219,7 +220,9 @@ function Paragraph() {
                         )
                       )}
                     </ul>
-                    <p className="warning">&#x26A0; : {det.warning}</p>
+                    <p className="warning">
+                      <PiWarningFill className="warningStyle" />: {det.warning}
+                    </p>
                   </div>
                 ) : (
                   <ul className="projectObjectiveUl">

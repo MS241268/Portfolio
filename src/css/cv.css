@@ -76,13 +76,16 @@ li {
   width: 95%;
   background-color: rgba(31, 78, 121, 0.936);
   border-radius: 15px;
-  list-style-type: circle;
+  list-style-type: none;
 }
 .leftSection ul li {
-  width: 80%;
+  width: 85%;
   margin: auto;
   /* padding: 10px 0px; */
   text-align: start;
+}
+.degreeStyle {
+  margin-right: 10px;
 }
 .hobbies {
   margin-bottom: 30px;
