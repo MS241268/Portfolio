@@ -99,24 +99,28 @@
 	overflow-y: scroll; */
 }
 
-.projectOjectiveUl {
+.projectObjectiveUl {
   padding: 0px 20px;
   margin-bottom: 55px;
-  list-style-type: square;
+  list-style-type: none;
   /* overflow-x: scroll;
 	overflow-y: scroll; */
 }
 
-.projectOjectiveLi {
+.projectObjectiveLi {
   font-size: 20px;
   padding-bottom: 10px;
+  list-style-type: none;
+}
+.arrowStyle {
+  margin-right: 20px;
 }
 
-.projectOjectiveWarningContainer {
+.projectObjectiveWarningContainer {
   margin-bottom: 55px;
 }
 
-.projectOjectiveWarningUl {
+.projectObjectiveWarningUl {
   margin-bottom: 10px;
   padding: 0px 20px;
 }

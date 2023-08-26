@@ -1,5 +1,6 @@
 import Title from '../components/title';
 import '../css/cv.css';
+import { FaHandPointRight } from 'react-icons/fa';
 
 function Cv() {
   return (
@@ -46,21 +47,41 @@ function Cv() {
           </ul>
         </section>
         <section className="rightSection">
-          <h2 id="item-0">COMPETÉNCES METIER</h2>
+          <h2 id="item-0">COMPETÉNCES MÉTIER</h2>
           <ul id="item-1">
-            <li>Création de sites web à partir d’un cahier des charges.</li>
-            <li>Application des éventuelles corrections dans le code.</li>
-            <li>Élaboration de fiche test et guide d’utilisation site.</li>
             <li>
+              <FaHandPointRight className="handStyle" />
+              Création de sites web à partir d’un cahier des charges.
+            </li>
+            <li>
+              <FaHandPointRight className="handStyle" />
+              Application des éventuelles corrections dans le code.
+            </li>
+            <li>
+              <FaHandPointRight className="handStyle" />
+              Élaboration de fiche test et guide d’utilisation site.
+            </li>
+            <li>
+              <FaHandPointRight className="handStyle" />
               Organisation, Planification, Gestion et Présentation de projets.
             </li>
-            <li>Veille technique.</li>
             <li>
+              <FaHandPointRight className="handStyle" />
+              Veille technique.
+            </li>
+            <li>
+              <FaHandPointRight className="handStyle" />
               Management équipes internes jusqu’à 20 personnes en iterne et
               sous-traitance.
             </li>
-            <li>Communication (animation réunion, présentation rapport).</li>
-            <li>Maîtrise des outils MS Office</li>
+            <li>
+              <FaHandPointRight className="handStyle" />" Communication
+              (animation réunion, présentation rapport).
+            </li>
+            <li>
+              <FaHandPointRight className="handStyle" />
+              Maîtrise des outils MS Office
+            </li>
           </ul>
           <h2 id="item-3">PARCOURS PROFESSIONNEL</h2>
           <div id="item-4">&nbsp;</div>

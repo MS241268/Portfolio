@@ -55,11 +55,14 @@ li {
   background-color: rgba(31, 78, 121, 0.936);
   border-radius: 15px;
 }
+.handStyle {
+  margin-right: 30px;
+}
 #item-1 li {
   width: 80%;
   margin: auto;
   background-color: rgba(31, 78, 121, 0.936);
-  list-style-type: square;
+  list-style-type: none;
   text-align: start;
 }
 .leftSection {

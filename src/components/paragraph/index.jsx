@@ -2,6 +2,7 @@ import './index.css';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 // import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
+import { FaDirections } from 'react-icons/fa';
 import { useLayoutEffect } from 'react';
 import Datas from '../../datas/about';
 
@@ -207,11 +208,12 @@ function Paragraph() {
 
               {Array.isArray(parag.details[index].projectObjective) ? (
                 det.warning !== undefined ? (
-                  <div className="projectOjectiveWarningContainer">
-                    <ul className="projectOjectiveWarningUl">
+                  <div className="projectObjectiveWarningContainer">
+                    <ul className="projectObjectiveWarningUl">
                       {parag.details[index].projectObjective.map(
                         (obj, index) => (
-                          <li key={index} className="projectOjectiveLi">
+                          <li key={index} className="projectObjectiveLi">
+                            <FaDirections className="arrowStyle" />
                             {obj.objectif}
                           </li>
                         )
@@ -220,9 +222,10 @@ function Paragraph() {
                     <p className="warning">&#x26A0; : {det.warning}</p>
                   </div>
                 ) : (
-                  <ul className="projectOjectiveUl">
+                  <ul className="projectObjectiveUl">
                     {parag.details[index].projectObjective.map((obj, index) => (
-                      <li key={index} className="projectOjectiveLi">
+                      <li key={index} className="projectObjectiveLi">
+                        <FaDirections className="arrowStyle" />
                         {obj.objectif}
                       </li>
                     ))}
