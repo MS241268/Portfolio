@@ -48,15 +48,19 @@ function Cv() {
         <section className="rightSection">
           <h2 id="item-0">COMPETÉNCES METIER</h2>
           <ul id="item-1">
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+            <li>Création de sites web à partir d’un cahier des charges.</li>
+            <li>Application des éventuelles corrections dans le code.</li>
+            <li>Élaboration de fiche test et guide d’utilisation site.</li>
             <li>
-              Earum eveniet, ex est aliquid quam aspernatur qui soluta nihil hic
-              facere laborum eligendi corporis itaque dolore
+              Organisation, Planification, Gestion et Présentation de projets.
             </li>
-            <li>temporibus, velit quasi rerum aperiam?</li>
-            <li>d</li>
-            <li>e</li>
-            <li>f</li>
+            <li>Veille technique.</li>
+            <li>
+              Management équipes internes jusqu’à 20 personnes en iterne et
+              sous-traitance.
+            </li>
+            <li>Communication (animation réunion, présentation rapport).</li>
+            <li>Maîtrise des outils MS Office</li>
           </ul>
           <h2 id="item-3">PARCOURS PROFESSIONNEL</h2>
           <div id="item-4">&nbsp;</div>
