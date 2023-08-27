@@ -32,7 +32,8 @@ function Paragraph() {
         marginBottom: '60px',
         scrollTrigger: {
           trigger: '.paragraphContainer0',
-          start: 'top center',
+          // start:'top center', 27/08/23 Remettre si toujours Ko sur Mac
+          start: 'center center',
           end: 'bottom center',
           toggleActions: 'play none none reverse',
           onUpdate: () => ScrollTrigger.refresh(),
@@ -40,8 +41,10 @@ function Paragraph() {
             gsap.to('.aboutParagraph0', {
               scrollTrigger: {
                 trigger: '.paragraphContainer0',
-                start: 'top center',
+                // start:'top center',27/08/23 Remettre si toujours Ko sur Mac
+                start: 'center center',
                 toggleActions: 'play none none reverse',
+                // markers: true,
               },
               x: '0',
               opacity: '1',

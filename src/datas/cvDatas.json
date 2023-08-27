@@ -1,7 +1,8 @@
 [
   {
-    "date": "Juin 2016–Juillet 2023",
+    "iconCompany": "../assets/companyLogos/SFR.png",
     "company": "SFR",
+    "date": "Juin 2016–Juillet 2023",
     "place": "Metz(57)",
     "function": "Responsable Régional Expertise et Support Backbone et Entreprises",
     "département": "Départements 08,10,51,52,54,55,57 et 88",
@@ -15,8 +16,9 @@
     ]
   },
   {
-    "date": "Avril 2005-Juin 2016",
+    "iconCompany": "../assets/companyLogos/Numericable.png",
     "company": "NUMERICABLE",
+    "date": "Avril 2005-Juin 2016",
     "place": "Metz(57)",
     "function": "Responsable Groupe Expertise Régional",
     "département": "Région Grand Est et une partie de la Région Bourgogne-Franche-Comté",
@@ -33,8 +35,9 @@
     ]
   },
   {
-    "date": "Février 2001-Avril 2005",
+    "iconCompany": "../assets/companyLogos/TDF.png",
     "company": "TDF CABLE",
+    "date": "Février 2001-Avril 2005",
     "place": "Metz(57)",
     "function": "Responsable Maintenance Adjoint",
     "département": "Départements 08,51,52,54,55,57 et 88",
@@ -52,8 +55,9 @@
     ]
   },
   {
-    "date": "Février 2001-Avril 2005",
+    "iconCompany": "../assets/companyLogos/TDF.png",
     "company": "TDF CABLE",
+    "date": "Février 2001-Avril 2005",
     "place": "Metz(57)",
     "function": "Responsable Ordonnancement",
     "département": "Départements 08,51,52,54,55,57 et 88",
@@ -70,8 +74,9 @@
     ]
   },
   {
-    "date": "Mai 1998-Février 2001",
+    "iconCompany": "../assets/companyLogos/TDF.png",
     "company": "TDF",
+    "date": "Mai 1998-Février 2001",
     "place": "Luttange(57)",
     "function": "Responsable Maintenance Réseaux Câblés",
     "département": "Départements 08,54,55 et 57",
@@ -88,8 +93,9 @@
     ]
   },
   {
-    "date": "Février 1993-Mai 1998-Février",
+    "iconCompany": "../assets/companyLogos/TDF.png",
     "company": "TDF",
+    "date": "Février 1993-Mai 1998-Février",
     "place": "Luttange(57)",
     "function": "Technicien Supérieur de Maintenance Audiovisuelle, réseaux câblés et réseau TV principal",
     "département": "Départements 08,55 et 57",
@@ -106,8 +112,9 @@
     ]
   },
   {
-    "date": "De 1984 à 1991 pendant toutes les vacances scolaires",
+    "iconCompany": "../assets/companyLogos/Spie.png",
     "company": "SPIE TRINDEL",
+    "date": "De 1984 à 1991 pendant toutes les vacances scolaires",
     "place": "Uckange(57)",
     "function": "Mission Intérimaires comme Electricien Industriel",
     "postDescription": [
