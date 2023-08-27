@@ -90,6 +90,9 @@ li {
 .hobbies {
   margin-bottom: 30px;
 }
+.hobbiesStyle {
+  margin-right: 10px;
+}
 .rightSection {
   height: 100%;
   border-radius: 15px;

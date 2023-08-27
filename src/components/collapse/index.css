@@ -1,0 +1,89 @@
+.articleCollapse {
+  margin: auto;
+  margin-bottom: 30px;
+  background-color: rgba(38, 108, 174, 0.936);
+  border-radius: 18px;
+  overflow: hidden;
+  min-height: 52px;
+}
+
+.btnCollapse {
+  width: 100%;
+  height: 52px;
+  font-size: 18px;
+  background-color: rgba(31, 78, 121, 0.936);
+  border-radius: 18px;
+  /* border: #FF6060; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btnCollapse span {
+  margin-left: 2%;
+  margin-right: auto;
+  color: white;
+}
+
+.btnCollapse :hover {
+  cursor: pointer;
+}
+
+.arrowCollapse {
+  margin-right: 2%;
+  transform: rotate(0deg);
+  transition: 0.3s ease-in-out;
+}
+
+.arrowCollapseRotate {
+  margin-right: 2%;
+  transform: rotate(180deg);
+  transition: 0.3s ease-in-out;
+}
+
+.collapseContent {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 3%;
+  list-style: none;
+  font-size: 24px;
+  color: white;
+  opacity: 1;
+  transition: margin-top 0.5s ease-in-out, opacity 0.5s ease-in;
+}
+
+.hidden {
+  margin-top: -300px;
+  margin-bottom: 0px;
+  padding: 3%;
+  list-style: none;
+  font-size: 24px;
+  color: rgba(31, 78, 121, 0.936);
+  opacity: 0;
+  transition: margin-top 0.5s ease-in-out, opacity 0.5s ease-out;
+}
+
+@media screen and (max-width: 768px) {
+  .articleCollapse {
+    width: 100%;
+    border-radius: 5px;
+    min-height: 30px;
+  }
+
+  .btnCollapse {
+    height: 30px;
+    border-radius: 5px;
+  }
+
+  .btnCollapse span {
+    font-size: 12px;
+  }
+
+  .arrowCollapse {
+    width: 15px;
+  }
+
+  .arrowCollapseRotate {
+    width: 15px;
+  }
+}

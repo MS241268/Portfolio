@@ -1,7 +1,9 @@
 import Title from '../components/title';
 import '../css/cv.css';
-import { FaHandPointRight } from 'react-icons/fa';
-import { GiDiploma } from 'react-icons/gi';
+import { FaHandPointRight, FaGuitar } from 'react-icons/fa';
+import { GiDiploma, GiFullMotorcycleHelmet } from 'react-icons/gi';
+import { PiMicrophoneStageFill } from 'react-icons/pi';
+import { MdDriveEta } from 'react-icons/md';
 
 function Cv() {
   return (
@@ -18,22 +20,23 @@ function Cv() {
           <ul className="studies">
             <li>
               <GiDiploma className="degreeStyle" />
-              Lorem ipsum dolor adipisicing elit
-            </li>
-            <li>
-              <GiDiploma className="degreeStyle" /> sit amet consectetur
-            </li>
-            <li>
-              <GiDiploma className="degreeStyle" /> Unde tempora possimus ut
-              eligendi quisquam
+              2022 à 2023 : BAC+2 Développeur Web
             </li>
             <li>
               <GiDiploma className="degreeStyle" />
-              reiciendis perferendis necessitatibus
+              1989 à 1991 : BTS Électronique
             </li>
             <li>
               <GiDiploma className="degreeStyle" />
-              quia totam quae
+              1987 à 1989 : BAC Électronique
+            </li>
+            <li>
+              <GiDiploma className="degreeStyle" />
+              1985 à 1987 : CAP + BEP Électronique
+            </li>
+            <li>
+              <GiDiploma className="degreeStyle" />
+              1982 à 1985 : CAP Électricien Équipements
             </li>
           </ul>
           <h2>MES ATOUTS</h2>
@@ -54,11 +57,22 @@ function Cv() {
           </ul>
           <h2>DIVERS</h2>
           <ul className="studies hobbies">
-            <li>Lorem ipsum dolor adipisicing elit</li>
-            <li> sit amet consectetur</li>
-            <li> Unde tempora possimus ut eligendi quisquam</li>
-            <li>reiciendis perferendis necessitatibus</li>
-            <li>quia totam quae</li>
+            <li>
+              <MdDriveEta className="hobbiesStyle" />
+              Permis A & B
+            </li>
+            <li>
+              <FaGuitar className="hobbiesStyle" />
+              Guitare
+            </li>
+            <li>
+              <PiMicrophoneStageFill className="hobbiesStyle" />
+              Concerts
+            </li>
+            <li>
+              <GiFullMotorcycleHelmet className="hobbiesStyle" />
+              Moto
+            </li>
           </ul>
         </section>
         <section className="rightSection">
