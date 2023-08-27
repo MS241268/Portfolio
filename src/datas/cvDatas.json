@@ -1,0 +1,128 @@
+[
+  {
+    "date": "Juin 2016–Juillet 2023",
+    "company": "SFR",
+    "place": "Metz(57)",
+    "function": "Responsable Régional Expertise et Support Backbone et Entreprises",
+    "département": "Départements 08,10,51,52,54,55,57 et 88",
+    "postDescription": [
+      {
+        "description": "Participation au projet désaturation fibre optique de la boucle locale (Grand Public et Entreprises)."
+      },
+      {
+        "description": "Suivi remise en conformité réseau fibre réseaux backbone, boucle locale Grand Public et Entreprises suite à incidents graves."
+      }
+    ]
+  },
+  {
+    "date": "Avril 2005-Juin 2016",
+    "company": "NUMERICABLE",
+    "place": "Metz(57)",
+    "function": "Responsable Groupe Expertise Régional",
+    "département": "Région Grand Est et une partie de la Région Bourgogne-Franche-Comté",
+    "postDescription": [
+      {
+        "domain1": "Exploitation réseaux de télédistribution coaxiaux et fibres optiques (FTTB – FTTH)",
+        "description": "Responsable régional exploitation plateformes des services TV, Internet, VOD, VOIP et réseaux de distribution fibre optique et coaxiaux."
+      },
+
+      {
+        "domain2": "Déploiement réseaux de télédistribution coaxiaux et fibres optiques (FTTB – FTTH) en collaboration avec les Services Ingénierie Centraux, Services Régionaux et Sous-traitants niveau 1",
+        "description": "Responsable régional rénovation et upgrade plateformes Backbone, Services, Énergie, Climatisation et réseaux de distribution Grand Public."
+      }
+    ]
+  },
+  {
+    "date": "Février 2001-Avril 2005",
+    "company": "TDF CABLE",
+    "place": "Metz(57)",
+    "function": "Responsable Maintenance Adjoint",
+    "département": "Départements 08,51,52,54,55,57 et 88",
+    "postDescription": [
+      {
+        "description": "Responsable de la mise en œuvre des consignes de production."
+      },
+      {
+        "description": "Expert Technique National (Hot Line)."
+      },
+      {
+        "description": "Management de la maintenance corrective pour France telecom dans le département des Hautes Seines(92)"
+      },
+      { "description": "Chargé des relations Clients / Fournisseurs." }
+    ]
+  },
+  {
+    "date": "Février 2001-Avril 2005",
+    "company": "TDF CABLE",
+    "place": "Metz(57)",
+    "function": "Responsable Ordonnancement",
+    "département": "Départements 08,51,52,54,55,57 et 88",
+    "postDescription": [
+      {
+        "description": "Planification quotidienne et prévisionnelle de la maintenance corrective et préventive."
+      },
+      {
+        "description": "Élaboration de tableaux de bord maintenance."
+      },
+      {
+        "description": "Élaboration et adaptation de consignes de production."
+      }
+    ]
+  },
+  {
+    "date": "Mai 1998-Février 2001",
+    "company": "TDF",
+    "place": "Luttange(57)",
+    "function": "Responsable Maintenance Réseaux Câblés",
+    "département": "Départements 08,54,55 et 57",
+    "postDescription": [
+      {
+        "description": "Planification quotidienne et prévisionnelle de la maintenance corrective et préventive."
+      },
+      {
+        "description": "Expertise technique nationale (Hot Line)."
+      },
+      {
+        "description": "Chargé des relations Clients / Fournisseurs."
+      }
+    ]
+  },
+  {
+    "date": "Février 1993-Mai 1998-Février",
+    "company": "TDF",
+    "place": "Luttange(57)",
+    "function": "Technicien Supérieur de Maintenance Audiovisuelle, réseaux câblés et réseau TV principal",
+    "département": "Départements 08,55 et 57",
+    "postDescription": [
+      {
+        "description": "Intervenant technique sur la maintenance corrective et préventive."
+      },
+      {
+        "description": "Expertise technique régionale et nationale : recette des réseaux fibre et coaxiaux et signaux TV numériques."
+      },
+      {
+        "description": "Formateur national en maintenance réseaux câblés."
+      }
+    ]
+  },
+  {
+    "date": "De 1984 à 1991 pendant toutes les vacances scolaires",
+    "company": "SPIE TRINDEL",
+    "place": "Uckange(57)",
+    "function": "Mission Intérimaires comme Electricien Industriel",
+    "postDescription": [
+      {
+        "description": "Tirage de câbles."
+      },
+      {
+        "description": "Câblage circuits de puissance."
+      },
+      {
+        "description": "Câblage circuits de commande avec automates."
+      },
+      {
+        "description": "Mise à jour de plans électriques"
+      }
+    ]
+  }
+]
