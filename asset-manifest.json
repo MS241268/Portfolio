@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.16d3c225.css",
-    "main.js": "/Portfolio/static/js/main.585804d4.js",
+    "main.css": "/Portfolio/static/css/main.24a67a88.css",
+    "main.js": "/Portfolio/static/js/main.f5b67b30.js",
     "static/media/moi.jpg": "/Portfolio/static/media/moi.dc66cafebf3fc5c4b1be.jpg",
     "static/media/BAC_Electronique.jpg": "/Portfolio/static/media/BAC_Electronique.db68463fec8416519f9c.jpg",
     "static/media/Attestation_OC.jpg": "/Portfolio/static/media/Attestation_OC.e19de4e3da3d81531f9b.jpg",
@@ -13,11 +13,13 @@
     "index.html": "/Portfolio/index.html",
     "static/media/left_arrow.svg": "/Portfolio/static/media/left_arrow.65ddf93384ca3602b8a95b6fb49c22f4.svg",
     "static/media/down_arrow.svg": "/Portfolio/static/media/down_arrow.b052dd29e3a2bab76700eee79e133c37.svg",
-    "main.16d3c225.css.map": "/Portfolio/static/css/main.16d3c225.css.map",
-    "main.585804d4.js.map": "/Portfolio/static/js/main.585804d4.js.map"
+    "static/media/empty_star.svg": "/Portfolio/static/media/empty_star.cebe6e8f1150810d723361da98ed6e96.svg",
+    "static/media/full_star.svg": "/Portfolio/static/media/full_star.59627b135b4544a281697b418b5893ea.svg",
+    "main.24a67a88.css.map": "/Portfolio/static/css/main.24a67a88.css.map",
+    "main.f5b67b30.js.map": "/Portfolio/static/js/main.f5b67b30.js.map"
   },
   "entrypoints": [
-    "static/css/main.16d3c225.css",
-    "static/js/main.585804d4.js"
+    "static/css/main.24a67a88.css",
+    "static/js/main.f5b67b30.js"
   ]
 }
