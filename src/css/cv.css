@@ -1,27 +1,27 @@
 .wrapperCv {
   display: grid;
   grid-template-columns: 30% 70%;
-  gap: 10px;
+  gap: 0.625rem;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 .bannerCv {
   height: auto;
   grid-column: 1/3;
-  max-width: 1440px;
-  margin: 60px 0px 40px 0px;
+  max-width: 90rem;
+  margin: 3.75rem 0rem 2.5rem 0rem;
   background-color: rgba(38, 108, 174, 0.936);
-  border-radius: 25px;
-  border: 3px solid rgba(31, 78, 121, 0.936);
-  box-shadow: 12px 12px 20px 1px rgba(31, 78, 121, 0.8);
+  border-radius: 1.5625rem;
+  border: 0.1875rem solid rgba(31, 78, 121, 0.936);
+  box-shadow: 0.75rem 0.75rem 1.25rem 0.0625rem rgba(31, 78, 121, 0.8);
 }
 
 .h1TitleCvContainer {
   width: 100%;
-  margin: 60px 0px;
+  margin: 3.75rem 0rem;
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 0.625rem;
 }
 /* .wrapper > div {
   width: 100%;
@@ -32,49 +32,49 @@
 } */
 h2 {
   width: 95%;
-  height: 59px;
-  padding: 15px;
-  margin: 30px auto;
-  border-radius: 10px;
-  font-size: 25px;
+  height: 3.6875rem;
+  padding: 0.9375rem;
+  margin: 1.875rem auto;
+  border-radius: 0.625rem;
+  font-size: 1.5625rem;
   text-align: center;
   background-color: rgba(31, 78, 121, 0.936);
 }
 ul {
-  padding: 10px;
+  padding: 0.625rem;
 }
 li {
-  padding: 5px 0px;
+  padding: 0.3125rem 0rem;
 }
 #item-0 {
-  height: 59px;
+  height: 3.6875rem;
 }
 #item-1 {
   width: 95%;
   background-color: rgba(31, 78, 121, 0.936);
-  border-radius: 15px;
+  border-radius: 0.9375rem;
 }
 .handStyle {
-  margin-right: 30px;
+  margin-right: 1.875rem;
 }
 #item-1 li {
   width: 95%;
   margin: auto;
-  margin-left: 70px;
+  margin-left: 4.375rem;
   list-style-type: none;
   text-align: start;
 }
 .leftSection {
   width: 100%;
   height: 100%;
-  border-radius: 15px;
+  border-radius: 0.9375rem;
   background-color: rgba(38, 108, 174, 0.936);
   grid-row: 2/ 12;
 }
 .leftSection ul {
   width: 95%;
   background-color: rgba(31, 78, 121, 0.936);
-  border-radius: 15px;
+  border-radius: 0.9375rem;
   list-style-type: none;
 }
 .leftSection ul li {
@@ -87,41 +87,41 @@ li {
   text-align: start;
 }
 .degreeStyle {
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 .asset {
   width: 95%;
-  padding: 20px;
-  border-radius: 15px;
+  padding: 1.25rem;
+  border-radius: 0.9375rem;
   background-color: rgba(31, 78, 121, 0.936);
 }
 .asset > div {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 .ratingDiv {
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 .star {
   color: blueviolet;
 }
 .language {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 .language > p {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .flag {
-  width: 50px;
+  width: 3.125rem;
 }
 .hobbies {
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 .hobbiesStyle {
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 .rightSection {
   height: 100%;
-  border-radius: 15px;
+  border-radius: 0.9375rem;
   background-color: rgba(38, 108, 174, 0.936);
 }
 #item-4 {

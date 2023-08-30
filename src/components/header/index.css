@@ -1,9 +1,9 @@
 header {
   /* max-width : 1440px; */
-  height: 100px;
-  margin-top: 20px;
+  height: 6.25rem;
+  margin-top: 1.25rem;
   /* margin-bottom: 40px; */
-  border-radius: 25px;
+  border-radius: 1.5625rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -17,7 +17,7 @@ header nav {
 }
 
 header ul {
-  gap: 30px;
+  gap: 1.875rem;
   display: flex;
   flex-wrap: nowrap;
   list-style-type: none;
@@ -25,7 +25,7 @@ header ul {
 
 header a {
   text-decoration: none;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 header ul li :hover {
@@ -36,23 +36,23 @@ header .activePage {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 30px;
-  height: 60px;
-  padding: 0px 20px;
-  border-radius: 15px;
+  min-width: 1.875rem;
+  height: 3.75rem;
+  padding: 0rem 1.25rem;
+  border-radius: 0.9375rem;
   text-decoration: underline;
   background-color: rgba(31, 78, 121, 0.6);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
   header img {
-    width: 145px;
+    width: 9.0625rem;
   }
   header ul {
-    gap: 18px;
+    gap: 1.125rem;
   }
   header a {
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 }

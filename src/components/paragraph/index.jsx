@@ -18,7 +18,7 @@ function Paragraph() {
     gsap.fromTo(
       '.paragraphContainer0',
       {
-        minHeight: '100px',
+        minHeight: '6.25rem',
         backgroundColor: 'transparent',
         border: 'none',
         boxShadow: 'none',
@@ -27,9 +27,9 @@ function Paragraph() {
       {
         height: 'auto',
         backgroundColor: 'rgba(38, 108, 174, 0.936)',
-        border: '3px solid rgba(31, 78, 121, 0.936)',
-        boxShadow: '12px 12px 20px 1px rgba(31, 78, 121, 0.8)',
-        marginBottom: '60px',
+        border: '0.1875rem solid rgba(31, 78, 121, 0.936)',
+        boxShadow: '0.75rem 0.75rem 1.25rem 0.0625rem rgba(31, 78, 121, 0.8)',
+        marginBottom: '3.75rem',
         scrollTrigger: {
           trigger: '.paragraphContainer0',
           // start:'top center', 27/08/23 Remettre si toujours Ko sur Mac
@@ -62,9 +62,9 @@ function Paragraph() {
     gsap.to('.paragraphContainer1', {
       height: 'auto',
       backgroundColor: 'rgba(38, 108, 174, 0.936)',
-      border: '3px solid rgba(31, 78, 121, 0.936)',
-      boxShadow: '12px 12px 20px 1px rgba(31, 78, 121, 0.8)',
-      marginBottom: '60px',
+      border: '0.1875rem solid rgba(31, 78, 121, 0.936)',
+      boxShadow: '0.75rem 0.75rem 1.25rem 0.0625rem rgba(31, 78, 121, 0.8)',
+      marginBottom: '3.75rem',
       scrollTrigger: {
         id: 'paragraphContainer1',
         trigger: '.paragraphContainer0',
@@ -113,9 +113,9 @@ function Paragraph() {
     gsap.to('.paragraphContainer2', {
       height: 'auto',
       backgroundColor: 'rgba(38, 108, 174, 0.936)',
-      border: '3px solid rgba(31, 78, 121, 0.936)',
-      boxShadow: '12px 12px 20px 1px rgba(31, 78, 121, 0.8)',
-      marginBottom: '60px',
+      border: '0.1875rem solid rgba(31, 78, 121, 0.936)',
+      boxShadow: '0.75rem 0.75rem 1.25rem 0.0625rem rgba(31, 78, 121, 0.8)',
+      marginBottom: '3.75rem',
       scrollTrigger: {
         id: 'paragraphContainer2',
         trigger: '.paragraphContainer1',

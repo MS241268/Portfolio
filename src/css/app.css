@@ -3,7 +3,7 @@
   max-width: 100vw;
   padding: 0%;
   margin: 0%;
-  max-width: 1440px;
+  max-width: 90rem;
   margin: auto;
   box-sizing: border-box;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
@@ -13,8 +13,8 @@
 body {
   /* min-height: 100vh; */
   /* max-width: 1440px; */
-  padding-top: 20px;
-  margin: 0px 20px;
+  padding-top: 1.25rem;
+  margin: 0rem 1.25rem;
   /* background-color: rgba(31, 78, 121, 0.936); */
   /* background: linear-gradient(
     45deg,
@@ -40,7 +40,7 @@ body {
 }
 p,
 li {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 /* @keyframes gradient {
   0% {

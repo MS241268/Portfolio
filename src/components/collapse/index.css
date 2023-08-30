@@ -1,18 +1,18 @@
 .articleCollapse {
   margin: auto;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
   background-color: rgba(38, 108, 174, 0.936);
-  border-radius: 18px;
+  border-radius: 1.125rem;
   overflow: hidden;
-  min-height: 52px;
+  min-height: 3.25rem;
 }
 
 .btnCollapse {
   width: 100%;
-  height: 52px;
-  font-size: 18px;
+  height: 3.25rem;
+  font-size: 1.125rem;
   background-color: rgba(31, 78, 121, 0.936);
-  border-radius: 18px;
+  border-radius: 1.125rem;
   /* border: #FF6060; */
   display: flex;
   justify-content: space-between;
@@ -42,48 +42,48 @@
 }
 
 .collapseContent {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
   padding: 3%;
   list-style: none;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: white;
   opacity: 1;
   transition: margin-top 0.5s ease-in-out, opacity 0.5s ease-in;
 }
 
 .hidden {
-  margin-top: -300px;
-  margin-bottom: 0px;
+  margin-top: -18.75rem;
+  margin-bottom: 0rem;
   padding: 3%;
   list-style: none;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: rgba(31, 78, 121, 0.936);
   opacity: 0;
   transition: margin-top 0.5s ease-in-out, opacity 0.5s ease-out;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
   .articleCollapse {
     width: 100%;
-    border-radius: 5px;
-    min-height: 30px;
+    border-radius: 0.3125rem;
+    min-height: 1.875rem;
   }
 
   .btnCollapse {
-    height: 30px;
-    border-radius: 5px;
+    height: 1.875rem;
+    border-radius: 0.3125rem;
   }
 
   .btnCollapse span {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 
   .arrowCollapse {
-    width: 15px;
+    width: 0.9375rem;
   }
 
   .arrowCollapseRotate {
-    width: 15px;
+    width: 0.9375rem;
   }
 }

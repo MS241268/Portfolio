@@ -1,11 +1,11 @@
 .slider {
   position: relative;
-  height: 1000px;
+  height: 62.5rem;
   width: 100%;
   overflow: hidden;
-  margin-bottom: 60px;
-  border-radius: 25px;
-  box-shadow: 20px 20px 30px 1px rgba(31, 78, 121, 0.8);
+  margin-bottom: 3.75rem;
+  border-radius: 1.5625rem;
+  box-shadow: 1.25rem 1.25rem 1.875rem 0.0625rem rgba(31, 78, 121, 0.8);
   visibility: hidden;
   animation: sliderAppear 0.5s ease 2.4s forwards;
 }
@@ -38,18 +38,18 @@
 .arrow_navigate {
   width: 100%;
   height: inherit;
-  margin: 0px;
+  margin: 0rem;
   gap: 85%;
   position: absolute;
   top: 0;
   display: flex;
-  padding: 0px 25px;
+  padding: 0rem 1.5625rem;
   z-index: 1;
 }
 
 .arrow {
-  width: 80px;
-  height: 80px;
+  width: 5rem;
+  height: 5rem;
   cursor: pointer;
 }
 
@@ -58,9 +58,9 @@
 }
 
 .arrow_navigate :hover {
-  width: 80px;
-  height: 80px;
-  padding: 0.1px;
+  width: 5rem;
+  height: 5rem;
+  padding: 0.00625rem;
   background-color: rgb(185, 183, 183);
   border-radius: 50%;
   cursor: pointer;
@@ -68,51 +68,51 @@
 
 .numberPicture {
   position: absolute;
-  bottom: 20px;
+  bottom: 1.25rem;
   width: 6%;
-  height: 50px;
+  height: 3.125rem;
   margin-left: 47%;
   margin-right: 47%;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: rgba(31, 78, 121, 0.936);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
   .slider {
-    height: 255px;
+    height: 15.9375rem;
   }
 
   .arrow_navigate {
     top: 33%;
     align-items: center;
-    padding: 15px;
+    padding: 0.9375rem;
   }
 
   .arrow_navigate img {
-    width: 12px;
-    height: 12px;
+    width: 0.75rem;
+    height: 0.75rem;
   }
 
   .numberPicture {
-    font-size: 12px;
+    font-size: 0.75rem;
     /* visibility: hidden; */
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 48.0625rem) and (max-width: 64rem) {
   .arrow_navigate img {
-    width: 18px;
-    height: 18px;
+    width: 1.125rem;
+    height: 1.125rem;
   }
 
   .arrow_navigate {
     top: 38%;
     align-items: center;
-    padding: 15px;
+    padding: 0.9375rem;
   }
 }

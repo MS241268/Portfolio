@@ -78,7 +78,7 @@ function Cv() {
 
           <h2>LANGUES</h2>
           {cvDatas.map((elt) =>
-            Array.isArray(elt.languages)
+            Array.isArray(elt.languages) //Vérifie si tableau et évite les erreurs "TypeError: Cannot Read Property ‘Map’ of Undefined” Error?
               ? elt.languages.map((lang) => (
                   <div key={lang} className="studies language">
                     <img

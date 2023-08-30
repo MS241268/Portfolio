@@ -1,23 +1,23 @@
 .letterContainer {
-  width: 60px;
-  height: 90px;
-  font-size: 40px;
+  width: 3.75rem;
+  height: 5.625rem;
+  font-size: 2.5rem;
   font-weight: bolder;
   background-color: #ccc6c6ea;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   transform: rotateY(180deg);
   transform-style: preserve-3d;
   animation: cardFlip 0.3s ease forwards;
 }
 
 .letterContainerOtherPages {
-  width: 60px;
-  height: 90px;
-  font-size: 40px;
+  width: 3.75rem;
+  height: 5.625rem;
+  font-size: 2.5rem;
   font-weight: bolder;
   margin: 0;
   background-color: #ccc6c6ea;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   transform: rotateY(180deg);
   transform-style: preserve-3d;
   animation: cardFlip 0.3s ease forwards;
@@ -35,7 +35,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   background-color: rgba(31, 78, 121, 0.936);
   backface-visibility: hidden;
 }
