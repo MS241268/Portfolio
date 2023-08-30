@@ -168,6 +168,7 @@
   border-radius: 0.9375rem;
   padding: 0.625rem 0rem;
   background-color: rgba(31, 78, 121, 0.6);
+  box-shadow: 0.75rem 0.75rem 1.25rem 0.0625rem rgba(31, 78, 121, 0.8);
 }
 
 .languageIcons {

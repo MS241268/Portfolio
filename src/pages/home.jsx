@@ -39,7 +39,7 @@ function Home() {
       display: 'block',
       scrollTrigger: {
         trigger: '.paragraphContainer2',
-        start: '650px center',
+        start: '40.625rem center',
         toggleActions: 'play none none none',
         onEnter: () => {
           window.addEventListener('scroll', function () {
@@ -73,7 +73,7 @@ function Home() {
       display: 'none',
       scrollTrigger: {
         trigger: '.bannerHome',
-        start: 'top 140px',
+        start: 'top 8.75rem',
         toggleActions: 'play none none none',
         onEnter: () => {
           gsap.set('.mouseScroll', { display: 'block' });
