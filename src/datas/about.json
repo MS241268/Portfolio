@@ -8,7 +8,7 @@
     "description": "Les projets ci-dessous sont issus de ma formation chez OpenClassrooms. Chaque projet a été présenté, expliqué et évalué par des mentors évaluateurs et sont tous factices:",
     "details": [
       {
-        "projectIcon": "../assets/projectIcons/Booki.png",
+        "projectIcon": "./assets/projectIcons/Booki.png",
         "projectTitle": "Projet N°1: Booki",
         "projectDescription": "Transformer une maquette au format SVG d'un site d'hébergement en site web avec HTML5 & CSS3.",
         "projectObjective": [
@@ -23,7 +23,7 @@
         "projectUrl": "https://ms241268.github.io/P2-Booki/"
       },
       {
-        "projectIcon": "../assets/projectIcons/Ohmyfood.png",
+        "projectIcon": "./assets/projectIcons/Ohmyfood.png",
         "projectTitle": "Projet N°2: Ohmyfood",
         "projectDescription": "Transformer une maquette au format PNG en site web avec HTML5 & CSS3. Dynamiser une page web avec des animations CSS.",
         "projectObjective": [
@@ -41,7 +41,7 @@
         "projectUrl": "https://ms241268.github.io/ohmyfood/"
       },
       {
-        "projectIcon": "../assets/projectIcons/LaPanthere.png",
+        "projectIcon": "./assets/projectIcons/LaPanthere.png",
         "projectTitle": "Projet N°3: La panthère",
         "projectDescription": "Optimiser un site de web design existant.",
         "projectObjective": [
@@ -58,7 +58,7 @@
         "projectUrl": "https://ms241268.github.io/P4-LaPanthere/"
       },
       {
-        "projectIcon": "../assets/projectIcons/Kanap.png",
+        "projectIcon": "./assets/projectIcons/Kanap.png",
         "projectTitle": "Projet N°4: Kanap",
         "projectDescription": "Construire un site e-commerce en JavaScript.",
 
@@ -82,7 +82,7 @@
         "warning": "Le site étant hébergé gratuitement (lenteur du serveur), il se peut que les produits ne s'affichent pas: Rafraîchissez la page. Si vous obtenez une erreur FETCH cliquez sur OK et rafraîchissez à nouveau."
       },
       {
-        "projectIcon": "../assets/projectIcons/Piiquante.png",
+        "projectIcon": "./assets/projectIcons/Piiquante.png",
         "projectTitle": "Projet N°5: Piiquante",
         "projectDescription": "Construire une API sécurisée pour une application d'avis gastronomiques.",
         "projectObjective": [
@@ -98,7 +98,7 @@
         "projectUrl": ""
       },
       {
-        "projectIcon": "../assets/projectIcons/Kasa.svg",
+        "projectIcon": "./assets/projectIcons/Kasa.svg",
         "projectTitle": "Projet N°6: Kasa",
         "projectDescription": "Créer une application web de location immobilière avec la bibliothèque React.",
         "projectObjective": [
@@ -152,7 +152,7 @@
         "progress": 50
       },
       {
-        "icon": "../assets/languageIcons/gsap.svg",
+        "icon": "./assets/languageIcons/gsap.svg",
         "iconName": "Gsap",
         "progress": 50
       },
