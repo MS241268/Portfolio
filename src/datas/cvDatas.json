@@ -1,5 +1,26 @@
 [
   {
+    "assets": [
+      { "asset": "Sens des Responsabilités", "rate": 4 },
+      { "asset": "Initiative", "rate": "4" },
+      { "asset": "Autonomie", "rate": "4" },
+      { "asset": "Prise de Décision", "rate": "4" },
+      { "asset": "Travail en Équipe", "rate": "4" }
+    ]
+  },
+  {
+    "languages": [
+      {
+        "country": "https://flagcdn.com/128x96/fr.png",
+        "level": "Langue Maternelle"
+      },
+      {
+        "country": "https://flagcdn.com/128x96/gb.png",
+        "level": "Niveau B1 (TOEIC)"
+      }
+    ]
+  },
+  {
     "iconCompany": "../assets/companyLogos/SFR.png",
     "company": "SFR",
     "date": "Juin 2016–Juillet 2023",

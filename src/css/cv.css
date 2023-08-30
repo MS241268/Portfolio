@@ -44,7 +44,6 @@ ul {
   padding: 10px;
 }
 li {
-  font-size: 20px;
   padding: 5px 0px;
 }
 #item-0 {
@@ -79,6 +78,9 @@ li {
   list-style-type: none;
 }
 .leftSection ul li {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
   width: 85%;
   margin: auto;
   /* padding: 10px 0px; */
@@ -86,6 +88,30 @@ li {
 }
 .degreeStyle {
   margin-right: 10px;
+}
+.asset {
+  width: 95%;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: rgba(31, 78, 121, 0.936);
+}
+.asset > div {
+  margin-bottom: 20px;
+}
+.ratingDiv {
+  margin-top: 10px;
+}
+.star {
+  color: blueviolet;
+}
+.language {
+  margin-bottom: 20px;
+}
+.language > p {
+  font-size: 20px;
+}
+.flag {
+  width: 50px;
 }
 .hobbies {
   margin-bottom: 30px;

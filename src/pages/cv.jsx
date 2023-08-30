@@ -4,7 +4,12 @@ import { FaHandPointRight, FaGuitar } from 'react-icons/fa';
 import { GiDiploma, GiFullMotorcycleHelmet } from 'react-icons/gi';
 import { PiMicrophoneStageFill } from 'react-icons/pi';
 import { MdDriveEta } from 'react-icons/md';
+import cvDatas from '../datas/cvDatas.json';
+import fullStar from '../assets/icons/full_star.svg';
+import emptyStar from '../assets/icons/empty_star.svg';
 
+console.log(cvDatas, typeof cvDatas);
+const rating = [1, 2, 3, 4, 5];
 function Cv() {
   return (
     <main>
@@ -14,7 +19,6 @@ function Cv() {
             <Title content="CURRICULUM VITAE" />
           </h1>
         </section>
-        {/* <div id="item-2">&nbsp;</div> */}
         <section className="leftSection">
           <h2>MES ÉTUDES</h2>
           <ul className="studies">
@@ -40,21 +44,53 @@ function Cv() {
             </li>
           </ul>
           <h2>MES ATOUTS</h2>
-          <ul className="studies">
-            <li>Lorem ipsum dolor adipisicing elit</li>
-            <li> sit amet consectetur</li>
-            <li> Unde tempora possimus ut eligendi quisquam</li>
-            <li>reiciendis perferendis necessitatibus</li>
-            <li>quia totam quae</li>
-          </ul>
+          <section className="asset">
+            {cvDatas.map((elt) =>
+              Array.isArray(elt.assets)
+                ? elt.assets.map((adv) => (
+                    <div key={adv}>
+                      {console.log(adv.asset, adv.rate, typeof elt.assets)}
+                      <p>{adv.asset}</p>
+                      <div className="ratingDiv">
+                        {rating.map((level) =>
+                          adv.rate >= level ? (
+                            <img
+                              key={level}
+                              className="star"
+                              src={fullStar}
+                              alt="Etoile verte"
+                            />
+                          ) : (
+                            <img
+                              key={level}
+                              className="star"
+                              src={emptyStar}
+                              alt="Etoile rouge"
+                            />
+                          )
+                        )}
+                      </div>
+                    </div>
+                  ))
+                : null
+            )}
+          </section>
+
           <h2>LANGUES</h2>
-          <ul className="studies">
-            <li>Lorem ipsum dolor adipisicing elit</li>
-            <li> sit amet consectetur</li>
-            <li> Unde tempora possimus ut eligendi quisquam</li>
-            <li>reiciendis perferendis necessitatibus</li>
-            <li>quia totam quae</li>
-          </ul>
+          {cvDatas.map((elt) =>
+            Array.isArray(elt.languages)
+              ? elt.languages.map((lang) => (
+                  <div key={lang} className="studies language">
+                    <img
+                      src={lang.country}
+                      alt={`Drapeau Pays`}
+                      className="flag"
+                    ></img>
+                    <p>{lang.level}</p>
+                  </div>
+                ))
+              : null
+          )}
           <h2>DIVERS</h2>
           <ul className="studies hobbies">
             <li>

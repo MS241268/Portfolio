@@ -23,7 +23,7 @@
 }
 
 .aboutParagraph {
-  font-size: 20px;
+  /* font-size: 20px; */
   margin-top: 30px;
   padding: 20px;
   opacity: 0;
@@ -108,7 +108,7 @@
 }
 
 .projectObjectiveLi {
-  font-size: 20px;
+  /* font-size: 20px; */
   padding-bottom: 10px;
   list-style-type: none;
 }

@@ -178,7 +178,7 @@ function Paragraph() {
     });
   }, []);
   //////Fin Container Compétences//////
-
+  console.log(Datas, typeof Datas);
   return Datas.map((parag, index) => (
     <section
       key={index}
@@ -195,6 +195,7 @@ function Paragraph() {
 			</Cards> */}
       {Array.isArray(parag.details) ? (
         <section className={`projectsContainer`}>
+          {console.log(typeof parag.details)}
           {parag.details.map((det, index) => (
             <article key={index} className={`project${index} project`}>
               <div className="imgContainer">
