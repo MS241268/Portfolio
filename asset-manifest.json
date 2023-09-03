@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.159a722d.css",
-    "main.js": "/static/js/main.fad4caee.js",
-    "static/media/moi.jpg": "/static/media/moi.dc66cafebf3fc5c4b1be.jpg",
-    "static/media/BAC_Electronique.jpg": "/static/media/BAC_Electronique.db68463fec8416519f9c.jpg",
-    "static/media/Attestation_OC.jpg": "/static/media/Attestation_OC.e19de4e3da3d81531f9b.jpg",
-    "static/media/CAP_Electrotech.jpg": "/static/media/CAP_Electrotech.c9268577207f3889f047.jpg",
-    "static/media/CAP_Electronique.jpg": "/static/media/CAP_Electronique.6bf1271eb3d492e27739.jpg",
-    "static/media/BEP_Electronique.jpg": "/static/media/BEP_Electronique.e5d5271380289602954a.jpg",
-    "static/media/BTS_Electronique.jpg": "/static/media/BTS_Electronique.8fc02345e6ad560c4f44.jpg",
-    "static/media/computer_mouse_icon_126666.svg": "/static/media/computer_mouse_icon_126666.2cb96ac45307e7a83bc5149acb90cd93.svg",
-    "index.html": "/index.html",
-    "static/media/left_arrow.svg": "/static/media/left_arrow.65ddf93384ca3602b8a95b6fb49c22f4.svg",
-    "static/media/down_arrow.svg": "/static/media/down_arrow.b052dd29e3a2bab76700eee79e133c37.svg",
-    "static/media/empty_star.svg": "/static/media/empty_star.cebe6e8f1150810d723361da98ed6e96.svg",
-    "static/media/full_star.svg": "/static/media/full_star.59627b135b4544a281697b418b5893ea.svg",
-    "main.159a722d.css.map": "/static/css/main.159a722d.css.map",
-    "main.fad4caee.js.map": "/static/js/main.fad4caee.js.map"
+    "main.css": "/Portfolio/static/css/main.159a722d.css",
+    "main.js": "/Portfolio/static/js/main.d8769f6e.js",
+    "static/media/moi.jpg": "/Portfolio/static/media/moi.dc66cafebf3fc5c4b1be.jpg",
+    "static/media/BAC_Electronique.jpg": "/Portfolio/static/media/BAC_Electronique.db68463fec8416519f9c.jpg",
+    "static/media/Attestation_OC.jpg": "/Portfolio/static/media/Attestation_OC.e19de4e3da3d81531f9b.jpg",
+    "static/media/CAP_Electrotech.jpg": "/Portfolio/static/media/CAP_Electrotech.c9268577207f3889f047.jpg",
+    "static/media/CAP_Electronique.jpg": "/Portfolio/static/media/CAP_Electronique.6bf1271eb3d492e27739.jpg",
+    "static/media/BEP_Electronique.jpg": "/Portfolio/static/media/BEP_Electronique.e5d5271380289602954a.jpg",
+    "static/media/BTS_Electronique.jpg": "/Portfolio/static/media/BTS_Electronique.8fc02345e6ad560c4f44.jpg",
+    "static/media/computer_mouse_icon_126666.svg": "/Portfolio/static/media/computer_mouse_icon_126666.2cb96ac45307e7a83bc5149acb90cd93.svg",
+    "index.html": "/Portfolio/index.html",
+    "static/media/left_arrow.svg": "/Portfolio/static/media/left_arrow.65ddf93384ca3602b8a95b6fb49c22f4.svg",
+    "static/media/down_arrow.svg": "/Portfolio/static/media/down_arrow.b052dd29e3a2bab76700eee79e133c37.svg",
+    "static/media/empty_star.svg": "/Portfolio/static/media/empty_star.cebe6e8f1150810d723361da98ed6e96.svg",
+    "static/media/full_star.svg": "/Portfolio/static/media/full_star.59627b135b4544a281697b418b5893ea.svg",
+    "main.159a722d.css.map": "/Portfolio/static/css/main.159a722d.css.map",
+    "main.d8769f6e.js.map": "/Portfolio/static/js/main.d8769f6e.js.map"
   },
   "entrypoints": [
     "static/css/main.159a722d.css",
-    "static/js/main.fad4caee.js"
+    "static/js/main.d8769f6e.js"
   ]
 }
