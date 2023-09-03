@@ -7,30 +7,53 @@ function Collapse({ label, content }) {
   function toggle() {
     setOpen(!open);
   }
+
   return (
     <article className="articleCollapse">
+      {console.log(`valeur content:`, content)}
       <button onClick={toggle} className="btnCollapse">
-        <span>{label}</span>
+        <p>{content.date}</p>
+        {console.log(
+          `typeof content.jobDescription:`,
+          typeof content.jobDescription,
+          'valeur de content.jobDescription:',
+          content.jobDescription
+        )}
+        <span className="companyName">
+          <img
+            src={content.iconCompany}
+            alt={`Logo Société${content.company}`}
+            className="logoCompany"
+          />
+          <h2 className="companyCollapse">{label}</h2>
+          <p className="placeCollapse">{content.place}</p>
+        </span>
         <img
           src={downArrow}
           alt="Ouverture ou fermeture de l'élément"
           className={open ? 'arrowCollapseRotate' : 'arrowCollapse'}
         />
       </button>
+
       {
-        Array.isArray(content) ? ( //Le contenu est il un tableau ?
-          <ul className={open ? 'collapseContent' : 'hidden'}>
-            {' '}
-            {
-              //Le contenu est un tableau
-              content.map((equipments, index) => (
-                <li key={index}>{equipments}</li>
-              ))
-            }
-          </ul>
-        ) : (
-          <p className={open ? 'collapseContent' : 'hidden'}>{content}</p>
-        ) //Le contenu n'est pas un tableau
+        Array.isArray([content.jobDescription]) //Le contenu est il un tableau ?
+          ? [content.jobDescription].map((job) => (
+              <div className={open ? 'collapseContent' : 'hidden'}>
+                <h3>{content.function}</h3>
+                <ul>
+                  {console.log(
+                    `typeof content:`,
+                    typeof content,
+                    `valeurs content:`,
+                    job
+                  )}
+                  {job.map((job) => (
+                    <li key={job}>{job}</li>
+                  ))}
+                </ul>
+              </div>
+            ))
+          : null //Le contenu n'est pas un tableau
       }
     </article>
   );

@@ -2,10 +2,10 @@
   {
     "assets": [
       { "asset": "Sens des Responsabilités", "rate": 4 },
-      { "asset": "Initiative", "rate": "4" },
-      { "asset": "Autonomie", "rate": "4" },
-      { "asset": "Prise de Décision", "rate": "4" },
-      { "asset": "Travail en Équipe", "rate": "4" }
+      { "asset": "Initiative", "rate": 4 },
+      { "asset": "Autonomie", "rate": 4 },
+      { "asset": "Prise de Décision", "rate": 4 },
+      { "asset": "Travail en Équipe", "rate": 4 }
     ]
   },
   {
@@ -21,135 +21,102 @@
     ]
   },
   {
-    "iconCompany": "../assets/companyLogos/SFR.png",
-    "company": "SFR",
-    "date": "Juin 2016–Juillet 2023",
-    "place": "Metz(57)",
-    "function": "Responsable Régional Expertise et Support Backbone et Entreprises",
-    "département": "Départements 08,10,51,52,54,55,57 et 88",
-    "postDescription": [
+    "experience": [
       {
-        "description": "Participation au projet désaturation fibre optique de la boucle locale (Grand Public et Entreprises)."
+        "iconCompany": "../assets/companyLogos/SFR.png",
+        "company": "SFR",
+        "date": "Juin 2016–Juillet 2023",
+        "place": "Metz(57)",
+        "function": "Responsable Régional Expertise et Support Backbone et Entreprises",
+        "departements": "Périmètre : Départements 08,10,51,52,54,55,57 et 88",
+        "jobDescription": [
+          "Participation au projet désaturation fibre optique de la boucle locale (Grand Public et Entreprises).",
+          "Suivi remise en conformité réseau fibre réseaux backbone, boucle locale Grand Public et Entreprises suite à incidents graves."
+        ]
       },
       {
-        "description": "Suivi remise en conformité réseau fibre réseaux backbone, boucle locale Grand Public et Entreprises suite à incidents graves."
-      }
-    ]
-  },
-  {
-    "iconCompany": "../assets/companyLogos/Numericable.png",
-    "company": "NUMERICABLE",
-    "date": "Avril 2005-Juin 2016",
-    "place": "Metz(57)",
-    "function": "Responsable Groupe Expertise Régional",
-    "département": "Région Grand Est et une partie de la Région Bourgogne-Franche-Comté",
-    "postDescription": [
-      {
-        "domain1": "Exploitation réseaux de télédistribution coaxiaux et fibres optiques (FTTB – FTTH)",
-        "description": "Responsable régional exploitation plateformes des services TV, Internet, VOD, VOIP et réseaux de distribution fibre optique et coaxiaux."
+        "iconCompany": "../assets/companyLogos/Numericable.png",
+        "company": "NUMERICABLE",
+        "date": "Avril 2005-Juin 2016",
+        "place": "Metz(57)",
+        "function": "Responsable Groupe Expertise Régional",
+        "département": "Région Grand Est et une partie de la Région Bourgogne-Franche-Comté",
+        "jobDescription": [
+          "Exploitation réseaux de télédistribution coaxiaux et fibres optiques (FTTB – FTTH)",
+          "Responsable régional exploitation plateformes des services TV, Internet, VOD, VOIP et réseaux de distribution fibre optique et coaxiaux.",
+          "Déploiement réseaux de télédistribution coaxiaux et fibres optiques (FTTB – FTTH) en collaboration avec les Services Ingénierie Centraux, Services Régionaux et Sous-traitants niveau 1",
+          "Responsable régional rénovation et upgrade plateformes Backbone, Services, Énergie, Climatisation et réseaux de distribution Grand Public."
+        ]
       },
+      {
+        "iconCompany": "../assets/companyLogos/TDF.png",
+        "company": "TDF CABLE",
+        "date": "Février 2001-Avril 2005",
+        "place": "Metz(57)",
+        "function": "Responsable Maintenance Adjoint",
+        "département": "Départements 08,51,52,54,55,57 et 88",
+        "jobDescription": [
+          "Responsable de la mise en œuvre des consignes de production.",
 
-      {
-        "domain2": "Déploiement réseaux de télédistribution coaxiaux et fibres optiques (FTTB – FTTH) en collaboration avec les Services Ingénierie Centraux, Services Régionaux et Sous-traitants niveau 1",
-        "description": "Responsable régional rénovation et upgrade plateformes Backbone, Services, Énergie, Climatisation et réseaux de distribution Grand Public."
-      }
-    ]
-  },
-  {
-    "iconCompany": "../assets/companyLogos/TDF.png",
-    "company": "TDF CABLE",
-    "date": "Février 2001-Avril 2005",
-    "place": "Metz(57)",
-    "function": "Responsable Maintenance Adjoint",
-    "département": "Départements 08,51,52,54,55,57 et 88",
-    "postDescription": [
-      {
-        "description": "Responsable de la mise en œuvre des consignes de production."
+          "Expert Technique National (Hot Line).",
+
+          "Management de la maintenance corrective pour France telecom dans le département des Hautes Seines(92)",
+
+          "Chargé des relations Clients / Fournisseurs."
+        ]
       },
       {
-        "description": "Expert Technique National (Hot Line)."
+        "iconCompany": "../assets/companyLogos/TDF.png",
+        "company": "TDF CABLE",
+        "date": "Février 2001-Avril 2005",
+        "place": "Metz(57)",
+        "function": "Responsable Ordonnancement",
+        "département": "Départements 08,51,52,54,55,57 et 88",
+        "jobDescription": [
+          "Planification quotidienne et prévisionnelle de la maintenance corrective et préventive.",
+          "Élaboration de tableaux de bord maintenance.",
+          "Élaboration et adaptation de consignes de production."
+        ]
       },
       {
-        "description": "Management de la maintenance corrective pour France telecom dans le département des Hautes Seines(92)"
-      },
-      { "description": "Chargé des relations Clients / Fournisseurs." }
-    ]
-  },
-  {
-    "iconCompany": "../assets/companyLogos/TDF.png",
-    "company": "TDF CABLE",
-    "date": "Février 2001-Avril 2005",
-    "place": "Metz(57)",
-    "function": "Responsable Ordonnancement",
-    "département": "Départements 08,51,52,54,55,57 et 88",
-    "postDescription": [
-      {
-        "description": "Planification quotidienne et prévisionnelle de la maintenance corrective et préventive."
+        "iconCompany": "../assets/companyLogos/TDF.png",
+        "company": "TDF",
+        "date": "Mai 1998-Février 2001",
+        "place": "Luttange(57)",
+        "function": "Responsable Maintenance Réseaux Câblés",
+        "département": "Départements 08,54,55 et 57",
+        "jobDescription": [
+          "Planification quotidienne et prévisionnelle de la maintenance corrective et préventive.",
+          "Expertise technique nationale (Hot Line).",
+          "Chargé des relations Clients / Fournisseurs."
+        ]
       },
       {
-        "description": "Élaboration de tableaux de bord maintenance."
+        "iconCompany": "../assets/companyLogos/TDF.png",
+        "company": "TDF",
+        "date": "Février 1993-Mai 1998",
+        "place": "Luttange(57)",
+        "function": "Technicien Supérieur de Maintenance Audiovisuelle, réseaux câblés et réseau TV principal",
+        "département": "Départements 08,55 et 57",
+        "jobDescription": [
+          "Intervenant technique sur la maintenance corrective et préventive des réseaux câblés, du réseau TV principal et secondaire et du réseau FM.",
+          "Expertise technique régionale et nationale : recette des réseaux fibre et coaxiaux et signaux TV numériques.",
+          "Formateur national en maintenance réseaux câblés."
+        ]
       },
       {
-        "description": "Élaboration et adaptation de consignes de production."
-      }
-    ]
-  },
-  {
-    "iconCompany": "../assets/companyLogos/TDF.png",
-    "company": "TDF",
-    "date": "Mai 1998-Février 2001",
-    "place": "Luttange(57)",
-    "function": "Responsable Maintenance Réseaux Câblés",
-    "département": "Départements 08,54,55 et 57",
-    "postDescription": [
-      {
-        "description": "Planification quotidienne et prévisionnelle de la maintenance corrective et préventive."
-      },
-      {
-        "description": "Expertise technique nationale (Hot Line)."
-      },
-      {
-        "description": "Chargé des relations Clients / Fournisseurs."
-      }
-    ]
-  },
-  {
-    "iconCompany": "../assets/companyLogos/TDF.png",
-    "company": "TDF",
-    "date": "Février 1993-Mai 1998-Février",
-    "place": "Luttange(57)",
-    "function": "Technicien Supérieur de Maintenance Audiovisuelle, réseaux câblés et réseau TV principal",
-    "département": "Départements 08,55 et 57",
-    "postDescription": [
-      {
-        "description": "Intervenant technique sur la maintenance corrective et préventive."
-      },
-      {
-        "description": "Expertise technique régionale et nationale : recette des réseaux fibre et coaxiaux et signaux TV numériques."
-      },
-      {
-        "description": "Formateur national en maintenance réseaux câblés."
-      }
-    ]
-  },
-  {
-    "iconCompany": "../assets/companyLogos/Spie.png",
-    "company": "SPIE TRINDEL",
-    "date": "De 1984 à 1991 pendant toutes les vacances scolaires",
-    "place": "Uckange(57)",
-    "function": "Mission Intérimaires comme Electricien Industriel",
-    "postDescription": [
-      {
-        "description": "Tirage de câbles."
-      },
-      {
-        "description": "Câblage circuits de puissance."
-      },
-      {
-        "description": "Câblage circuits de commande avec automates."
-      },
-      {
-        "description": "Mise à jour de plans électriques"
+        "iconCompany": "../assets/companyLogos/Spie.png",
+        "company": "SPIE TRINDEL",
+        "date": "De 1984 à 1991",
+        "place": "Uckange(57)",
+        "function": "Mission Intérimaires comme Electricien Industriel (pendant toutes les vacances scolaires)",
+        "département": "Département 57",
+        "jobDescription": [
+          "Tirage de câbles.",
+          "Câblage circuits de puissance.",
+          "Câblage circuits de commande avec automates.",
+          "Mise à jour de plans électriques"
+        ]
       }
     ]
   }

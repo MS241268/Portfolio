@@ -8,52 +8,88 @@
 }
 
 .btnCollapse {
-  width: 100%;
+  z-index: 300;
+  width: 95%;
   height: 3.25rem;
   font-size: 1.125rem;
   background-color: rgba(31, 78, 121, 0.936);
-  border-radius: 1.125rem;
-  /* border: #FF6060; */
+  border-radius: 0.625rem;
+  border: rgba(31, 78, 121, 0.936);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .btnCollapse span {
+  width: 100%;
+  height: inherit;
   margin-left: 2%;
   margin-right: auto;
   color: white;
+  display: flex;
+  align-items: center;
 }
 
 .btnCollapse :hover {
   cursor: pointer;
 }
-
+.btnCollapse p {
+  width: 40%;
+  padding-left: 2%;
+  text-align: start;
+}
+/* .btnCollapse .companyName {
+  width: 40%;
+  margin-right: 9.375rem;
+  display: flex;
+  height: 1.25rem;
+  justify-content: space-evenly;
+  align-items: center;
+} */
+/* .companyName img {
+  margin-left: 30px;
+} */
+.companyCollapse {
+  width: 55%;
+  background-color: transparent;
+  padding: 0.9375rem 0rem;
+}
 .arrowCollapse {
+  width: 8%;
+  padding: 0.9375rem;
   margin-right: 2%;
   transform: rotate(0deg);
   transition: 0.3s ease-in-out;
 }
 
 .arrowCollapseRotate {
+  width: 8%;
+  padding: 0.9375rem;
   margin-right: 2%;
   transform: rotate(180deg);
   transition: 0.3s ease-in-out;
 }
 
 .collapseContent {
-  margin-top: 0rem;
+  /* z-index: -300; */
+  width: 95%;
+  margin-top: -0.25rem;
   margin-bottom: 0rem;
   padding: 3%;
   list-style: none;
   font-size: 1.5rem;
   color: white;
-  opacity: 1;
+  background-color: rgba(31, 78, 121, 0.936);
+  border-radius: 0 0 0.625rem 0.625rem;
+  opacity: 0.8;
   transition: margin-top 0.5s ease-in-out, opacity 0.5s ease-in;
+}
+.collapseContent ul {
+  text-align: start;
 }
 
 .hidden {
-  margin-top: -18.75rem;
+  margin-top: -25.75rem;
   margin-bottom: 0rem;
   padding: 3%;
   list-style: none;
