@@ -39,7 +39,8 @@ function Collapse({ label, content }) {
         Array.isArray([content.jobDescription]) //Le contenu est il un tableau ?
           ? [content.jobDescription].map((job) => (
               <div className={open ? 'collapseContent' : 'hidden'}>
-                <h3>{content.function}</h3>
+                <h3 className="functionTitle">{content.function}</h3>
+                <p className="departmentParagraph">{content.department}</p>
                 <ul>
                   {console.log(
                     `typeof content:`,

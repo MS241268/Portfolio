@@ -39,7 +39,8 @@
   text-align: start;
 }
 .companyCollapse {
-  width: 15rem;
+  width: 30%;
+  /* width: 15rem; Remmettre si 30% ko en prod*/
   background-color: transparent;
   padding: 0.9375rem 0rem;
   text-align: left;
@@ -76,8 +77,14 @@ p.placeCollapse {
   color: white;
   background-color: rgba(31, 78, 121, 0.936);
   border-radius: 0 0 0.625rem 0.625rem;
-  opacity: 0.8;
+  opacity: 0.7;
   transition: margin-top 0.5s ease-in-out, opacity 0.5s ease-in;
+}
+.functionTitle {
+  margin-bottom: 0.625rem;
+}
+.departmentParagraph {
+  margin-bottom: 1.25rem;
 }
 .collapseContent ul {
   text-align: start;

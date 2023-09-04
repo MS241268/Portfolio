@@ -28,7 +28,7 @@
         "date": "Juin 2016–Juillet 2023",
         "place": "Metz(57)",
         "function": "Responsable Régional Expertise et Support Backbone et Entreprises",
-        "departements": "Périmètre : Départements 08,10,51,52,54,55,57 et 88",
+        "department": "Périmètre : Départements 08,10,51,52,54,55,57 et 88",
         "jobDescription": [
           "Participation au projet désaturation fibre optique de la boucle locale (Grand Public et Entreprises).",
           "Suivi remise en conformité réseau fibre réseaux backbone, boucle locale Grand Public et Entreprises suite à incidents graves."
@@ -40,7 +40,7 @@
         "date": "Avril 2005-Juin 2016",
         "place": "Metz(57)",
         "function": "Responsable Groupe Expertise Régional",
-        "département": "Région Grand Est et une partie de la Région Bourgogne-Franche-Comté",
+        "department": "Périmètre : Région Grand Est et une partie de la Région Bourgogne-Franche-Comté",
         "jobDescription": [
           "Exploitation réseaux de télédistribution coaxiaux et fibres optiques (FTTB – FTTH)",
           "Responsable régional exploitation plateformes des services TV, Internet, VOD, VOIP et réseaux de distribution fibre optique et coaxiaux.",
@@ -54,7 +54,7 @@
         "date": "Février 2001-Avril 2005",
         "place": "Metz(57)",
         "function": "Responsable Maintenance Adjoint",
-        "département": "Départements 08,51,52,54,55,57 et 88",
+        "department": "Périmètre : Départements 08,51,52,54,55,57 et 88",
         "jobDescription": [
           "Responsable de la mise en œuvre des consignes de production.",
 
@@ -71,7 +71,7 @@
         "date": "Février 2001-Avril 2005",
         "place": "Metz(57)",
         "function": "Responsable Ordonnancement",
-        "département": "Départements 08,51,52,54,55,57 et 88",
+        "department": "Périmètre : Départements 08,51,52,54,55,57 et 88",
         "jobDescription": [
           "Planification quotidienne et prévisionnelle de la maintenance corrective et préventive.",
           "Élaboration de tableaux de bord maintenance.",
@@ -84,7 +84,7 @@
         "date": "Mai 1998-Février 2001",
         "place": "Luttange(57)",
         "function": "Responsable Maintenance Réseaux Câblés",
-        "département": "Départements 08,54,55 et 57",
+        "department": "Périmètre : Départements 08,54,55 et 57",
         "jobDescription": [
           "Planification quotidienne et prévisionnelle de la maintenance corrective et préventive.",
           "Expertise technique nationale (Hot Line).",
@@ -97,7 +97,7 @@
         "date": "Février 1993-Mai 1998",
         "place": "Luttange(57)",
         "function": "Technicien Supérieur de Maintenance Audiovisuelle, réseaux câblés et réseau TV principal",
-        "département": "Départements 08,55 et 57",
+        "department": "Périmètre : Départements 08,55 et 57",
         "jobDescription": [
           "Intervenant technique sur la maintenance corrective et préventive des réseaux câblés, du réseau TV principal et secondaire et du réseau FM.",
           "Expertise technique régionale et nationale : recette des réseaux fibre et coaxiaux et signaux TV numériques.",
@@ -110,7 +110,7 @@
         "date": "De 1984 à 1991",
         "place": "Uckange(57)",
         "function": "Mission Intérimaires comme Electricien Industriel (pendant toutes les vacances scolaires)",
-        "département": "Département 57",
+        "department": "Périmètre : Département 57",
         "jobDescription": [
           "Tirage de câbles.",
           "Câblage circuits de puissance.",
