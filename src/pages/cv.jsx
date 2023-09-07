@@ -25,23 +25,23 @@ function Cv() {
           <ul className="studies">
             <li>
               <GiDiploma className="degreeStyle" />
-              2022 à 2023 : BAC+2 Développeur Web
+              <span>2022 à 2023 : BAC+2 Développeur Web</span>
             </li>
             <li>
               <GiDiploma className="degreeStyle" />
-              1989 à 1991 : BTS Électronique
+              <span>1989 à 1991 : BTS Électronique</span>
             </li>
             <li>
               <GiDiploma className="degreeStyle" />
-              1987 à 1989 : BAC Électronique
+              <span>1987 à 1989 : BAC Électronique</span>
             </li>
             <li>
               <GiDiploma className="degreeStyle" />
-              1985 à 1987 : CAP + BEP Électronique
+              <span>1985 à 1987 : CAP + BEP Électronique</span>
             </li>
             <li>
               <GiDiploma className="degreeStyle" />
-              1982 à 1985 : CAP Électricien Équipements
+              <span>1982 à 1985 : CAP Électricien Équipements</span>
             </li>
           </ul>
           <h2>MES ATOUTS</h2>
