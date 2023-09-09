@@ -10,15 +10,15 @@ function Collapse({ label, content }) {
 
   return (
     <article className="articleCollapse">
-      {console.log(`valeur content:`, content)}
+      {/* {console.log(`valeur content:`, content)} */}
       <button onClick={toggle} className="btnCollapse">
         <p>{content.date}</p>
-        {console.log(
+        {/* {console.log(
           `typeof content.jobDescription:`,
           typeof content.jobDescription,
           'valeur de content.jobDescription:',
           content.jobDescription
-        )}
+        )} */}
         {/* <span className="companyName"> */}
         <img
           src={content.iconCompany}
@@ -42,12 +42,12 @@ function Collapse({ label, content }) {
                 <h3 className="functionTitle">{content.function}</h3>
                 <p className="departmentParagraph">{content.department}</p>
                 <ul>
-                  {console.log(
+                  {/* {console.log(
                     `typeof content:`,
                     typeof content,
                     `valeurs content:`,
                     job
-                  )}
+                  )} */}
                   {job.map((job) => (
                     <li key={job}>{job}</li>
                   ))}
