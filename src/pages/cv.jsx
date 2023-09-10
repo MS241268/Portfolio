@@ -24,23 +24,33 @@ function Cv() {
           <h2>MES ÉTUDES</h2>
           <ul className="studies">
             <li>
-              <GiDiploma className="degreeStyle" />
+              <i className="degreeStyle">
+                <GiDiploma />
+              </i>
               <span>2022 à 2023 : BAC+2 Développeur Web</span>
             </li>
             <li>
-              <GiDiploma className="degreeStyle" />
+              <i className="degreeStyle">
+                <GiDiploma />
+              </i>
               <span>1989 à 1991 : BTS Électronique</span>
             </li>
             <li>
-              <GiDiploma className="degreeStyle" />
+              <i className="degreeStyle">
+                <GiDiploma />
+              </i>
               <span>1987 à 1989 : BAC Électronique</span>
             </li>
             <li>
-              <GiDiploma className="degreeStyle" />
+              <i className="degreeStyle">
+                <GiDiploma />
+              </i>
               <span>1985 à 1987 : CAP + BEP Électronique</span>
             </li>
             <li>
-              <GiDiploma className="degreeStyle" />
+              <i className="degreeStyle">
+                <GiDiploma />
+              </i>
               <span>1982 à 1985 : CAP Électricien Équipements</span>
             </li>
           </ul>
@@ -96,57 +106,91 @@ function Cv() {
           <h2>DIVERS</h2>
           <ul className="studies hobbies">
             <li>
-              <MdDriveEta className="hobbiesStyle" />
-              Permis A & B
+              <i className="hobbiesStyle">
+                <MdDriveEta />
+              </i>
+              <span>Permis A & B</span>
             </li>
             <li>
-              <FaGuitar className="hobbiesStyle" />
-              Guitare
+              <i className="hobbiesStyle">
+                <FaGuitar />
+              </i>
+              <span>Guitare</span>
             </li>
             <li>
-              <PiMicrophoneStageFill className="hobbiesStyle" />
-              Concerts
+              <i className="hobbiesStyle">
+                <PiMicrophoneStageFill />
+              </i>
+              <span>Concerts</span>
             </li>
             <li>
-              <GiFullMotorcycleHelmet className="hobbiesStyle" />
-              Moto
+              <i className="hobbiesStyle">
+                <GiFullMotorcycleHelmet />
+              </i>
+              <span>Moto</span>
             </li>
           </ul>
         </section>
         <section className="rightSection">
           <h2 id="item-0">COMPETÉNCES MÉTIER</h2>
-          <ul id="item-1">
+          <ul className="item-1">
             <li>
-              <FaHandPointRight className="handStyle" />
-              Création de sites web à partir d’un cahier des charges.
+              <i className="handStyle">
+                <FaHandPointRight />
+              </i>
+              <span>
+                Création de sites web à partir d’un cahier des charges.
+              </span>
             </li>
             <li>
-              <FaHandPointRight className="handStyle" />
-              Application des éventuelles corrections dans le code.
+              <i className="handStyle">
+                <FaHandPointRight />
+              </i>
+              <span>Application des éventuelles corrections dans le code.</span>
             </li>
             <li>
-              <FaHandPointRight className="handStyle" />
-              Élaboration de fiche test et guide d’utilisation site.
+              <i className="handStyle">
+                <FaHandPointRight />
+              </i>
+              <span>
+                Élaboration de fiche test et guide d’utilisation site.
+              </span>
             </li>
             <li>
-              <FaHandPointRight className="handStyle" />
-              Organisation, Planification, Gestion et Présentation de projets.
+              <i className="handStyle">
+                <FaHandPointRight />
+              </i>
+              <span>
+                Organisation, Planification, Gestion et Présentation de projets.
+              </span>
             </li>
             <li>
-              <FaHandPointRight className="handStyle" />
-              Veille technique.
+              <i className="handStyle">
+                <FaHandPointRight />
+              </i>
+              <span>Veille technique.</span>
             </li>
             <li>
-              <FaHandPointRight className="handStyle" />
-              Management jusqu’à 20 personnes en interne et sous-traitance.
+              <i className="handStyle">
+                <FaHandPointRight />
+              </i>
+              <span>
+                Management jusqu’à 20 personnes en interne et sous-traitance.
+              </span>
             </li>
             <li>
-              <FaHandPointRight className="handStyle" />
-              Communication (animation réunion, présentation rapport).
+              <i className="handStyle">
+                <FaHandPointRight />
+              </i>
+              <span>
+                Communication (animation réunion, présentation rapport).
+              </span>
             </li>
             <li>
-              <FaHandPointRight className="handStyle" />
-              Maîtrise des outils MS Office
+              <i className="handStyle">
+                <FaHandPointRight />
+              </i>
+              <span>Maîtrise des outils MS Office.</span>
             </li>
           </ul>
           <h2 id="item-3">PARCOURS PROFESSIONNEL</h2>

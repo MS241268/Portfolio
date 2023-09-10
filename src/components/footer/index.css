@@ -4,6 +4,8 @@ footer {
   border-radius: 1.5625rem;
   padding-top: 4.0625rem;
   background-color: rgba(38, 108, 174, 0.936);
+  box-shadow: 1.25rem 1.25rem 1.875rem 0.0625rem rgba(31, 78, 121, 0.8);
+  border: 0.1875rem solid rgba(31, 78, 121, 0.936);
   margin: auto;
   text-align: center;
 }

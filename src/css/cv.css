@@ -43,28 +43,29 @@ ul {
 }
 li {
   padding: 0.3125rem 0rem;
-  /* display: flex; */
 }
 #item-0 {
   height: 3.6875rem;
 }
-#item-1 {
+.item-1 {
   width: 95%;
   background-color: rgba(31, 78, 121, 0.936);
   border-radius: 0.9375rem;
 }
 .handStyle {
-  margin-left: 0rem;
+  margin-left: 3.75rem;
   margin-right: 1.875rem;
 }
-#item-1 li {
-  width: 95%;
+.item-1 li {
+  width: 80%;
   margin: auto;
-  margin-left: 4.375rem;
   display: flex;
   justify-content: flex-start;
   list-style-type: none;
   text-align: start;
+}
+.item-1 span {
+  margin-left: 0rem;
 }
 .leftSection {
   width: 100%;
@@ -72,6 +73,7 @@ li {
   border-radius: 0.9375rem;
   background-color: rgba(38, 108, 174, 0.936);
   box-shadow: 0.75rem 0.75rem 1.25rem 0.0625rem rgba(31, 78, 121, 0.8);
+  border: 0.1875rem solid rgba(31, 78, 121, 0.936);
   grid-row: 2/ 12;
 }
 .leftSection ul {
@@ -137,6 +139,7 @@ li {
   border-radius: 0.9375rem;
   background-color: rgba(38, 108, 174, 0.936);
   box-shadow: 0.75rem 0.75rem 1.25rem 0.0625rem rgba(31, 78, 121, 0.8);
+  border: 0.1875rem solid rgba(31, 78, 121, 0.936);
 }
 .logoCompany {
   width: auto;

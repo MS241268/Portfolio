@@ -190,9 +190,7 @@ function Paragraph() {
       <p className={`aboutParagraph${index} aboutParagraph`} key={index + 1}>
         {parag.description}
       </p>
-      <section className={`projectsContainer1`}></section>
-      {/* <Cards content={parag.details}>
-			</Cards> */}
+      {/* <section className={`projectsContainer1`}></section> */}
       {Array.isArray(parag.details) ? (
         <section className={`projectsContainer`}>
           {/* {console.log(typeof parag.details)} */}
@@ -218,22 +216,29 @@ function Paragraph() {
                       {parag.details[index].projectObjective.map(
                         (obj, index) => (
                           <li key={index} className="projectObjectiveLi">
-                            <FaDirections className="arrowStyle" />
-                            {obj.objectif}
+                            <i className="arrowStyle">
+                              <FaDirections />
+                            </i>
+                            <span>{obj.objectif}</span>
                           </li>
                         )
                       )}
                     </ul>
                     <p className="warning">
-                      <PiWarningFill className="warningStyle" />: {det.warning}
+                      <i>
+                        <PiWarningFill className="warningStyle" />
+                      </i>
+                      <span>: {det.warning}</span>
                     </p>
                   </div>
                 ) : (
                   <ul className="projectObjectiveUl">
                     {parag.details[index].projectObjective.map((obj, index) => (
                       <li key={index} className="projectObjectiveLi">
-                        <FaDirections className="arrowStyle" />
-                        {obj.objectif}
+                        <i className="arrowStyle">
+                          <FaDirections />
+                        </i>
+                        <span>{obj.objectif}</span>
                       </li>
                     ))}
                   </ul>

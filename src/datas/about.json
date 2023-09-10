@@ -79,7 +79,7 @@
         ],
         "projectCode": "https://github.com/MS241268/P5-Kanap",
         "projectUrl": "https://kanap-keyq.onrender.com/",
-        "warning": "Le site étant hébergé gratuitement (lenteur du serveur), il se peut que les produits ne s'affichent pas: Rafraîchissez la page. Si vous obtenez une erreur FETCH cliquez sur OK et rafraîchissez à nouveau."
+        "warning": "Le site étant hébergé gratuitement (lenteur du serveur), il se peut que les produits ne s'affichent pas : Rafraîchissez la page. Si vous obtenez une erreur FETCH cliquez sur OK et rafraîchissez à nouveau."
       },
       {
         "projectIcon": "./assets/projectIcons/Piiquante.png",

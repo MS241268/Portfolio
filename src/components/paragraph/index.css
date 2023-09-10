@@ -110,13 +110,17 @@
 .projectObjectiveLi {
   /* font-size: 20px; */
   padding-bottom: 0.625rem;
+  display: flex;
   list-style-type: none;
 }
+.projectObjectiveLi span {
+  width: 80%;
+}
 .arrowStyle {
-  /*margin-right: 1.25rem; */
-  padding-top: 0.9375rem;
+  /* margin-right: 1.25rem; */
+  /* padding-top: 0.9375rem; */
   width: 2.5rem;
-  font-size: 1.875rem;
+  font-size: 1.25rem;
 }
 
 .projectObjectiveWarningContainer {
@@ -132,7 +136,16 @@
   margin-right: 0.1875rem;
 }
 .warning {
+  display: flex;
   font-size: 0.875rem;
+}
+.warning i {
+  font-size: 1.25rem;
+  margin-top: 0rem;
+}
+.warning span {
+  padding-top: 0.3125rem;
+  padding-left: 0.3125rem;
 }
 .linkContainer {
   position: absolute;
