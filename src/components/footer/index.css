@@ -35,7 +35,6 @@ footer span {
   padding-right: 0.625rem;
   display: flex;
   align-items: center;
-  /* color: red; */
 }
 footer span:hover {
   color: rgba(31, 78, 121, 0.936);
