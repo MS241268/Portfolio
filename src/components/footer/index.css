@@ -26,22 +26,23 @@ footer a:hover {
   scale: 1.2;
   background-color: white;
   border-color: rgba(31, 78, 121, 0.936);
+  background-color: rgba(31, 78, 121, 0.936);
   border-radius: 0.3125rem;
 }
 .iconsLink {
   font-size: 2.5rem;
   margin-right: 0.625rem;
   padding-left: 0.3125rem;
-  fill: rgba(31, 78, 121, 0.936);
+  /* fill: rgba(31, 78, 121, 0.936); */
 }
 footer span {
   padding-right: 0.625rem;
   display: flex;
   align-items: center;
 }
-footer span:hover {
+/* footer span:hover {
   color: rgba(31, 78, 121, 0.936);
-}
+} */
 footer p {
   margin-top: 2.5rem;
   margin-bottom: 1.875rem;
