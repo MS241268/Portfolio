@@ -1,27 +1,19 @@
-.letterContainer {
+.letterContainer,
+.letterContainerOtherPages {
   width: 3.75rem;
   height: 5.625rem;
   font-size: 2.5rem;
   font-weight: bolder;
-  background-color: #ccc6c6ea;
+  background-color: rgba(31, 78, 121, 0.936);
   border-radius: 0.625rem;
   transform: rotateY(180deg);
   transform-style: preserve-3d;
   animation: cardFlip 0.3s ease forwards;
 }
 
-.letterContainerOtherPages {
-  width: 3.75rem;
-  height: 5.625rem;
-  font-size: 2.5rem;
-  font-weight: bolder;
+/* .letterContainerOtherPages {
   margin: 0;
-  background-color: #ccc6c6ea;
-  border-radius: 0.625rem;
-  transform: rotateY(180deg);
-  transform-style: preserve-3d;
-  animation: cardFlip 0.3s ease forwards;
-}
+} */
 
 @keyframes cardFlip {
   100% {
@@ -38,4 +30,19 @@
   border-radius: 0.625rem;
   background-color: rgba(31, 78, 121, 0.936);
   backface-visibility: hidden;
+  /* display: grid; */
 }
+
+/* Début version Mobile jusqu'à 768px*/
+@media screen and (max-width: 48rem) {
+  .charFrontBlank {
+    display: none;
+  }
+  /* .letterContainer {
+    scale: 0.5;
+  }
+  .letterContainerOtherPages {
+    scale: 0.5;
+  } */
+}
+/* Fin version Mobile*/

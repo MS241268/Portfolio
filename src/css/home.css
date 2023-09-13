@@ -43,18 +43,16 @@ img {
   height: inherit;
   object-fit: cover;
 }
-
 .h1Title {
-  width: 80%;
-  display: flex;
-  justify-content: center;
+  width: 63%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
   gap: 0.625rem;
   margin: 1.875rem auto;
-  padding: 0rem 0.9375rem;
 }
 
 .letterContainer {
-  margin: 0;
+  margin: auto;
 }
 
 .wrapper {
@@ -66,6 +64,7 @@ img {
 
 .mouseScroll,
 .arrowScroll {
+  z-index: 1;
   position: fixed;
   top: 50vh;
   left: 83vw;
@@ -113,7 +112,24 @@ img {
   margin: auto;
 }
 
-@media screen and (min-width: 40.0625rem) and (max-width: 64rem) {
+/* Début version Mobile jusqu'à 768px*/
+@media screen and (max-width: 768px) {
+  /* html {
+    min-width: 100vh;
+  } */
+  .imageContainer {
+    display: none;
+  }
+  .h1Title {
+    width: inherit;
+    height: inherit;
+    /* scale: 0.5; */
+    margin: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    /* gap: 0rem; */
+    padding: 0rem;
+  }
   .mouseScroll,
   .arrowScroll {
     position: fixed;
@@ -121,3 +137,4 @@ img {
     left: 83vw;
   }
 }
+/* Fin version Mobile*/

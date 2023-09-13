@@ -1,9 +1,9 @@
 * {
   position: relative;
-  max-width: 100vw;
+  /* max-width: 100vw; */
   padding: 0%;
-  margin: 0%;
-  max-width: 90rem;
+  /* margin: 0%;
+  max-width: 90rem; */
   margin: auto;
   box-sizing: border-box;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
@@ -13,8 +13,9 @@
 body {
   /* min-height: 100vh; */
   /* max-width: 1440px; */
+  width: 95%;
   padding-top: 1.25rem;
-  margin: 0rem 1.25rem;
+  /* margin: 0rem 1.25rem; */
   /* background-color: rgba(31, 78, 121, 0.936); */
   /* background: linear-gradient(
     45deg,
@@ -65,7 +66,7 @@ li {
   h2,h3,p{
     scale: 0.5 }
   } */
-#root {
+/* #root {
   width: inherit;
   margin: inherit;
-}
+} */

@@ -33,16 +33,13 @@ footer a:hover {
   font-size: 2.5rem;
   margin-right: 0.625rem;
   padding-left: 0.3125rem;
-  /* fill: rgba(31, 78, 121, 0.936); */
 }
 footer span {
   padding-right: 0.625rem;
   display: flex;
   align-items: center;
 }
-/* footer span:hover {
-  color: rgba(31, 78, 121, 0.936);
-} */
+
 footer p {
   margin-top: 2.5rem;
   margin-bottom: 1.875rem;
