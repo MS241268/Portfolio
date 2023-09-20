@@ -27,7 +27,7 @@ header ul {
 
 header a {
   text-decoration: none;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
 }
 
 header ul li :hover {
@@ -46,15 +46,19 @@ header .activePage {
   background-color: rgba(31, 78, 121, 0.6);
 }
 
-@media screen and (max-width: 48rem) {
-  header img {
-    width: 9.0625rem;
+@media all and (max-width: 48rem) {
+  header nav {
+    width: 90%;
+    margin: auto;
   }
   header ul {
     gap: 1.125rem;
   }
+  header .activePage {
+    border-radius: 0.3125rem;
+  }
   header a {
     text-transform: uppercase;
-    font-size: 0.75rem;
+    /* font-size: 0.75rem; */
   }
 }

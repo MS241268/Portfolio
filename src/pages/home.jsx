@@ -91,9 +91,7 @@ function Home() {
   return (
     <main>
       <section className="bannerHome">
-        <div className="imageContainer">
-          <img src={Photo} alt="Profil"></img>
-        </div>
+        <img src={Photo} alt="Profil" className="image"></img>
         <h1 className="h1Title">
           <Title content="Marc SCHONNE" />
         </h1>

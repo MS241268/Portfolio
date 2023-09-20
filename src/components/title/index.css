@@ -1,8 +1,6 @@
-.letterContainer,
-.letterContainerOtherPages {
+.letterContainer {
   width: 3.75rem;
   height: 5.625rem;
-  font-size: 2.5rem;
   font-weight: bolder;
   background-color: rgba(31, 78, 121, 0.936);
   border-radius: 0.625rem;
@@ -10,17 +8,11 @@
   transform-style: preserve-3d;
   animation: cardFlip 0.3s ease forwards;
 }
-
-/* .letterContainerOtherPages {
-  margin: 0;
-} */
-
 @keyframes cardFlip {
   100% {
     transform: rotateY(0deg);
   }
 }
-
 .charFront {
   width: inherit;
   height: inherit;
@@ -30,19 +22,14 @@
   border-radius: 0.625rem;
   background-color: rgba(31, 78, 121, 0.936);
   backface-visibility: hidden;
-  /* display: grid; */
 }
 
-/* Début version Mobile jusqu'à 768px*/
-@media screen and (max-width: 48rem) {
-  .charFrontBlank {
-    display: none;
+/* Début version Mobile jusqu'à 529px*/
+@media all and (max-width: 529px) {
+  .letterContainer {
+    width: calc(0.7 * 2.75rem);
+    height: calc(0.7 * 3.625rem);
+    border-radius: 0.3125rem;
   }
-  /* .letterContainer {
-    scale: 0.5;
-  }
-  .letterContainerOtherPages {
-    scale: 0.5;
-  } */
 }
-/* Fin version Mobile*/
+/* Fin version Mobile jusqu'à 529 px*/

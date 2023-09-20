@@ -13,9 +13,11 @@ main {
   box-shadow: 0.75rem 0.75rem 1.25rem 0.0625rem rgba(31, 78, 121, 0.8);
 }
 
-.imageContainer {
-  /* width:60%;
-	margin: auto; */
+.image {
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+  margin: auto;
   margin-top: 1.875rem;
   border-radius: 1.5625rem;
   overflow: hidden;
@@ -36,12 +38,6 @@ main {
     transform: rotateY(-1080deg);
     opacity: 1;
   }
-}
-
-img {
-  width: inherit;
-  height: inherit;
-  object-fit: cover;
 }
 .h1Title {
   width: 63%;
@@ -112,23 +108,44 @@ img {
   margin: auto;
 }
 
-/* Début version Mobile jusqu'à 768px*/
-@media screen and (max-width: 768px) {
-  /* html {
-    min-width: 100vh;
-  } */
-  .imageContainer {
-    display: none;
+/* Début version Mobile jusqu'à 529px*/
+@media all and (max-width: 529px) {
+  .bannerHome {
+    display: flex;
+    justify-content: center;
+    max-width: 24.375rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    padding: 30px 2%;
+  }
+  .image {
+    max-width: 80px;
+    max-height: 80px;
+    scale: 0.8;
+    margin: auto;
+    border-radius: 50% 50%;
   }
   .h1Title {
-    width: inherit;
-    height: inherit;
-    /* scale: 0.5; */
+    width: auto;
     margin: auto;
-    flex-wrap: wrap;
-    align-items: center;
-    /* gap: 0rem; */
-    padding: 0rem;
+    scale: 0.8;
+    /* padding: 0 0 0 2%; */
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(2, 40.59px);
+    gap: 3px;
+  }
+  h1.h1Title > .letterContainer4 {
+    margin-left: 0px;
+    grid-template-columns: 300px;
+    grid-column: 5 /8;
+    grid-row: 1 / 2;
+    visibility: hidden;
+    background-color: transparent;
+  }
+  .paragraphContainer {
+    max-width: 24.375rem;
   }
   .mouseScroll,
   .arrowScroll {
@@ -137,4 +154,31 @@ img {
     left: 83vw;
   }
 }
-/* Fin version Mobile*/
+/* Fin version Mobile jusqu'à 529 px*/
+
+/* Début version Mobile de 530px jusqu'à 768px*/
+@media all and (min-width: 530px) and (max-width: 768px) {
+  .bannerHome {
+    max-width: 575px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    padding: 30px 0%;
+  }
+  .image {
+    max-width: 80px;
+    max-height: 80px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 0.763rem;
+  }
+  .h1Title {
+    width: 90%;
+    margin: auto;
+    scale: 0.7;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 3px;
+  }
+}
+/* Fin version Mobile de 530px jusqu'à 768px*/

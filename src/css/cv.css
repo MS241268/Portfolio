@@ -25,17 +25,17 @@
 }
 h2 {
   width: 95%;
-  height: 3.6875rem;
+  /* height: 3.6875rem; */
   padding: 0.9375rem;
   margin: 1.875rem auto;
   border-radius: 0.625rem;
-  font-size: 1.5625rem;
+  /* font-size: 1.5625rem; */
   font-weight: bold;
   text-align: center;
   background-color: rgba(31, 78, 121, 0.936);
 }
 h3 {
-  font-size: 1.375rem;
+  /* font-size: 1.375rem; */
   font-weight: bold;
 }
 ul {
@@ -120,9 +120,9 @@ li {
 .language {
   margin-bottom: 1.25rem;
 }
-.language > p {
+/* .language > p {
   font-size: 1.25rem;
-}
+} */
 .flag {
   width: 3.125rem;
 }
@@ -145,3 +145,54 @@ li {
   width: auto;
   padding: 0.4%;
 }
+/* Début version Mobile jusqu'à 529px*/
+@media all and (max-width: 529px) {
+  .bannerCv {
+    width: 90%;
+    max-width: 390px;
+    height: 150px;
+    grid-column: 1/3;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+  .h1TitleCvContainer {
+    margin-top: 30px;
+    margin-left: 25px;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(2, 40.59px);
+    gap: 3px;
+  }
+  h1.h1TitleCvContainer > .letterContainer10 {
+    /* grid-column: 1 /4; */
+    /* grid-row: 2 / 2; */
+    visibility: hidden;
+  }
+  .leftSection {
+    width: 90%;
+    max-width: 390px;
+    grid-column: 1/3;
+    grid-row: 4/25;
+  }
+  .rightSection {
+    width: 90%;
+    max-width: 390px;
+    grid-column: 1/3;
+  }
+  .handStyle {
+    margin-left: 0.6rem;
+  }
+  .btnCollapse p {
+    width: 24%;
+  }
+  .logoCompany {
+    display: none;
+  }
+  .companyCollapse {
+    text-align: center;
+  }
+  .placeCollapse {
+    display: none;
+  }
+}
+/* Fin version Mobile jusqu'à 529 px*/

@@ -19,7 +19,6 @@ function Collapse({ label, content }) {
           'valeur de content.jobDescription:',
           content.jobDescription
         )} */}
-        {/* <span className="companyName"> */}
         <img
           src={content.iconCompany}
           alt={`Logo Société${content.company}`}
@@ -27,7 +26,6 @@ function Collapse({ label, content }) {
         />
         <h2 className="companyCollapse">{label}</h2>
         <p className="placeCollapse">{content.place}</p>
-        {/* </span> */}
         <img
           src={downArrow}
           alt="Ouverture ou fermeture de l'élément"

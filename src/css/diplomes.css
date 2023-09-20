@@ -25,3 +25,11 @@
   margin: 3.75rem auto;
   gap: 0.625rem;
 }
+
+/* Début version Mobile jusqu'à 768px*/
+@media all and (max-width: 768px) {
+  /* .h1TitleDegreesContainer > .letterContainerOtherPages3 {
+    display: none;
+  } */
+}
+/* Fin version Mobile*/

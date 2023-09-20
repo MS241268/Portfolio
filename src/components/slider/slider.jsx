@@ -34,7 +34,6 @@ function Slider({ images }) {
 
   return (
     <section className="slider">
-      {/* <div className='backgroundSlider'> */}
       <div
         className="picturesContainer"
         style={{ transform: `translateX(-${currentPicture * 100}%)` }}
@@ -48,7 +47,6 @@ function Slider({ images }) {
           />
         ))}
       </div>
-
       {images.length > 1 ? (
         <div className="arrow_navigate">
           <img
@@ -68,7 +66,6 @@ function Slider({ images }) {
       <div className="numberPicture">
         {currentPicture + 1}/{images.length}
       </div>
-      {/* </div> */}
     </section>
   );
 }

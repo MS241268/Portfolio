@@ -83,7 +83,7 @@
   background-color: rgba(31, 78, 121, 0.936);
 }
 
-@media screen and (max-width: 48rem) {
+@media all and (max-width: 48rem) {
   .slider {
     height: 15.9375rem;
   }
@@ -105,7 +105,7 @@
   }
 }
 
-@media screen and (min-width: 48.0625rem) and (max-width: 64rem) {
+@media all and (min-width: 48.0625rem) and (max-width: 64rem) {
   .arrow_navigate img {
     width: 1.125rem;
     height: 1.125rem;
