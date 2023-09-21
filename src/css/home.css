@@ -124,13 +124,14 @@ main {
     max-height: 80px;
     scale: 0.8;
     margin: auto;
+    margin-left: 0px;
     border-radius: 50% 50%;
   }
   .h1Title {
-    width: auto;
+    width: 75%;
     margin: auto;
+    /* margin-left: -15%; */
     scale: 0.8;
-    /* padding: 0 0 0 2%; */
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(2, 40.59px);
@@ -162,8 +163,9 @@ main {
     max-width: 575px;
     margin-left: auto;
     margin-right: auto;
-    height: auto;
+    height: 250px;
     padding: 30px 0%;
+    padding-bottom: 0px;
   }
   .image {
     max-width: 80px;
@@ -173,12 +175,12 @@ main {
     border-radius: 0.763rem;
   }
   .h1Title {
-    width: 90%;
-    margin: auto;
-    scale: 0.7;
-    display: grid;
+    margin-left: 5px;
+    grid-gap: 3px;
+    margin-top: 0px;
     grid-template-columns: repeat(12, 1fr);
-    gap: 3px;
+    scale: 0.7;
+    max-width: 20%;
   }
 }
 /* Fin version Mobile de 530px jusqu'à 768px*/

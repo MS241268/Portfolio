@@ -13,12 +13,6 @@
 }
 
 .h1TitleDegreesContainer {
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.625rem;
-  width: 100%;
-  margin: 3.75rem 0rem; */
   width: 63%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -26,10 +20,29 @@
   gap: 0.625rem;
 }
 
-/* Début version Mobile jusqu'à 768px*/
-@media all and (max-width: 768px) {
-  /* .h1TitleDegreesContainer > .letterContainerOtherPages3 {
-    display: none;
-  } */
+/* Début version Mobile jusqu'à 529px*/
+@media all and (max-width: 529px) {
+  .degreesSection {
+    width: 90%;
+    max-width: 390px;
+    height: 150px;
+    grid-column: 1/3;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    padding: 30px 5%;
+  }
+  .h1TitleDegreesContainer {
+    width: 100%;
+    margin: 0px auto;
+    scale: 0.8;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 40.59px);
+    gap: 3px;
+  }
+  h1.h1TitleDegreesContainer > .letterContainer3 {
+    grid-column: 4 /9;
+    grid-row: 1 / 2;
+    visibility: hidden;
+  }
 }
-/* Fin version Mobile*/

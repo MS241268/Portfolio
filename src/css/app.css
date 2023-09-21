@@ -63,7 +63,7 @@ span {
     font-size: calc(0.7 * 1.125rem);
   }
   .charFront {
-    font-size: calc(0.6 * 2.5rem);
+    font-size: calc(0.5 * 2.5rem);
   }
 }
 /* Fin version Mobile jusqu'à 529 px*/
