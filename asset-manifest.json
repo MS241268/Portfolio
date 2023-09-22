@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.f2078577.css",
+    "main.css": "/Portfolio/static/css/main.8684318d.css",
     "main.js": "/Portfolio/static/js/main.8cdae9d8.js",
     "static/media/moi.jpg": "/Portfolio/static/media/moi.dc66cafebf3fc5c4b1be.jpg",
     "static/media/BAC_Electronique.jpg": "/Portfolio/static/media/BAC_Electronique.db68463fec8416519f9c.jpg",
@@ -15,11 +15,11 @@
     "static/media/down_arrow.svg": "/Portfolio/static/media/down_arrow.b052dd29e3a2bab76700eee79e133c37.svg",
     "static/media/empty_star.svg": "/Portfolio/static/media/empty_star.cebe6e8f1150810d723361da98ed6e96.svg",
     "static/media/full_star.svg": "/Portfolio/static/media/full_star.59627b135b4544a281697b418b5893ea.svg",
-    "main.f2078577.css.map": "/Portfolio/static/css/main.f2078577.css.map",
+    "main.8684318d.css.map": "/Portfolio/static/css/main.8684318d.css.map",
     "main.8cdae9d8.js.map": "/Portfolio/static/js/main.8cdae9d8.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2078577.css",
+    "static/css/main.8684318d.css",
     "static/js/main.8cdae9d8.js"
   ]
 }
