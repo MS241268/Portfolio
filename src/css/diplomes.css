@@ -19,21 +19,24 @@
   gap: 0.625rem;
 }
 
-/* Début version Mobile jusqu'à 529px*/
-@media all and (max-width: 529px) {
+/* Début version commune Mobile de 320px jusqu'à 529px*/
+@media all and (max-width: 768px) {
   .degreesSection {
     width: 90%;
-    max-width: 390px;
-    height: 150px;
-    grid-column: 1/3;
     margin: auto;
     margin-top: 60px;
     margin-bottom: 40px;
+    padding: 30px 0px;
   }
+}
+/* Fin version commune Mobile de 320px jusqu'à 529px*/
+
+/* Début version Mobile jusqu'à 529px*/
+@media all and (max-width: 529px) {
   .h1TitleDegreesContainer {
     margin: 0px;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(2, 40.59px);
+    grid-template-rows: repeat(2, 1fr);
     gap: 3px;
   }
   h1.h1TitleDegreesContainer > .letterContainer3 {
@@ -47,15 +50,7 @@
 /* Début version Mobile de 530px jusqu'à 768px*/
 @media all and (min-width: 530px) and (max-width: 768px) {
   .h1TitleDegreesContainer {
-    scale: 0.6;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 3px;
-  }
-  h1.h1TitleDegreesContainer > .letterContainer3 {
-    grid-column: 4 /9;
-    grid-row: 1 / 2;
-    visibility: hidden;
+    scale: 0.5;
   }
 }
 /* Fin version Mobile de 530px jusqu'à 768px*/
