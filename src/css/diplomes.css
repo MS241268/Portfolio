@@ -3,9 +3,10 @@
 }
 
 .banner {
-  position: relative;
-  max-width: 90rem;
-  margin: 3.75rem 0rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
   background-color: rgba(38, 108, 174, 0.936);
   border-radius: 1.5625rem;
   border: 0.1875rem solid rgba(31, 78, 121, 0.936);
@@ -13,10 +14,8 @@
 }
 
 .h1TitleDegreesContainer {
-  width: 63%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  margin: 3.75rem auto;
   gap: 0.625rem;
 }
 
@@ -30,12 +29,9 @@
     margin: auto;
     margin-top: 60px;
     margin-bottom: 40px;
-    padding: 30px 5%;
   }
   .h1TitleDegreesContainer {
-    width: 100%;
-    margin: 0px auto;
-    scale: 0.8;
+    margin: 0px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(2, 40.59px);
     gap: 3px;
@@ -46,3 +42,20 @@
     visibility: hidden;
   }
 }
+/* Fin version Mobile jusqu'à 529 px*/
+
+/* Début version Mobile de 530px jusqu'à 768px*/
+@media all and (min-width: 530px) and (max-width: 768px) {
+  .h1TitleDegreesContainer {
+    scale: 0.6;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3px;
+  }
+  h1.h1TitleDegreesContainer > .letterContainer3 {
+    grid-column: 4 /9;
+    grid-row: 1 / 2;
+    visibility: hidden;
+  }
+}
+/* Fin version Mobile de 530px jusqu'à 768px*/
