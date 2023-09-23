@@ -199,6 +199,12 @@ li {
     /*max-width: 390px; */
     grid-column: 1/8;
   }
+  .btnCollapse p {
+    width: 30%;
+  }
+  .companyCollapse {
+    width: 45%;
+  }
 }
 /* Fin version commune Mobile de 320px jusqu'à 768px*/
 
