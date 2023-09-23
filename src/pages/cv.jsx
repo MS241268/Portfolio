@@ -201,6 +201,7 @@ function Cv() {
                     label={exp.company}
                     key={exp.function}
                     content={exp}
+                    index={index}
                   ></Collapse>
                 ))
               : null

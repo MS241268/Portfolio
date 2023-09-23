@@ -22,7 +22,7 @@
 /* Début version commune Mobile de 320px jusqu'à 529px*/
 @media all and (max-width: 768px) {
   .degreesSection {
-    width: 90%;
+    /* width: 90%; */
     margin: auto;
     margin-top: 60px;
     margin-bottom: 40px;
@@ -50,7 +50,15 @@
 /* Début version Mobile de 530px jusqu'à 768px*/
 @media all and (min-width: 530px) and (max-width: 768px) {
   .h1TitleDegreesContainer {
-    scale: 0.5;
+    scale: 0.55;
   }
 }
 /* Fin version Mobile de 530px jusqu'à 768px*/
+
+/* Début version Mobile de 769px jusqu'à 1024px*/
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  .h1TitleDegreesContainer {
+    scale: 0.8;
+  }
+}
+/* Fin version Mobile de 769px jusqu'à 1024px*/

@@ -2,8 +2,7 @@
   position: relative;
   /* max-width: 100vw; */
   padding: 0%;
-  /* margin: 0%;
-  max-width: 90rem; */
+  /* margin: 0%;*/
   margin: auto;
   box-sizing: border-box;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
@@ -13,8 +12,9 @@
 body {
   /* min-height: 100vh; */
   /* max-width: 1440px; */
-  width: 95%;
-  padding-top: 1.25rem;
+  max-width: 90rem;
+  margin: auto;
+  /* padding-top: 1.25rem; */
   background: linear-gradient(
     15deg,
     rgba(4, 46, 86, 0.936),
@@ -26,6 +26,9 @@ body {
   );
   background-size: 100% 500%;
   /* overflow-x: hidden; */
+}
+main {
+  width: 90%;
 }
 h2 {
   font-size: 1.5625rem;
@@ -45,6 +48,15 @@ span {
 .charFront {
   font-size: 2.5rem;
 }
+
+/* Début version commune Mobile de 320px jusqu'à 768px*/
+@media all and (max-width: 1024px) {
+  main {
+    width: 98%;
+  }
+}
+/* Fin version commune Mobile de 320px jusqu'à 768px*/
+
 /* Début version Mobile jusqu'à 529px*/
 @media all and (max-width: 529px) {
   h2 {

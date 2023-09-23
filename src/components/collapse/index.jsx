@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './index.css';
 import downArrow from '../../assets/icons/down_arrow.svg';
 
-function Collapse({ label, content }) {
+function Collapse({ label, content, index }) {
   const [open, setOpen] = useState(false);
   function toggle() {
     setOpen(!open);
@@ -22,7 +22,7 @@ function Collapse({ label, content }) {
         <img
           src={content.iconCompany}
           alt={`Logo Société${content.company}`}
-          className="logoCompany"
+          className={`logoCompany logoCompany${index}`}
         />
         <h2 className="companyCollapse">{label}</h2>
         <p className="placeCollapse">{content.place}</p>

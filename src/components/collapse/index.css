@@ -48,19 +48,29 @@ p.placeCollapse {
   text-align: end;
   padding-right: 20px;
 }
-.arrowCollapse {
-  width: 8%;
+.arrowCollapse,
+.arrowCollapseRotate {
+  /* width: 8%; */
+  width: 55px;
   padding: 0.9375rem;
   margin-right: 2%;
-  transform: rotate(0deg);
   transition: 0.3s ease-in-out;
 }
-.arrowCollapseRotate {
-  width: 8%;
+.arrowCollapse {
+  /* width: 8%; */
+  /* width: 55px;
   padding: 0.9375rem;
-  margin-right: 2%;
+  margin-right: 2%; */
+  transform: rotate(0deg);
+  /* transition: 0.3s ease-in-out; */
+}
+.arrowCollapseRotate {
+  /* width: 8%; */
+  /* width: 55px;
+  padding: 0.9375rem;
+  margin-right: 2%; */
   transform: rotate(180deg);
-  transition: 0.3s ease-in-out;
+  /* transition: 0.3s ease-in-out; */
 }
 .collapseContent {
   width: 95%;
