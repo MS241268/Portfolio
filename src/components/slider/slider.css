@@ -1,9 +1,10 @@
 .slider {
   position: relative;
+  scale: 0.8;
   height: 60.5rem;
   width: 100%;
   overflow: hidden;
-  margin-bottom: 3.75rem;
+  /* margin-bottom: 3.75rem; */
   border-radius: 1.5625rem;
   box-shadow: 1.25rem 1.25rem 1.875rem 0.0625rem rgba(31, 78, 121, 0.8);
   border: 0.1875rem solid rgba(31, 78, 121, 0.936);

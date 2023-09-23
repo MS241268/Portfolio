@@ -1,11 +1,8 @@
-.degreesSection {
-  margin: 3.75rem 0rem;
-}
-
 .banner {
   display: grid;
   align-items: center;
   justify-content: center;
+  margin-top: 80px;
   padding: 30px;
   background-color: rgba(38, 108, 174, 0.936);
   border-radius: 1.5625rem;
