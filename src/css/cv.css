@@ -78,7 +78,7 @@ li {
   box-shadow: 0.75rem 0.75rem 1.25rem 0.0625rem rgba(31, 78, 121, 0.8);
   border: 0.1875rem solid rgba(31, 78, 121, 0.936);
   grid-column: 1/3;
-  grid-row: 2/ 12;
+  /* grid-row: 2/ 12; */
 }
 .leftSection ul {
   width: 95%;
@@ -140,6 +140,7 @@ li {
 .rightSection {
   width: 100%;
   grid-column: 3/8;
+  /* grid-row: 2/13; */
   border-radius: 0.9375rem;
   background-color: rgba(38, 108, 174, 0.936);
   box-shadow: 0.75rem 0.75rem 1.25rem 0.0625rem rgba(31, 78, 121, 0.8);
@@ -237,3 +238,9 @@ li {
   }
 }
 /* Fin version Mobile de 769px jusqu'à 1024px*/
+
+/* Début version Mobile de 1025px jusqu'à 1439px*/
+/* @media all and (min-width: 1025px) and (max-width: 1439px) {
+
+} */
+/* Fin version Mobile de 1025px jusqu'à 1439px*/
