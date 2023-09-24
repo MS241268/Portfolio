@@ -1,3 +1,4 @@
+// import { useEffect } from 'react';
 import './index.css';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -10,8 +11,6 @@ import Datas from '../../datas/about';
 gsap.registerPlugin(ScrollTrigger);
 
 console.clear();
-
-// import Cards from "../cards/index.jsx"
 function Paragraph() {
   //////Début Container Qui suis je//////
   useLayoutEffect(() => {
@@ -179,12 +178,16 @@ function Paragraph() {
   }, []);
   //////Fin Container Compétences//////
   // console.log(Datas, typeof Datas);
+  // useEffect(() => {
+  //   const toto = Array.from(document.getElementsByClassName('titleSection0'));
+  //   console.log(toto);
+  // }, []);
   return Datas.map((parag, index) => (
     <section
       key={index}
       className={`paragraphContainer${index} paragraphContainer`}
     >
-      <h2 key={index} className="titleSection">
+      <h2 key={index} className={`titleSection titleSection${index}`}>
         {parag.title}
       </h2>
       <p className={`aboutParagraph${index} aboutParagraph`} key={index + 1}>

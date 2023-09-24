@@ -2,8 +2,8 @@
   display: grid;
   align-items: center;
   justify-content: center;
-  margin-top: 80px;
-  padding: 30px;
+  margin-top: 5rem;
+  padding: 1.875rem;
   background-color: rgba(38, 108, 174, 0.936);
   border-radius: 1.5625rem;
   border: 0.1875rem solid rgba(31, 78, 121, 0.936);
@@ -19,11 +19,10 @@
 /* Début version commune Mobile de 320px jusqu'à 529px*/
 @media all and (max-width: 768px) {
   .degreesSection {
-    /* width: 90%; */
     margin: auto;
-    margin-top: 60px;
-    margin-bottom: 40px;
-    padding: 30px 0px;
+    margin-top: 3.75rem;
+    margin-bottom: 2.5rem;
+    padding: 1.875rem 0rem;
   }
 }
 /* Fin version commune Mobile de 320px jusqu'à 529px*/
@@ -31,10 +30,10 @@
 /* Début version Mobile jusqu'à 529px*/
 @media all and (max-width: 529px) {
   .h1TitleDegreesContainer {
-    margin: 0px;
+    margin: 0rem;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 3px;
+    gap: 0.1875rem;
   }
   h1.h1TitleDegreesContainer > .letterContainer3 {
     grid-column: 4 /9;

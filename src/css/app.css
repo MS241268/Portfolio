@@ -10,11 +10,9 @@
 }
 
 body {
-  min-height: 100vh;
-  /* max-width: 1440px; */
+  /* min-height: 100vh; */
   max-width: 90rem;
   margin: auto;
-  /* padding-top: 1.25rem; */
   background: linear-gradient(
     15deg,
     rgba(4, 46, 86, 0.936),
@@ -32,9 +30,11 @@ main {
 }
 h2 {
   font-size: 1.5625rem;
+  font-weight: bold;
 }
 h3 {
   font-size: 1.375rem;
+  font-weight: bold;
 }
 h4,
 a {
@@ -53,9 +53,11 @@ span {
 @media all and (min-width: 320px) and (max-width: 1200px) {
   h2 {
     font-size: calc(0.7 * 1.5625rem); /*=17.5px*/
+    font-weight: bold;
   }
   h3 {
     font-size: calc(0.75 * 1.375rem); /*=16.5px*/
+    font-weight: bold;
   }
   h4,
   a {

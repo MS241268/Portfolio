@@ -57,7 +57,7 @@
 }
 .projectTitle {
   width: 13.75rem;
-  font-weight: bold;
+  /* font-weight: bold; */
   margin: 0.625rem auto 3.125rem auto;
   padding: 0.9375rem 1.875rem;
   text-align: center;

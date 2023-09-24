@@ -107,9 +107,8 @@
 /* Début version commune Mobile de 320px jusqu'à 768px*/
 @media all and (max-width: 768px) {
   .bannerHome {
-    /* width: 90%; */
     margin: auto;
-    margin-top: 60px;
+    margin-top: 3.75rem;
     justify-content: center;
     align-items: center;
   }
@@ -121,27 +120,26 @@
   .bannerHome {
     display: flex;
     /* max-width: 24.375rem; */
-    padding: 15px 0px;
+    padding: 0.9375rem 0rem;
   }
   .image {
     scale: 0.85;
-    max-width: 80px;
-    max-height: 80px;
+    max-width: 5rem;
+    max-height: 5rem;
     border-radius: 50% 50%;
     margin: auto;
   }
   .h1Title {
-    /* width: 70%; */
     scale: 0.9;
     margin: auto;
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 3px;
+    gap: 0.1875rem;
   }
   h1.h1Title > .letterContainer4 {
-    margin-left: 0px;
+    margin-left: 0rem;
     grid-column: 5 /8;
     grid-row: 1 / 2;
     visibility: hidden;
@@ -161,16 +159,12 @@
 /* Début version Mobile de 530px jusqu'à 768px*/
 @media all and (min-width: 530px) and (max-width: 768px) {
   .bannerHome {
-    /* max-width: 575px; */
-    padding-bottom: 15px;
-    /* margin-left: auto;
-    margin-right: auto; */
+    padding-bottom: 0.9375rem;
   }
   .image {
-    max-width: 100px;
-    max-height: 100px;
-    margin: 0px auto;
-    /* margin-bottom: 20px; */
+    max-width: 6.25rem;
+    max-height: 6.25rem;
+    margin: 0rem auto;
     border-radius: 0.763rem;
   }
   .h1Title {
