@@ -6,7 +6,7 @@ import Cap2 from '../assets/degrees/CAP_Electronique.jpg';
 import Bep from '../assets/degrees/BEP_Electronique.jpg';
 import Bac from '../assets/degrees/BAC_Electronique.jpg';
 import Bts from '../assets/degrees/BTS_Electronique.jpg';
-import Att from '../assets/degrees/Attestation_OC.jpg';
+import Att from '../assets/degrees/BTS_Developpeur_Web.jpg';
 
 const images = [Cap1, Cap2, Bep, Bac, Bts, Att];
 function Diplomes() {

@@ -209,16 +209,28 @@ li {
 }
 /* Fin version Mobile de 530px jusqu'à 768px*/
 
-/* Début version Mobile de 769px jusqu'à 1024px*/
+/* Début version Tablette de 769px jusqu'à 1024px*/
 @media all and (min-width: 769px) and (max-width: 1024px) {
   .h1TitleCvContainer {
     scale: 0.6;
   }
-}
-/* Fin version Mobile de 769px jusqu'à 1024px*/
+  .asset {
+    padding: 0.3125rem;
+    padding-top: 1.25rem;
+  }
+  .star {
+    scale: 0.9;
+  }
 
-/* Début version Mobile de 1025px jusqu'à 1439px*/
+  .logoCompany1 {
+    width: 18%;
+    padding-left: 5px;
+  }
+}
+/* Fin version Tablette de 769px jusqu'à 1024px*/
+
+/* Début version Ordinateur de 1025px jusqu'à 1439px*/
 /* @media all and (min-width: 1025px) and (max-width: 1439px) {
 
 } */
-/* Fin version Mobile de 1025px jusqu'à 1439px*/
+/* Fin version Ordinateur de 1025px jusqu'à 1439px*/
