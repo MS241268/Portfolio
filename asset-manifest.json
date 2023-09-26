@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.0542807d.css",
-    "main.js": "/Portfolio/static/js/main.d54ab17a.js",
+    "main.css": "/Portfolio/static/css/main.4753264a.css",
+    "main.js": "/Portfolio/static/js/main.bab0dd05.js",
+    "static/media/BTS_Developpeur_Web.jpg": "/Portfolio/static/media/BTS_Developpeur_Web.5bb54a2c3fb15b39c39d.jpg",
     "static/media/moi.jpg": "/Portfolio/static/media/moi.dc66cafebf3fc5c4b1be.jpg",
     "static/media/BAC_Electronique.jpg": "/Portfolio/static/media/BAC_Electronique.db68463fec8416519f9c.jpg",
-    "static/media/Attestation_OC.jpg": "/Portfolio/static/media/Attestation_OC.e19de4e3da3d81531f9b.jpg",
     "static/media/CAP_Electrotech.jpg": "/Portfolio/static/media/CAP_Electrotech.c9268577207f3889f047.jpg",
     "static/media/CAP_Electronique.jpg": "/Portfolio/static/media/CAP_Electronique.6bf1271eb3d492e27739.jpg",
     "static/media/BEP_Electronique.jpg": "/Portfolio/static/media/BEP_Electronique.e5d5271380289602954a.jpg",
@@ -15,11 +15,11 @@
     "static/media/down_arrow.svg": "/Portfolio/static/media/down_arrow.b052dd29e3a2bab76700eee79e133c37.svg",
     "static/media/empty_star.svg": "/Portfolio/static/media/empty_star.cebe6e8f1150810d723361da98ed6e96.svg",
     "static/media/full_star.svg": "/Portfolio/static/media/full_star.59627b135b4544a281697b418b5893ea.svg",
-    "main.0542807d.css.map": "/Portfolio/static/css/main.0542807d.css.map",
-    "main.d54ab17a.js.map": "/Portfolio/static/js/main.d54ab17a.js.map"
+    "main.4753264a.css.map": "/Portfolio/static/css/main.4753264a.css.map",
+    "main.bab0dd05.js.map": "/Portfolio/static/js/main.bab0dd05.js.map"
   },
   "entrypoints": [
-    "static/css/main.0542807d.css",
-    "static/js/main.d54ab17a.js"
+    "static/css/main.4753264a.css",
+    "static/js/main.bab0dd05.js"
   ]
 }
