@@ -19,13 +19,16 @@ function Collapse({ label, content, index }) {
           'valeur de content.jobDescription:',
           content.jobDescription
         )} */}
-        <img
-          src={content.iconCompany}
-          alt={`Logo Société${content.company}`}
-          className={`logoCompany logoCompany${index}`}
-        />
-        <h2 className="companyCollapse">{label}</h2>
-        <p className="placeCollapse">{content.place}</p>
+        <div className={`company company${index}`}>
+          <img
+            src={content.iconCompany}
+            alt={`Logo Société${content.company}`}
+            className={`logoCompany logoCompany${index}`}
+          />
+
+          <h2 className={`companyCollapse companyCollapse${index}`}>{label}</h2>
+        </div>
+        <p className={`placeCollapse placeCollapse${index}`}>{content.place}</p>
         <img
           src={downArrow}
           alt="Ouverture ou fermeture de l'élément"

@@ -109,6 +109,7 @@
   .bannerHome {
     margin: auto;
     margin-top: 3.75rem;
+    margin-bottom: 40px;
     justify-content: center;
     align-items: center;
   }

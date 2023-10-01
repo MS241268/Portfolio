@@ -20,8 +20,8 @@
   gap: 0.625rem;
 }
 .aboutParagraph {
-  margin-top: 1.875rem;
   padding: 1.25rem;
+  padding-top: 3.875rem;
   opacity: 0;
   transform: translateX(200%);
 }
@@ -50,6 +50,7 @@
   overflow: hidden;
 }
 .projectIcon {
+  width: 90%;
   height: 6.25rem;
   padding-top: 1.5625rem;
   display: flex;
@@ -200,6 +201,26 @@
   .titleSection {
     width: 70%;
     border-radius: 1.25rem;
+  }
+  .aboutParagraph {
+    padding-top: 30px;
+  }
+  .aboutParagraph0 {
+    height: 200px;
+    overflow-y: scroll;
+  }
+  .projectsContainer {
+    width: 95%;
+    max-width: 500px;
+    padding-top: 0px;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .projectDescription {
+    height: auto;
+  }
+  .projectIcon {
+    width: 90%;
   }
 }
 /* Fin version Mobile*/

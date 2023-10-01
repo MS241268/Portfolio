@@ -1,8 +1,6 @@
 * {
   position: relative;
-  /* max-width: 100vw; */
   padding: 0%;
-  /* margin: 0%;*/
   margin: auto;
   box-sizing: border-box;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
@@ -10,7 +8,6 @@
 }
 
 body {
-  /* min-height: 100vh; */
   max-width: 90rem;
   margin: auto;
   background: linear-gradient(
@@ -23,7 +20,6 @@ body {
     #0499cf
   );
   background-size: 100% 500%;
-  /* overflow-x: hidden; */
 }
 main {
   width: 90%;
@@ -49,8 +45,8 @@ span {
   font-size: 2.5rem;
 }
 
-/* Début version Ecrans de 320px jusqu'à 1200px*/
-@media all and (min-width: 320px) and (max-width: 1200px) {
+/* Début version Ecrans de 320px jusqu'à 529px*/
+@media all and (min-width: 320px) and (max-width: 529px) {
   h2 {
     font-size: calc(0.7 * 1.5625rem); /*=17.5px*/
     font-weight: bold;
@@ -66,21 +62,10 @@ span {
   p,
   li,
   span {
-    font-size: calc(0.75 * 1.125rem); /*=13.5px*/
-  }
-  /* .charFront {
-    font-size: calc(0.7 * 2.5rem);
-  } */
-}
-/* Fin version Ecrans de 320px jusqu'à 1200px*/
-
-/* Début version commune Mobile de 320px jusqu'à 768px*/
-@media all and (max-width: 1024px) {
-  main {
-    width: 98%;
+    font-size: calc(0.75 * 1.125rem); /*=13.5px */
   }
 }
-/* Fin version commune Mobile de 320px jusqu'à 768px*/
+/* Fin version Ecrans de 320px jusqu'à 529px*/
 
 /* Début version Mobile jusqu'à 529px*/
 @media all and (max-width: 529px) {
@@ -89,3 +74,49 @@ span {
   }
 }
 /* Fin version Mobile jusqu'à 529 px*/
+
+/* Début version Ecrans de 530px jusqu'à 768px*/
+@media all and (min-width: 530px) and (max-width: 768px) {
+  h2 {
+    font-size: calc(0.75 * 1.5625rem); /*=18.75px*/
+    font-weight: bold;
+  }
+  h3 {
+    font-size: calc(0.8 * 1.375rem); /*=17.6px*/
+    font-weight: bold;
+  }
+  h4,
+  a {
+    font-size: calc(0.75 * 1.25rem); /*=15px*/
+  }
+  p,
+  li,
+  span {
+    font-size: calc(0.85 * 1.125rem); /*=15.3px */
+  }
+}
+/* Fin version Ecrans de 530px jusqu'à 768px*/
+
+/* Début version Ecrans de 769px jusqu'à 1024px*/
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  h2 {
+    font-size: calc(0.8 * 1.5625rem); /*=20px*/
+    font-weight: bold;
+  }
+  h3 {
+    font-size: calc(0.85 * 1.375rem); /*=18.7px*/
+    font-weight: bold;
+  }
+  p,
+  li,
+  span {
+    font-size: calc(0.9 * 1.125rem); /*=16.2px */
+  }
+}
+/* Fin version Ecrans de 769px jusqu'à 1024px*/
+
+@media all and (max-width: 1440px) {
+  main {
+    width: 98%;
+  }
+}

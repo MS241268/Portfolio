@@ -203,7 +203,7 @@ function Paragraph() {
                 <img
                   src={det.projectIcon}
                   alt={`logo du ${parag.title}`}
-                  className={`projectIcon`}
+                  className={`projectIcon projectIcon${index}`}
                 ></img>
               </div>
               <h3 className="projectTitle">{det.projectTitle}</h3>

@@ -27,7 +27,7 @@
   gap: 0.625rem;
 }
 h2 {
-  width: 95%;
+  width: 98%;
   padding: 0.9375rem;
   margin: 1.875rem auto;
   border-radius: 0.625rem;
@@ -44,7 +44,7 @@ li {
   height: 3.6875rem;
 }
 .item-1 {
-  width: 95%;
+  width: 98%;
   background-color: rgba(31, 78, 121, 0.936);
   border-radius: 0.9375rem;
 }
@@ -73,7 +73,7 @@ li {
   grid-column: 1/3;
 }
 .leftSection ul {
-  width: 95%;
+  width: 98%;
   background-color: rgba(31, 78, 121, 0.936);
   border-radius: 0.9375rem;
   list-style-type: none;
@@ -95,7 +95,7 @@ li {
   margin-left: 0rem;
 }
 .asset {
-  width: 95%;
+  width: 98%;
   padding: 1.25rem;
   border-radius: 0.9375rem;
   background-color: rgba(31, 78, 121, 0.936);
@@ -131,20 +131,11 @@ li {
   box-shadow: 0.75rem 0.75rem 1.25rem 0.0625rem rgba(31, 78, 121, 0.8);
   border: 0.1875rem solid rgba(31, 78, 121, 0.936);
 }
-.logoCompany {
-  width: 6%;
-  padding: 0.4%;
-}
-.logoCompany1 {
-  width: 20%;
-}
-.logoCompany6 {
-  width: 10%;
-}
 
 /* Début version commune Mobile de 320px jusqu'à 768px*/
 @media all and (max-width: 768px) {
   .wrapperCv {
+    max-width: 73.75rem;
     grid-template-columns: repeat(1, 1fr);
     gap: 1.25rem 0rem;
   }
@@ -169,12 +160,6 @@ li {
     width: 100%;
     grid-column: 1/8;
   }
-  .btnCollapse p {
-    width: 30%;
-  }
-  .companyCollapse {
-    width: 45%;
-  }
 }
 /* Fin version commune Mobile de 320px jusqu'à 768px*/
 
@@ -185,18 +170,6 @@ li {
   }
   .handStyle {
     margin-left: 0.6rem;
-  }
-  .btnCollapse p {
-    width: 24%;
-  }
-  .logoCompany {
-    display: none;
-  }
-  .companyCollapse {
-    text-align: center;
-  }
-  .placeCollapse {
-    display: none;
   }
 }
 /* Fin version Mobile jusqu'à 529 px*/
@@ -211,6 +184,9 @@ li {
 
 /* Début version Tablette de 769px jusqu'à 1024px*/
 @media all and (min-width: 769px) and (max-width: 1024px) {
+  .wrapperCv {
+    max-width: 60.625rem;
+  }
   .h1TitleCvContainer {
     scale: 0.6;
   }
@@ -221,16 +197,5 @@ li {
   .star {
     scale: 0.9;
   }
-
-  .logoCompany1 {
-    width: 18%;
-    padding-left: 5px;
-  }
 }
 /* Fin version Tablette de 769px jusqu'à 1024px*/
-
-/* Début version Ordinateur de 1025px jusqu'à 1439px*/
-/* @media all and (min-width: 1025px) and (max-width: 1439px) {
-
-} */
-/* Fin version Ordinateur de 1025px jusqu'à 1439px*/
