@@ -57,6 +57,14 @@
   text-align: left;
   margin-left: 0.625rem;
 }
+.company0,
+.company4,
+.company5 {
+  padding-right: 20%;
+}
+.company6 {
+  padding-left: 20%;
+}
 p.placeCollapse {
   margin: auto;
 }
