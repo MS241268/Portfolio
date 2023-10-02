@@ -45,9 +45,12 @@ footer p {
 /* Début version Ecrans jusqu'à 540px*/
 @media all and (max-width: 540px) {
   .contactDiv {
-    width: 95%;
+    /* width: 51%; */
     display: flex;
     flex-direction: column;
+  }
+  footer a {
+    width: 181px;
   }
 }
 /* Fin version Ecrans jusqu'à 540px*/
@@ -68,11 +71,11 @@ footer p {
   footer {
     padding-top: 1.5rem;
   }
-  footer a {
+  /* footer a {
     width: 95%;
-  }
+  } */
   footer i {
-    width: 50%;
+    /* width: 50%; */
     margin-right: 0rem;
     text-align: end;
   }
