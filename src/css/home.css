@@ -113,6 +113,9 @@
     justify-content: center;
     align-items: center;
   }
+  .titleSection0 {
+    z-index: 2;
+  }
 }
 /* Fin version commune Mobile de 320px jusqu'à 768px*/
 

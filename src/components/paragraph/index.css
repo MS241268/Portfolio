@@ -236,6 +236,9 @@
     width: 70%;
     border-radius: 1.25rem;
   }
+  .wrapper {
+    margin-bottom: 0rem;
+  }
   .aboutParagraph {
     padding-top: 1.875rem;
   }
@@ -257,4 +260,12 @@
     width: 90%;
   }
 }
-/* Fin version Mobile*/
+/* Fin version Mobile jusqu'à 768px*/
+
+/* Début version de 769px à 1024px*/
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  .wrapper {
+    margin-bottom: 0rem;
+  }
+}
+/* Fin version de 769px à 1024px*/
