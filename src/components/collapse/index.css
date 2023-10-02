@@ -129,7 +129,20 @@ p.placeCollapse {
   }
 }
 /* Fin version Mobile jusqu'à 529px*/
-
+@media all and (min-width: 729px) and (max-width: 768px) {
+  .company0,
+  .company4,
+  .company5 {
+    padding-right: 18%;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 908px) {
+  .company0,
+  .company4,
+  .company5 {
+    padding-right: 23%;
+  }
+}
 /* Début version Mobile de 530px jusqu'à 768px*/
 @media all and (min-width: 530px) and (max-width: 768px) {
   .btnCollapse {
