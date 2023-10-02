@@ -1,6 +1,5 @@
 footer {
   width: 98%;
-  height: 13.125rem;
   border-radius: 1.5625rem;
   padding-top: 4.0625rem;
   background-color: rgba(38, 108, 174, 0.936);
@@ -55,9 +54,6 @@ footer p {
 
 /* Début version Ecrans de 541px à 768px*/
 @media all and (min-width: 541px) and (max-width: 768px) {
-  footer {
-    height: auto;
-  }
   .contactDiv {
     width: 95%;
     justify-content: center;
@@ -81,8 +77,9 @@ footer p {
     text-align: end;
   }
   footer span {
-    width: 55%;
+    width: 75%;
     margin-left: 0rem;
+    white-space: nowrap;
   }
   footer p {
     margin-top: 1.5rem;
