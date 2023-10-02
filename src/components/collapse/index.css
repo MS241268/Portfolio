@@ -176,3 +176,11 @@ p.placeCollapse {
     width: 25%;
   }
 }
+/* Début version Ecrans de 1025px jusqu'à 1263px*/
+@media all and (min-width: 1025px) and (max-width: 1263px) {
+  .company0,
+  .company4,
+  .company5 {
+    padding-right: 22.5%;
+  }
+}
