@@ -134,36 +134,8 @@ li {
   border: 0.1875rem solid rgba(31, 78, 121, 0.936);
 }
 
-/* Début version ecrans de 320px jusqu'à 389px*/
+/* Début version Ecranss de 320px jusqu'à 389px*/
 @media all and (min-width: 320px) and (max-width: 389px) {
-  .wrapperCv {
-    max-width: 73.75rem;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1.25rem 0rem;
-  }
-  .h1TitleCvContainer {
-    width: 100%;
-    margin: 0rem auto;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 0.1875rem;
-  }
-  h1.h1TitleCvContainer > .letterContainer10 {
-    grid-column: 1 /4;
-    grid-row: 2 / 2;
-    visibility: hidden;
-  }
-  .leftSection {
-    width: 100%;
-    grid-column: 1/8;
-    grid-row: 4/25;
-  }
-  .studies ul {
-    max-width: 22.1875rem;
-  }
-  .degreeStyle {
-    padding-right: 0.625rem;
-  }
   .languages {
     display: flex;
     max-width: 20rem;
@@ -178,15 +150,47 @@ li {
     max-width: 23.125rem;
     column-count: 2;
   }
-  .rightSection {
+}
+/* Fin version Ecrans de 320px jusqu'à 389px*/
+
+/* Début version Ecrans de 390px jusqu'à 768px*/
+@media all and (min-width: 390px) and (max-width: 768px) {
+  .languages {
+    display: flex;
+    max-width: 16rem;
+  }
+  .hobbies {
+    display: block;
+  }
+  .hobbies ul {
     width: 100%;
-    grid-column: 1/8;
+    max-width: 31.25rem;
+    display: flex;
   }
 }
-/* Fin version ecrans de 320px jusqu'à 389px*/
+/* Fin version Ecrans de 390px jusqu'à 768px*/
 
-/* Début version ecrans de 390px jusqu'à 768px*/
-@media all and (min-width: 390px) and (max-width: 768px) {
+/* Début version Ecrans jusqu'à 529px*/
+@media all and (max-width: 529px) {
+  .h1TitleCvContainer {
+    scale: 0.8;
+  }
+  .handStyle {
+    margin-left: 0.6rem;
+  }
+}
+/* Fin version Ecrans jusqu'à 529 px*/
+
+/* Début version Ecrans de 530px jusqu'à 768px*/
+@media all and (min-width: 530px) and (max-width: 768px) {
+  .h1TitleCvContainer {
+    scale: 0.7;
+  }
+}
+/* Fin version Ecrans de 530px jusqu'à 768px*/
+
+/* Début version commune écrans jusqu'à 768px*/
+@media all and (max-width: 768px) {
   .wrapperCv {
     max-width: 73.75rem;
     grid-template-columns: repeat(1, 1fr);
@@ -215,43 +219,12 @@ li {
   .degreeStyle {
     padding-right: 0.625rem;
   }
-  .languages {
-    display: flex;
-    max-width: 16rem;
-  }
-  .hobbies {
-    display: block;
-  }
-  .hobbies ul {
-    width: 100%;
-    max-width: 31.25rem;
-    display: flex;
-  }
   .rightSection {
     width: 100%;
     grid-column: 1/8;
   }
 }
-/* Fin version ecrans de 390px jusqu'à 768px*/
-
-/* Début version Mobile jusqu'à 529px*/
-@media all and (max-width: 529px) {
-  .h1TitleCvContainer {
-    scale: 0.8;
-  }
-  .handStyle {
-    margin-left: 0.6rem;
-  }
-}
-/* Fin version Mobile jusqu'à 529 px*/
-
-/* Début version Mobile de 530px jusqu'à 768px*/
-@media all and (min-width: 530px) and (max-width: 768px) {
-  .h1TitleCvContainer {
-    scale: 0.7;
-  }
-}
-/* Fin version Mobile de 530px jusqu'à 768px*/
+/* Fin version commune écrans jusqu'à 768px*/
 
 /* Début version Tablette de 769px jusqu'à 1024px*/
 @media all and (min-width: 769px) and (max-width: 1024px) {
