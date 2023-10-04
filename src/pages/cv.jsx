@@ -22,38 +22,40 @@ function Cv() {
         </section>
         <section className="leftSection">
           <h2>MES ÉTUDES</h2>
-          <ul className="studies">
-            <li>
-              <i className="degreeStyle">
-                <GiDiploma />
-              </i>
-              <span>2022 à 2023 : BAC+2 Développeur Web</span>
-            </li>
-            <li>
-              <i className="degreeStyle">
-                <GiDiploma />
-              </i>
-              <span>1989 à 1991 : BTS Électronique</span>
-            </li>
-            <li>
-              <i className="degreeStyle">
-                <GiDiploma />
-              </i>
-              <span>1987 à 1989 : BAC Électronique</span>
-            </li>
-            <li>
-              <i className="degreeStyle">
-                <GiDiploma />
-              </i>
-              <span>1985 à 1987 : CAP + BEP Électronique</span>
-            </li>
-            <li>
-              <i className="degreeStyle">
-                <GiDiploma />
-              </i>
-              <span>1982 à 1985 : CAP Électricien Équipements</span>
-            </li>
-          </ul>
+          <div className="studies">
+            <ul>
+              <li>
+                <i className="degreeStyle">
+                  <GiDiploma />
+                </i>
+                <span>2022 à 2023 : BAC+2 Développeur Web</span>
+              </li>
+              <li>
+                <i className="degreeStyle">
+                  <GiDiploma />
+                </i>
+                <span>1989 à 1991 : BTS Électronique</span>
+              </li>
+              <li>
+                <i className="degreeStyle">
+                  <GiDiploma />
+                </i>
+                <span>1987 à 1989 : BAC Électronique</span>
+              </li>
+              <li>
+                <i className="degreeStyle">
+                  <GiDiploma />
+                </i>
+                <span>1985 à 1987 : CAP + BEP Électronique</span>
+              </li>
+              <li>
+                <i className="degreeStyle">
+                  <GiDiploma />
+                </i>
+                <span>1982 à 1985 : CAP Électricien Équipements</span>
+              </li>
+            </ul>
+          </div>
           <h2>MES ATOUTS</h2>
           <section className="asset">
             {cvDatas.map((elt) =>
@@ -88,48 +90,52 @@ function Cv() {
           </section>
 
           <h2>LANGUES</h2>
-          {cvDatas.map((elt) =>
-            Array.isArray(elt.languages) //Vérifie si tableau et évite les erreurs "TypeError: Cannot Read Property ‘Map’ of Undefined” Error?
-              ? elt.languages.map((lang) => (
-                  <div key={lang.country} className="studies language">
-                    {/* {console.log(lang, typeof lang)} */}
-                    <img
-                      src={lang.country}
-                      alt={`Drapeau Pays`}
-                      className="flag"
-                    ></img>
-                    <p>{lang.level}</p>
-                  </div>
-                ))
-              : null
-          )}
+          <div className="languages">
+            {cvDatas.map((elt) =>
+              Array.isArray(elt.languages) //Vérifie si tableau et évite les erreurs "TypeError: Cannot Read Property ‘Map’ of Undefined” Error?
+                ? elt.languages.map((lang) => (
+                    <div key={lang.country} className="language">
+                      {/* {console.log(lang, typeof lang)} */}
+                      <img
+                        src={lang.country}
+                        alt={`Drapeau Pays`}
+                        className="flag"
+                      ></img>
+                      <p>{lang.level}</p>
+                    </div>
+                  ))
+                : null
+            )}
+          </div>
           <h2>DIVERS</h2>
-          <ul className="studies hobbies">
-            <li>
-              <i className="hobbiesStyle">
-                <MdDriveEta />
-              </i>
-              <span>Permis A & B</span>
-            </li>
-            <li>
-              <i className="hobbiesStyle">
-                <FaGuitar />
-              </i>
-              <span>Guitare</span>
-            </li>
-            <li>
-              <i className="hobbiesStyle">
-                <PiMicrophoneStageFill />
-              </i>
-              <span>Concerts</span>
-            </li>
-            <li>
-              <i className="hobbiesStyle">
-                <GiFullMotorcycleHelmet />
-              </i>
-              <span>Moto</span>
-            </li>
-          </ul>
+          <div className="hobbies">
+            <ul>
+              <li>
+                <i className="hobbiesStyle">
+                  <MdDriveEta />
+                </i>
+                <span>Permis A & B</span>
+              </li>
+              <li>
+                <i className="hobbiesStyle">
+                  <FaGuitar />
+                </i>
+                <span>Guitare</span>
+              </li>
+              <li>
+                <i className="hobbiesStyle">
+                  <PiMicrophoneStageFill />
+                </i>
+                <span>Concerts</span>
+              </li>
+              <li>
+                <i className="hobbiesStyle">
+                  <GiFullMotorcycleHelmet />
+                </i>
+                <span>Moto</span>
+              </li>
+            </ul>
+          </div>
         </section>
         <section className="rightSection">
           <h2 id="item-0">COMPETÉNCES MÉTIER</h2>
