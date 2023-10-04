@@ -22,9 +22,9 @@ function Header() {
               Accueil
             </NavLink>
           </li>
-          <li>
+          <li className="">
             <NavLink
-              className={({ isActive }) => (isActive ? 'activePage' : null)}
+              className={({ isActive }) => (isActive ? 'activePage cv' : 'cv2')}
               to="/cv"
             >
               Curriculum Vitae
