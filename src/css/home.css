@@ -56,16 +56,13 @@
 
 .mouseScroll,
 .arrowScroll {
+  /* top: 20px; */
+  /* left: 80vw; */
   z-index: 1;
   position: fixed;
   top: 50vh;
-  left: 83vw;
-  /* right: 130px; */
-  /* margin-left: -60px; */
-  /* height: 120px; */
-  /* margin: -200 auto 0 auto; */
-  width: 7.5rem;
-  /* background-color: rgba(31, 78, 121, 0.936); */
+  left: 82vw;
+  width: 5.5rem;
   background-color: #0499cf;
   opacity: 0.7;
   border-radius: 0.625rem;
@@ -151,11 +148,16 @@
   .paragraphContainer {
     max-width: 24.375rem;
   }
-  .mouseScroll,
+  /* .mouseScroll,
   .arrowScroll {
     position: fixed;
     top: 100vh;
     left: 83vw;
+  } */
+  .mouseScroll,
+  .arrowScroll {
+    left: 77vw;
+    scale: 0.6;
   }
 }
 /* Fin version Mobile jusqu'à 529 px*/
@@ -174,12 +176,21 @@
   .h1Title {
     scale: 0.5;
   }
+  .mouseScroll,
+  .arrowScroll {
+    scale: 0.8;
+  }
 }
 /* Fin version Mobile de 530px jusqu'à 768px*/
 
 /* Début version Mobile de 769px jusqu'à 1024px*/
 @media all and (min-width: 769px) and (max-width: 1024px) {
   .h1Title {
+    scale: 0.8;
+  }
+  .mouseScroll,
+  .arrowScroll {
+    left: 90vw;
     scale: 0.8;
   }
 }

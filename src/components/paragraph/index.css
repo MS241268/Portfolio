@@ -267,5 +267,9 @@
   .wrapper {
     margin-bottom: 0rem;
   }
+  .projectsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 /* Fin version de 769px à 1024px*/

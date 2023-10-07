@@ -40,13 +40,24 @@ function Home() {
       scrollTrigger: {
         trigger: '.paragraphContainer2',
         start: '40.625rem center',
-        toggleActions: 'play none none none',
+        toggleActions: 'play none none reverse',
         onEnter: () => {
           window.addEventListener('scroll', function () {
             const scrollPosition = window.pageYOffset;
-            if (scrollPosition > 3300) {
+            if (scrollPosition > 3800) {
               gsap.set('.mouseScroll', { display: 'none' });
               gsap.set('.arrowScroll', {
+                display: 'block',
+                onEnter: () => {
+                  gsap.set('.upWindow', {
+                    display: 'block',
+                    scrollTrigger: {},
+                  });
+                },
+              });
+            } else {
+              gsap.set('.arrowScroll', { display: 'none' });
+              gsap.set('.mouseScroll', {
                 display: 'block',
                 onEnter: () => {
                   gsap.set('.upWindow', {
