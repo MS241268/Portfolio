@@ -23,9 +23,23 @@
   {
     "experience": [
       {
-        "iconCompany": "./assets/companyLogos/SFR.png",
+        "iconCompany": "./assets/companyLogos/Socom1.png",
+        "company": "Socom",
+        "date": "Oct. 2023–Avr. 2024",
+        "place": "Foetz(Luxembourg)",
+        "function": "Technicien Courant Faible",
+        "department": "Périmètre : Luxembourg",
+        "jobDescription": [
+          "Installation Centrale Intrusion Aritech ATS4500 & ATS3500.",
+          "Installation Contrôle d'Accès Tyco CCURE9000 et Bosch.",
+          "Installation Video Surveillance HikVision et Axis",
+          "Installation Interphonie 2N"
+        ]
+      },
+      {
+        "iconCompany": "./assets/companyLogos/SFR1.png",
         "company": "SFR",
-        "date": "Juin 2016–Juillet 2023",
+        "date": "Juin 2016–Juil. 2023",
         "place": "Metz(57)",
         "function": "Responsable Régional Expertise et Support Backbone et Entreprises",
         "department": "Périmètre : Départements 08,10,51,52,54,55,57 et 88",
@@ -37,7 +51,7 @@
       {
         "iconCompany": "./assets/companyLogos/Numericable.png",
         "company": "NUMERICABLE",
-        "date": "Avril 2005-Juin 2016",
+        "date": "Avr. 2005-Juin 2016",
         "place": "Metz(57)",
         "function": "Responsable Groupe Expertise Régional",
         "department": "Périmètre : Région Grand Est et une partie de la Région Bourgogne-Franche-Comté",
@@ -51,7 +65,7 @@
       {
         "iconCompany": "./assets/companyLogos/TDF.png",
         "company": "TDF CABLE",
-        "date": "Février 2001-Avril 2005",
+        "date": "Fév. 2001-Avr. 2005",
         "place": "Metz(57)",
         "function": "Responsable Maintenance Adjoint",
         "department": "Périmètre : Départements 08,51,52,54,55,57 et 88",
@@ -68,7 +82,7 @@
       {
         "iconCompany": "./assets/companyLogos/TDF.png",
         "company": "TDF CABLE",
-        "date": "Février 2001-Avril 2005",
+        "date": "Fév. 2001-Avr. 2005",
         "place": "Metz(57)",
         "function": "Responsable Ordonnancement",
         "department": "Périmètre : Départements 08,51,52,54,55,57 et 88",
@@ -81,7 +95,7 @@
       {
         "iconCompany": "./assets/companyLogos/TDF.png",
         "company": "TDF",
-        "date": "Mai 1998-Février 2001",
+        "date": "Mai 1998-Fév. 2001",
         "place": "Luttange(57)",
         "function": "Responsable Maintenance Réseaux Câblés",
         "department": "Périmètre : Départements 08,54,55 et 57",
@@ -94,7 +108,7 @@
       {
         "iconCompany": "./assets/companyLogos/TDF.png",
         "company": "TDF",
-        "date": "Février 1993-Mai 1998",
+        "date": "Fév. 1993-Mai 1998",
         "place": "Luttange(57)",
         "function": "Technicien Supérieur de Maintenance Audiovisuelle, réseaux câblés et réseau TV principal",
         "department": "Périmètre : Départements 08,55 et 57",
