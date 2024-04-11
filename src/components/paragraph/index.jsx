@@ -31,7 +31,6 @@ function Paragraph() {
         marginBottom: '3.75rem',
         scrollTrigger: {
           trigger: '.paragraphContainer0',
-          // start:'top center', 27/08/23 Remettre si toujours Ko sur Mac
           start: 'center center',
           end: 'bottom center',
           toggleActions: 'play none none reverse',
@@ -40,10 +39,8 @@ function Paragraph() {
             gsap.to('.aboutParagraph0', {
               scrollTrigger: {
                 trigger: '.paragraphContainer0',
-                // start:'top center',27/08/23 Remettre si toujours Ko sur Mac
                 start: 'center center',
                 toggleActions: 'play none none reverse',
-                // markers: true,
               },
               x: '0',
               opacity: '1',
@@ -68,7 +65,6 @@ function Paragraph() {
         id: 'paragraphContainer1',
         trigger: '.paragraphContainer0',
         start: '94.5% center',
-        // end: 'bottom center',
         toggleActions: 'play none none reverse',
         onUpdate: () => ScrollTrigger.refresh(),
         onEnter: () => {
@@ -88,8 +84,6 @@ function Paragraph() {
               trigger: '.paragraphContainer0',
               start: '94.5% center',
               toggleActions: 'play none none reverse',
-              // end: 'top top',
-              // markers: true,
             },
             duration: '1',
             opacity: '1',
@@ -177,11 +171,6 @@ function Paragraph() {
     });
   }, []);
   //////Fin Container Compétences//////
-  // console.log(Datas, typeof Datas);
-  // useEffect(() => {
-  //   const toto = Array.from(document.getElementsByClassName('titleSection0'));
-  //   console.log(toto);
-  // }, []);
   return Datas.map((parag, index) => (
     <section
       key={index}
@@ -193,10 +182,8 @@ function Paragraph() {
       <p className={`aboutParagraph${index} aboutParagraph`} key={index + 1}>
         {parag.description}
       </p>
-      {/* <section className={`projectsContainer1`}></section> */}
       {Array.isArray(parag.details) ? (
         <section className={`projectsContainer`}>
-          {/* {console.log(typeof parag.details)} */}
           {parag.details.map((det, index) => (
             <article key={index} className={`project${index} project`}>
               <div className="imgContainer">

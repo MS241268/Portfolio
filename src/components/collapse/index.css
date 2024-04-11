@@ -10,12 +10,10 @@
   z-index: 300;
   width: 98%;
   height: 3.25rem;
-  /* font-size: 1.125rem; */
   background-color: rgba(31, 78, 121, 0.936);
   border-radius: 0.625rem;
   border: rgba(31, 78, 121, 0.936);
   display: grid;
-  /* grid-template-columns: 28.3% 49.4% 14.7% 7.3%; */
   grid-template-columns: 29.3% 36.4% 27.7% 7.3%;
 }
 .btnCollapse span {
@@ -55,28 +53,12 @@
   width: 4.8125rem;
   margin-right: 0rem;
 }
-/* .logoCompany1 {
-  width: 35%;
-  margin-right: 0rem;
-} */
-/* .logoCompany6 {
-  width: 20%;
-  margin-right: 0rem;
-} */
 .companyCollapse {
   background-color: transparent;
   padding: 0.9375rem 0rem;
   text-align: left;
   margin-left: 0.625rem;
 }
-/*.company0,
-.company4,
-.company5 {
-  padding-right: 20%;
-}*/
-/* .company6 {
-  padding-left: 20%;
-} */
 p.placeCollapse {
   margin: auto;
 }
@@ -143,30 +125,9 @@ p.placeCollapse {
 }
 /* Fin version Mobile jusqu'à 529px*/
 
-/* Début version Ecrans de 720px jusqu'à 768px*/
-/*@media all and (min-width: 720px) and (max-width: 768px) {
-  .company0,
-  .company4,
-  .company5 {
-    padding-right: 17%;
-  }
-}*/
-/* Fin version Ecrans de 729px jusqu'à 768px*/
-
-/* Début version Ecrans de 769px jusqu'à 908px*/
-/*@media all and (min-width: 769px) and (max-width: 908px) {
-  .company0,
-  .company4,
-  .company5 {
-    padding-right: 25%;
-  }
-}*/
-/* Fin version Ecrans de 769px jusqu'à 908px*/
-
 /* Début version Mobile de 530px jusqu'à 768px*/
 @media all and (min-width: 530px) and (max-width: 768px) {
   .btnCollapse {
-    /* grid-template-columns: 19.3% 56.4% 16.7% 7.3%; */
     grid-template-columns: 19.3% 48.4% 24.7% 7.3%;
   }
   .logoCompany1,
@@ -197,12 +158,8 @@ p.placeCollapse {
 /* Début version Tablette de 769px jusqu'à 1024px*/
 @media all and (min-width: 769px) and (max-width: 1024px) {
   .btnCollapse {
-    /* grid-template-columns: 22.3% 49.4% 18.7% 9.3%; */
     grid-template-columns: 22.3% 44.4% 22.7% 12.3%;
   }
-  /*.company1 {
-    margin-left: 0rem;
-  }*/
   .logoCompany0 {
     width: 6.11125rem;
   }
@@ -210,19 +167,4 @@ p.placeCollapse {
     width: 7.11125rem;
     height: 38px;
   }
-  /*.logoCompany1 {
-    width: 40%;
-    height: 2.1875rem;
-  }*/
-  /*.logoCompany6 {
-    width: 25%;
-  }*/
 }
-/* Début version Ecrans de 1025px jusqu'à 1263px*/
-/*@media all and (min-width: 1025px) and (max-width: 1260px) {
-  .company0,
-  .company4,
-  .company5 {
-    padding-right: 22%;
-  }
-}*/

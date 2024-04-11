@@ -58,7 +58,6 @@
 }
 .projectTitle {
   width: 13.75rem;
-  /* font-weight: bold; */
   margin: 0.625rem auto 3.125rem auto;
   padding: 0.9375rem 1.875rem;
   text-align: center;
@@ -82,15 +81,11 @@
   text-align: center;
   padding: 0rem 1.25rem;
   margin-bottom: 1.875rem;
-  /* overflow-x: scroll;
-	overflow-y: scroll; */
 }
 .projectObjectiveUl {
   padding: 0rem 1.25rem;
   margin-bottom: 3.4375rem;
   list-style-type: none;
-  /* overflow-x: scroll;
-	overflow-y: scroll; */
 }
 .projectObjectiveLi {
   padding-bottom: 0.625rem;
@@ -101,8 +96,6 @@
   width: 80%;
 }
 .arrowStyle {
-  /* margin-right: 1.25rem; */
-  /* padding-top: 0.9375rem; */
   width: 2.5rem;
   font-size: 1.25rem;
 }

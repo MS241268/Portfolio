@@ -167,7 +167,8 @@ function Cv() {
                 <FaHandPointRight />
               </i>
               <span>
-                Organisation, Planification, Gestion et Présentation de projets.
+                Organisation, Planification, Gestion, Réalisation et
+                Présentation de projets.
               </span>
             </li>
             <li>
