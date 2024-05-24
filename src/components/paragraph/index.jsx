@@ -9,8 +9,15 @@ import { useLayoutEffect } from 'react';
 import Datas from '../../datas/about';
 
 gsap.registerPlugin(ScrollTrigger);
-
 console.clear();
+
+const whoIam = Datas[0].description; //Recherche de l'étiquette "description" dans le tableau du fichier "about.json"
+const currentDate = new Date(); //date du jour
+const currentYear = currentDate.getFullYear(); //Année du jour
+const myAge = currentYear - 1968; // Calcul de mon âge
+const searchAge = whoIam.substring(whoIam.indexOf('55'), whoIam.indexOf('ans')); // Isolation de l'âge dans la description du fichier "about.json"
+const replaceTxt = whoIam.replace(searchAge, `${myAge} `); // Remplacement de l'âge du fichier "about.json" par la constante "myAge" (calcul auto de mon âge)
+
 function Paragraph() {
   //////Début Container Qui suis je//////
   useLayoutEffect(() => {
@@ -179,9 +186,15 @@ function Paragraph() {
       <h2 key={index} className={`titleSection titleSection${index}`}>
         {parag.title}
       </h2>
-      <p className={`aboutParagraph${index} aboutParagraph`} key={index + 1}>
-        {parag.description}
-      </p>
+      {index === 0 ? ( //index0 correspond au pragraphe du container "qui suis je" => si index est 0 alors remplacement du texte de l'étiquette "description" dans le fichier "about.json" par la variable "replaceTxt"
+        <p className={`aboutParagraph${index} aboutParagraph`} key={index + 1}>
+          {replaceTxt}
+        </p>
+      ) : (
+        <p className={`aboutParagraph${index} aboutParagraph`} key={index + 1}>
+          {parag.description}
+        </p>
+      )}
       {Array.isArray(parag.details) ? (
         <section className={`projectsContainer`}>
           {parag.details.map((det, index) => (
