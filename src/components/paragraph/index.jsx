@@ -13,8 +13,13 @@ console.clear();
 
 const whoIam = Datas[0].description; //Recherche de l'étiquette "description" dans le tableau du fichier "about.json"
 const currentDate = new Date(); //date du jour
-const currentYear = currentDate.getFullYear(); //Année du jour
-const myAge = currentYear - 1968; // Calcul de mon âge
+const currentYear = currentDate.getFullYear(); //Année en cours
+const currentMonth = currentDate.getMonth() + 1; //Mois en cours NB : on rajoue "1" pour avoir le vrai n° de mois
+const currentDay = currentDate.getDate(); // Jour en cours ()
+const myAge =
+  currentMonth === 12 && currentDay === 24 // Condition si date en cours est le 24/12/aaaa
+    ? currentYear - 1968
+    : currentYear - 1968 - 1; // Calcul de mon âge si date en cours n'est pas 24/12/aaaa
 const searchAge = whoIam.substring(whoIam.indexOf('55'), whoIam.indexOf('ans')); // Isolation de l'âge dans la description du fichier "about.json"
 const replaceTxt = whoIam.replace(searchAge, `${myAge} `); // Remplacement de l'âge du fichier "about.json" par la constante "myAge" (calcul auto de mon âge)
 
