@@ -10,7 +10,7 @@ import Datas from '../../datas/about';
 
 gsap.registerPlugin(ScrollTrigger);
 console.clear();
-
+/*Implémentation âge automatique et lien OpenClassrooms dans le texte de présentation*/
 const whoIam = Datas[0].description; //Recherche de l'étiquette "description" dans le tableau du fichier "about.json"
 const currentDate = new Date(); //date du jour
 const currentYear = currentDate.getFullYear(); //Année en cours
@@ -21,7 +21,18 @@ const myAge =
     ? currentYear - 1968
     : currentYear - 1968 - 1; // Calcul de mon âge si date en cours n'est pas 24/12/aaaa
 const searchAge = whoIam.substring(whoIam.indexOf('55'), whoIam.indexOf('ans')); // Isolation de l'âge dans la description du fichier "about.json"
-const replaceTxt = whoIam.replace(searchAge, `${myAge} `); // Remplacement de l'âge du fichier "about.json" par la constante "myAge" (calcul auto de mon âge)
+const urlLink = `https://openclassrooms.com/fr/paths/899-developpeur-web>`;
+console.log(urlLink);
+const linkOc = `<a href="${urlLink}" style = "font-weight: bold;font-style:italic">OpenClassrooms</a>`;
+const searchOpenClassrooms = whoIam.substring(
+  whoIam.indexOf('OpenClassrooms'),
+  whoIam.indexOf('pendant 1')
+);
+const replaceTxt = whoIam
+  .replace(searchOpenClassrooms, `${linkOc} `)
+  .replace(searchAge, `${myAge} `);
+console.log(replaceTxt); // Remplacement de l'âge du fichier "about.json" par la constante "myAge" (calcul auto de mon âge) et du mot OpenClassrooms du fichier "about.json" par la constante "linkOc"
+/*Fin Implémentation âge automatique et lien OpenClassrooms dans le texte de présentation*/
 
 function Paragraph() {
   //////Début Container Qui suis je//////
@@ -192,9 +203,12 @@ function Paragraph() {
         {parag.title}
       </h2>
       {index === 0 ? ( //index0 correspond au pragraphe du container "qui suis je" => si index est 0 alors remplacement du texte de l'étiquette "description" dans le fichier "about.json" par la variable "replaceTxt"
-        <p className={`aboutParagraph${index} aboutParagraph`} key={index + 1}>
-          {replaceTxt}
-        </p>
+        //Insertion du contenu du Paragraphe "Qui suisje ?" avec Âge auto en fonction de la courante + lien cliquable OpenClassrooms
+        <p
+          className={`aboutParagraph${index} aboutParagraph`}
+          key={index + 1}
+          dangerouslySetInnerHTML={{ __html: replaceTxt }}
+        /> //Fin Insertion du contenu du Paragraphe "Qui suisje ?" avec Âge auto en fonction de la courante + lien cliquable OpenClassrooms
       ) : (
         <p className={`aboutParagraph${index} aboutParagraph`} key={index + 1}>
           {parag.description}
