@@ -134,12 +134,12 @@
       {
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
         "iconName": "Javascript",
-        "progress": 50
+        "progress": 40
       },
       {
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
         "iconName": "React JS",
-        "progress": 50
+        "progress": 40
       },
       {
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",

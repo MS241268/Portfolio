@@ -11,7 +11,7 @@ import Datas from '../../datas/about';
 gsap.registerPlugin(ScrollTrigger);
 console.clear();
 /*Implémentation âge automatique et lien OpenClassrooms dans le texte de présentation*/
-const whoIam = Datas[0].description; //Recherche de l'étiquette "description" dans le tableau du fichier "about.json"
+const whoIam = Datas[0].description; //Recherche de la clef "description" dans le 1er élément du tableau du fichier "about.json"
 const currentDate = new Date(); //date du jour
 const currentYear = currentDate.getFullYear(); //Année en cours
 const birthDate = new Date(currentYear, 11, 24); //Date de mon anniversaire NB: janvier = 0 => décembre = 11
@@ -199,7 +199,7 @@ function Paragraph() {
       <h2 key={index} className={`titleSection titleSection${index}`}>
         {parag.title}
       </h2>
-      {index === 0 ? ( //index0 correspond au pragraphe du container "qui suis je" => si index est 0 alors remplacement du texte de l'étiquette "description" dans le fichier "about.json" par la variable "replaceTxt"
+      {index === 0 ? ( //index0 correspond au pragraphe du container "qui suis je" => si index est 0 alors remplacement du texte de la clef "description" dans le fichier "about.json" par la variable "replaceTxt"
         //Insertion du contenu du Paragraphe "Qui suisje ?" avec Âge auto en fonction de la courante + lien cliquable OpenClassrooms
         <p
           className={`aboutParagraph${index} aboutParagraph`}
