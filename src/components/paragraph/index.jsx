@@ -14,24 +14,21 @@ console.clear();
 const whoIam = Datas[0].description; //Recherche de l'étiquette "description" dans le tableau du fichier "about.json"
 const currentDate = new Date(); //date du jour
 const currentYear = currentDate.getFullYear(); //Année en cours
-const currentMonth = currentDate.getMonth() + 1; //Mois en cours NB : on rajoue "1" pour avoir le vrai n° de mois
-const currentDay = currentDate.getDate(); // Jour en cours ()
+const birthDate = new Date(currentYear, 11, 24); //Date de mon anniversaire NB: janvier = 0 => décembre = 11
 const myAge =
-  currentMonth === 12 && currentDay === 24 // Condition si date en cours est le 24/12/aaaa
-    ? currentYear - 1968
-    : currentYear - 1968 - 1; // Calcul de mon âge si date en cours n'est pas 24/12/aaaa
+  currentDate >= birthDate ? currentYear - 1968 : currentYear - 1968 - 1; // Calcul de mon âge si date en cours >= 24/12/aaaa où aaaa est l'année en cours*/
 const searchAge = whoIam.substring(whoIam.indexOf('55'), whoIam.indexOf('ans')); // Isolation de l'âge dans la description du fichier "about.json"
 const urlLink = `https://openclassrooms.com/fr/paths/899-developpeur-web>`;
-console.log(urlLink);
 const linkOc = `<a href="${urlLink}" style = "font-weight: bold;font-style:italic">OpenClassrooms</a>`;
 const searchOpenClassrooms = whoIam.substring(
   whoIam.indexOf('OpenClassrooms'),
   whoIam.indexOf('pendant 1')
 );
+// Remplacement de l'âge du fichier "about.json" par la constante "myAge" (calcul auto de mon âge) et du mot OpenClassrooms du fichier "about.json" par la constante "linkOc" :
 const replaceTxt = whoIam
   .replace(searchOpenClassrooms, `${linkOc} `)
   .replace(searchAge, `${myAge} `);
-console.log(replaceTxt); // Remplacement de l'âge du fichier "about.json" par la constante "myAge" (calcul auto de mon âge) et du mot OpenClassrooms du fichier "about.json" par la constante "linkOc"
+
 /*Fin Implémentation âge automatique et lien OpenClassrooms dans le texte de présentation*/
 
 function Paragraph() {
