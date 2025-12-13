@@ -8,6 +8,7 @@
 }
 
 body {
+  /* min-height: 560vh; */
   max-width: 90rem;
   margin: auto;
   background: linear-gradient(
@@ -20,6 +21,11 @@ body {
     #0499cf
   );
   background-size: 100% 500%;
+}
+body::after {
+  content: '';
+  display: block;
+  height: 10vh;
 }
 main {
   width: 90%;

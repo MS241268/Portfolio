@@ -1,4 +1,3 @@
-// import { useEffect } from 'react';
 import './index.css';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -9,22 +8,22 @@ import { useLayoutEffect } from 'react';
 import Datas from '../../datas/about';
 
 gsap.registerPlugin(ScrollTrigger);
-console.clear();
+
 /*Implémentation âge automatique et lien OpenClassrooms dans le texte de présentation*/
-const whoIam = Datas[0].description; //Recherche de la clef "description" dans le 1er élément du tableau du fichier "about.json"
-const currentDate = new Date(); //date du jour
-const currentYear = currentDate.getFullYear(); //Année en cours
-const birthDate = new Date(currentYear, 11, 24); //Date de mon anniversaire NB: janvier = 0 => décembre = 11
+const whoIam = Datas[0].description;
+const currentDate = new Date();
+const currentYear = currentDate.getFullYear();
+const birthDate = new Date(currentYear, 11, 24);
 const myAge =
-  currentDate >= birthDate ? currentYear - 1968 : currentYear - 1968 - 1; // Calcul de mon âge si date en cours >= 24/12/aaaa où aaaa est l'année en cours*/
-const searchAge = whoIam.substring(whoIam.indexOf('55'), whoIam.indexOf('ans')); // Isolation de l'âge dans la description du fichier "about.json"
+  currentDate >= birthDate ? currentYear - 1968 : currentYear - 1968 - 1;
+const searchAge = whoIam.substring(whoIam.indexOf('55'), whoIam.indexOf('ans'));
 const urlLink = `https://openclassrooms.com/fr/paths/899-developpeur-web>`;
-const linkOc = `<a href="${urlLink}" style = "font-weight: bold;font-style:italic">OpenClassrooms</a>`;
+const linkOc = `<a href="${urlLink}" style="font-weight: bold;font-style:italic">OpenClassrooms</a>`;
 const searchOpenClassrooms = whoIam.substring(
   whoIam.indexOf('OpenClassrooms'),
   whoIam.indexOf('pendant 1')
 );
-// Remplacement de l'âge du fichier "about.json" par la constante "myAge" (calcul auto de mon âge) et du mot OpenClassrooms du fichier "about.json" par la constante "linkOc" :
+
 const replaceTxt = whoIam
   .replace(searchOpenClassrooms, `${linkOc} `)
   .replace(searchAge, `${myAge} `);
@@ -32,165 +31,253 @@ const replaceTxt = whoIam
 /*Fin Implémentation âge automatique et lien OpenClassrooms dans le texte de présentation*/
 
 function Paragraph() {
-  //////Début Container Qui suis je//////
   useLayoutEffect(() => {
-    gsap.fromTo(
-      '.paragraphContainer0',
-      {
-        minHeight: '6.25rem',
-        backgroundColor: 'transparent',
-        border: 'none',
-        boxShadow: 'none',
-        marginBottom: 0,
-      },
-      {
-        height: 'auto',
-        backgroundColor: 'rgba(38, 108, 174, 0.936)',
-        border: '0.1875rem solid rgba(31, 78, 121, 0.936)',
-        boxShadow: '0.75rem 0.75rem 1.25rem 0.0625rem rgba(31, 78, 121, 0.8)',
-        marginBottom: '3.75rem',
-        scrollTrigger: {
-          trigger: '.paragraphContainer0',
-          start: 'center center',
-          end: 'bottom center',
-          toggleActions: 'play none none reverse',
-          onUpdate: () => ScrollTrigger.refresh(),
+    // if (!document.querySelector('#marker40')) {
+    //   const markerLine = document.createElement('div');
+    //   markerLine.id = 'marker40';
+    //   markerLine.style.position = 'fixed';
+    //   markerLine.style.top = '40vh';
+    //   markerLine.style.left = '0';
+    //   markerLine.style.width = '100vw';
+    //   markerLine.style.height = '2px';
+    //   markerLine.style.backgroundColor = 'red';
+    //   markerLine.style.zIndex = '9999';
+    //   markerLine.style.pointerEvents = 'none';
+    //   document.body.appendChild(markerLine);
+    // }
+
+    // 🔵 ICI — tout au début du useLayoutEffect
+    let hasRefreshedOnScroll = false;
+
+    const onFirstScroll = () => {
+      if (hasRefreshedOnScroll) return;
+      hasRefreshedOnScroll = true;
+      ScrollTrigger.refresh();
+      window.removeEventListener('scroll', onFirstScroll);
+    };
+
+    window.addEventListener('scroll', onFirstScroll, { passive: true });
+
+    const onLoadHandler = () => {
+      const container0 = document.querySelector('.paragraphContainer0');
+      const paragraph0 = document.querySelector('.aboutParagraph0');
+      // 🔹 hauteur ouverte réelle (AVANT ScrollTrigger)
+      const openHeight0 = container0.scrollHeight;
+      gsap.set(container0, { height: '6.25rem' });
+      gsap.set(paragraph0, {
+        x: '200%',
+        opacity: 0,
+      });
+
+      // // Création du ScrollTrigger
+
+      ScrollTrigger.create({
+        trigger: container0,
+        start: 'top 40%',
+        // toggleActions: 'play none none reverse',
+        // markers: true,
+        onEnter: () => {
+          // 🔹 CALCUL dynamique de la hauteur au lieu de 'auto'
+          // const targetHeight0 = container0.scrollHeight;
+          gsap.to(container0, {
+            height: openHeight0,
+            // onUpdate: () => ScrollTrigger.refresh(),
+            onComplete: () => ScrollTrigger.refresh(),
+            // RESTAURATION : background + border + boxShadow + marginBottom (remis comme avant)
+            backgroundColor: 'rgba(38, 108, 174, 0.936)',
+            border: '0.1875rem solid rgba(31, 78, 121, 0.936)',
+            borderRadius: '1.5625rem',
+            boxShadow:
+              '0.75rem 0.75rem 1.25rem 0.0625rem rgba(31, 78, 121, 0.8)',
+            marginBottom: '3.75rem',
+          });
+          gsap.to(paragraph0, { x: '0', opacity: 1, duration: 1 });
+        },
+        onLeaveBack: () => {
+          // RESTAURATION ÉTAT FERMÉ : background transparent, border none, boxShadow none, marginBottom 0
+          gsap.to(container0, {
+            height: '6.25rem',
+            duration: 1,
+            // onUpdate: () => ScrollTrigger.refresh(),
+            onComplete: () => ScrollTrigger.refresh(),
+            backgroundColor: 'transparent',
+            border: 'none',
+            boxShadow: 'none',
+            marginBottom: 0,
+          });
+          gsap.to(paragraph0, { x: '200%', opacity: 0, duration: 1 });
+        },
+      });
+
+      const container1 = document.querySelector('.paragraphContainer1');
+      const paragraph1 = document.querySelector('.aboutParagraph1');
+      const projects1 = container1.querySelector('.projectsContainer');
+
+      if (container1) {
+        gsap.set(paragraph1, {
+          x: '200%',
+          opacity: 0,
+        });
+        if (projects1) {
+          gsap.set(projects1, {
+            x: '-200%',
+            opacity: 0,
+          });
+        }
+        ScrollTrigger.create({
+          trigger: container1,
+          start: 'top 40%',
+          // toggleActions: 'play none none reverse',
+          // markers: true,
           onEnter: () => {
-            gsap.to('.aboutParagraph0', {
-              scrollTrigger: {
-                trigger: '.paragraphContainer0',
-                start: 'center center',
-                toggleActions: 'play none none reverse',
-              },
-              x: '0',
-              opacity: '1',
-              duration: '1',
+            // 🔹 CALCUL dynamique de la hauteur au lieu de 'auto'
+            const targetHeight1 = container1.scrollHeight;
+            gsap.to(container1, {
+              height: targetHeight1,
+              duration: 1,
+              // onUpdate: () => ScrollTrigger.refresh(),
+              onComplete: () => ScrollTrigger.refresh(),
+              // RESTAURATION : background + border + boxShadow + marginBottom
+              backgroundColor: 'rgba(38, 108, 174, 0.936)',
+              border: '0.1875rem solid rgba(31, 78, 121, 0.936)',
+              borderRadius: '1.5625rem',
+              boxShadow:
+                '0.75rem 0.75rem 1.25rem 0.0625rem rgba(31, 78, 121, 0.8)',
+              marginBottom: '3.75rem',
             });
+            if (paragraph1)
+              gsap.to(paragraph1, { x: '0', opacity: 1, duration: 1 });
+            if (projects1)
+              gsap.to(projects1, { x: 0, opacity: 1, duration: 1 });
           },
-        },
+          onLeaveBack: () => {
+            // RESTAURATION ÉTAT FERMÉ : background transparent, border none, boxShadow none, marginBottom 0
+            gsap.to(container1, {
+              height: '6.25rem',
+              duration: 1,
+              // onUpdate: () => ScrollTrigger.refresh(),
+              onComplete: () => ScrollTrigger.refresh(),
+              backgroundColor: 'transparent',
+              border: 'none',
+              boxShadow: 'none',
+              marginBottom: 0,
+            });
+            if (paragraph1)
+              gsap.to(paragraph1, { x: '200%', opacity: 0, duration: 1 });
+            if (projects1)
+              gsap.to(projects1, { x: '-200%', opacity: 0, duration: 1 });
+          },
+        });
       }
-    );
-  }, []);
-  //////Fin Container Qui suis je//////
 
-  //////Début Container Projets//////
-  useLayoutEffect(() => {
-    gsap.to('.paragraphContainer1', {
-      height: 'auto',
-      backgroundColor: 'rgba(38, 108, 174, 0.936)',
-      border: '0.1875rem solid rgba(31, 78, 121, 0.936)',
-      boxShadow: '0.75rem 0.75rem 1.25rem 0.0625rem rgba(31, 78, 121, 0.8)',
-      marginBottom: '3.75rem',
-      scrollTrigger: {
-        id: 'paragraphContainer1',
-        trigger: '.paragraphContainer0',
-        start: '94.5% center',
-        toggleActions: 'play none none reverse',
-        onUpdate: () => ScrollTrigger.refresh(),
-        onEnter: () => {
-          gsap.to('.aboutParagraph1', {
-            scrollTrigger: {
-              trigger: '.paragraphContainer0',
-              start: '94.5% center',
-              toggleActions: 'play none none reverse',
-            },
-            x: '0',
-            opacity: '1',
-            duration: '1',
-          });
-          gsap.to('.projectsContainer', {
-            scrollTrigger: {
-              id: 'projectsContainer',
-              trigger: '.paragraphContainer0',
-              start: '94.5% center',
-              toggleActions: 'play none none reverse',
-            },
-            duration: '1',
-            opacity: '1',
-            x: '0',
-          });
-        },
-        // markers: {
-        //   startColor: 'fuchsia',
-        //   endColor: 'purple',
-        //   fontSize: '2rem',
-        //   indent: 500,
-        // },
-      },
-    });
-  }, []);
-  //////Fin Container Projets//////
+      const container2 = document.querySelector('.paragraphContainer2');
+      const paragraph2 = document.querySelector('.aboutParagraph2');
+      const skills2 = container2.querySelector('.skillsContainer');
 
-  //////Début Container Compétences//////
-  useLayoutEffect(() => {
-    gsap.to('.paragraphContainer2', {
-      height: 'auto',
-      backgroundColor: 'rgba(38, 108, 174, 0.936)',
-      border: '0.1875rem solid rgba(31, 78, 121, 0.936)',
-      boxShadow: '0.75rem 0.75rem 1.25rem 0.0625rem rgba(31, 78, 121, 0.8)',
-      marginBottom: '3.75rem',
-      scrollTrigger: {
-        id: 'paragraphContainer2',
-        trigger: '.paragraphContainer1',
-        start: '94.5% center',
-        end: 'bottom center',
-        toggleActions: 'play none none reverse',
-        onUpdate: () => ScrollTrigger.refresh(),
-        onEnter: () => {
-          gsap.to('.aboutParagraph2', {
-            scrollTrigger: {
-              trigger: '.paragraphContainer1',
-              start: '94.5% center',
-              toggleActions: 'play none none reverse',
-              // markers: true,
-            },
-            x: '0',
-            opacity: '1',
-            duration: '1',
+      if (container2) {
+        gsap.set(paragraph2, {
+          x: '200%',
+          opacity: 0,
+        });
+
+        if (skills2) {
+          gsap.set(skills2, {
+            x: '-200%',
+            opacity: 0,
           });
-          gsap.to('.skillsContainer', {
-            scrollTrigger: {
-              id: 'skillsContainer',
-              trigger: '.paragraphContainer1',
-              start: '94.5% center',
-              toggleActions: 'play none none reverse',
-              // end: 'top top',
-              // markers: true,
-              onEnter: () => {
-                gsap.fromTo(
-                  '.languageIcons',
-                  {
-                    rotationY: '0deg',
-                  },
-                  {
-                    rotationY: '360deg',
-                    duration: '1',
-                    ease: 'none',
-                    repeat: -1,
-                  }
-                );
-                gsap.fromTo(
-                  '.progressbarWrapper',
-                  { paddingRight: '80%' },
-                  { paddingRight: '0%', delay: '1.5' }
-                );
-              },
-            },
-            duration: '1',
-            opacity: '1',
-            x: '0',
+          // Remettre les jauges à 0 au chargement
+          gsap.set(skills2.querySelectorAll('.progressbarWrapper'), {
+            paddingRight: '80%',
           });
-        },
-        // markers: {
-        //   startColor: 'red',
-        //   endColor: 'orange',
-        //   fontSize: '2rem',
-        //   indent: 500,
-        // },
-      },
-    });
+        }
+        ScrollTrigger.create({
+          trigger: container2,
+          start: 'top 40%',
+          toggleActions: 'play none none reverse',
+          // markers: true,
+          onEnter: () => {
+            // 🔹 CALCUL dynamique de la hauteur au lieu de 'auto'
+            const targetHeight2 = container2.scrollHeight;
+            gsap.to(container2, {
+              height: targetHeight2,
+              duration: 1,
+              // onUpdate: () => ScrollTrigger.refresh(),
+              onComplete: () => ScrollTrigger.refresh(),
+              backgroundColor: 'rgba(38, 108, 174, 0.936)',
+              border: '0.1875rem solid rgba(31, 78, 121, 0.936)',
+              borderRadius: '1.5625rem',
+              boxShadow:
+                '0.75rem 0.75rem 1.25rem 0.0625rem rgba(31, 78, 121, 0.8)',
+              marginBottom: '3.75rem',
+            });
+
+            if (paragraph2)
+              gsap.to(paragraph2, { x: '0', opacity: 1, duration: 1 });
+
+            if (skills2) {
+              gsap.to(skills2, { x: 0, opacity: 1, duration: 1 });
+
+              // Animation des icônes et des jauges
+              gsap.fromTo(
+                skills2.querySelectorAll('.languageIcons'),
+                { rotationY: '0deg' },
+                { rotationY: '360deg', duration: 1, ease: 'none', repeat: -1 }
+              );
+
+              // Jauge : se remplit et reste remplie
+              skills2.querySelectorAll('.progressbarWrapper').forEach((bar) => {
+                gsap.to(bar, {
+                  paddingRight: '0%',
+                  duration: 1.2,
+                  delay: 1.5,
+                  overwrite: 'auto',
+                });
+              });
+            }
+          },
+          onLeaveBack: () => {
+            // Fermeture de la section
+            gsap.to(container2, {
+              height: '6.75rem',
+              duration: 1,
+              // onUpdate: () => ScrollTrigger.refresh(),
+              onComplete: () => ScrollTrigger.refresh(),
+              backgroundColor: 'transparent',
+              border: 'none',
+              boxShadow: 'none',
+              marginBottom: 0,
+            });
+
+            if (paragraph2)
+              gsap.to(paragraph2, { x: '200%', opacity: 0, duration: 1 });
+
+            if (skills2) {
+              gsap.to(skills2, { x: '-200%', opacity: 0, duration: 1 });
+              // Remettre la jauge à 0 quand le container se ferme
+              skills2.querySelectorAll('.progressbarWrapper').forEach((bar) => {
+                gsap.set(bar, { paddingRight: '80%' });
+              });
+            }
+          },
+        });
+      }
+      ScrollTrigger.refresh();
+    };
+
+    if (document.readyState === 'complete') {
+      onLoadHandler();
+    } else {
+      window.addEventListener('load', onLoadHandler);
+    }
+
+    return () => {
+      window.removeEventListener('scroll', onFirstScroll);
+      window.removeEventListener('load', onLoadHandler);
+      ScrollTrigger.getAll().forEach((t) => t.kill());
+      gsap.killTweensOf('*');
+    };
   }, []);
-  //////Fin Container Compétences//////
+
   return Datas.map((parag, index) => (
     <section
       key={index}
@@ -199,13 +286,12 @@ function Paragraph() {
       <h2 key={index} className={`titleSection titleSection${index}`}>
         {parag.title}
       </h2>
-      {index === 0 ? ( //index0 correspond au pragraphe du container "qui suis je" => si index est 0 alors remplacement du texte de la clef "description" dans le fichier "about.json" par la variable "replaceTxt"
-        //Insertion du contenu du Paragraphe "Qui suisje ?" avec Âge auto en fonction de la courante + lien cliquable OpenClassrooms
+      {index === 0 ? (
         <p
           className={`aboutParagraph${index} aboutParagraph`}
           key={index + 1}
           dangerouslySetInnerHTML={{ __html: replaceTxt }}
-        /> //Fin Insertion du contenu du Paragraphe "Qui suisje ?" avec Âge auto en fonction de la courante + lien cliquable OpenClassrooms
+        />
       ) : (
         <p className={`aboutParagraph${index} aboutParagraph`} key={index + 1}>
           {parag.description}
@@ -226,8 +312,6 @@ function Paragraph() {
               <h4 className="pragraphTitle">DESCRIPTION du PROJET</h4>
               <p className="projectDescription">{det.projectDescription}</p>
               <h4 className="pragraphTitle">OBJECTIFS</h4>
-              {/* {console.log((parag.details[index]).projectObjective )} */}
-
               {Array.isArray(parag.details[index].projectObjective) ? (
                 det.warning !== undefined ? (
                   <div className="projectObjectiveWarningContainer">

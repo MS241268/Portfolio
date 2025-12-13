@@ -1,7 +1,10 @@
 .paragraphContainer {
-  border-radius: 1.5625rem;
-  height: 6.25rem;
+  /* border-radius: 1.5625rem; */
+  height: 6.25rem; /*hauteur fermée */
   background-color: transparent;
+  /* box-shadow: 0.75rem 0.75rem 1.25rem 0.0625rem rgba(31, 78, 121, 0.8); */
+  /*position: relative; /* pour que le titre absolute reste à l'intérieur */
+  /*overflow: hidden; /* pour cacher le contenu quand fermé */
 }
 .titleSection {
   position: absolute;
@@ -10,7 +13,7 @@
   transform: translate(-50%, -50%);
   width: 40%;
   padding: 0.625rem;
-  margin-top: -2.03125rem;
+  margin-top: -1.82rem;
   border-radius: 1.5625rem;
   background-color: rgba(31, 78, 121, 0.936);
   box-shadow: 0.375rem 0.375rem 0.375rem 0.0625rem rgba(31, 78, 121, 0.6);
@@ -230,6 +233,7 @@
     border-radius: 1.25rem;
   }
   .wrapper {
+    min-height: 710vh;
     margin-bottom: 0rem;
   }
   .aboutParagraph {
@@ -258,6 +262,7 @@
 /* Début version de 769px à 1024px*/
 @media all and (min-width: 769px) and (max-width: 1024px) {
   .wrapper {
+    min-height: 500vh;
     margin-bottom: 0rem;
   }
   .projectsContainer {
@@ -266,3 +271,16 @@
   }
 }
 /* Fin version de 769px à 1024px*/
+
+/* Début version au delà de 1024 px*/
+@media all and (min-width: 1025px) {
+  .wrapper {
+    min-height: 430vh;
+  }
+  @media (min-height: 1000px) and (min-width: 1024px) {
+    .paragraphContainer {
+      margin-bottom: 12rem;
+    }
+  }
+}
+/* Fin version au delà de 1024 px*/

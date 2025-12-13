@@ -35,16 +35,34 @@ function Home() {
   }, []);
 
   useLayoutEffect(() => {
+    // Récupérer la dernière ligne de la grid
+    const skillsContainer = document.querySelector('.skillsContainer');
+    const lastRow = skillsContainer.lastElementChild;
+    if (!lastRow) return;
+
+    let scrollHandlerAdded = false; // <-- ajout minimal pour éviter les doublons
+
     gsap.set('.mouseScroll', {
       display: 'block',
       scrollTrigger: {
-        trigger: '.paragraphContainer2',
-        start: '40.625rem center',
+        trigger: lastRow,
+        start: 'top bottom',
+        // markers: true,
         toggleActions: 'play none none reverse',
         onEnter: () => {
+          // Empêcher l'empilement → ton bug venait d’ici
+          if (scrollHandlerAdded) return;
+          scrollHandlerAdded = true;
+
           window.addEventListener('scroll', function () {
-            const scrollPosition = window.pageYOffset;
-            if (scrollPosition > 3800) {
+            const mouseScroll = document.querySelector('.mouseScroll');
+            const mouseTop =
+              mouseScroll.getBoundingClientRect().top + window.scrollY;
+            const lastRowTop =
+              lastRow.getBoundingClientRect().top + window.scrollY;
+
+            // Déclenchement légèrement avant le top
+            if (mouseTop >= lastRowTop - 20) {
               gsap.set('.mouseScroll', { display: 'none' });
               gsap.set('.arrowScroll', {
                 display: 'block',
@@ -66,36 +84,10 @@ function Home() {
                   });
                 },
               });
+              ScrollTrigger.refresh();
             }
           });
         },
-        // markers: {
-        //   startColor: 'red',
-        //   endColor: 'orange',
-        //   fontSize: '2rem',
-        //   indent: 500,
-        // },
-      },
-    });
-  }, []);
-
-  useLayoutEffect(() => {
-    gsap.set('.upWindow', {
-      display: 'none',
-      scrollTrigger: {
-        trigger: '.bannerHome',
-        start: 'top 8.75rem',
-        toggleActions: 'play none none none',
-        onEnter: () => {
-          gsap.set('.mouseScroll', { display: 'block' });
-          gsap.set('.upWindow', { display: 'none' });
-        },
-        // markers: {
-        //   startColor: 'purple',
-        //   endColor: 'purple',
-        //   fontSize: '2rem',
-        //   indent: 500,
-        // },
       },
     });
   }, []);

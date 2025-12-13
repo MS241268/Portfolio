@@ -1,3 +1,9 @@
+/* body::after {
+  content: '';
+  display: block;
+  height: 20vh; /* augmente si nécessaire (20 → 30 → 40) */
+/* } */
+
 .bannerHome {
   display: grid;
   align-items: center;
@@ -48,9 +54,10 @@
 }
 
 .wrapper {
+  min-height: 463vh;
   overflow: hidden;
   padding-top: 1.25rem;
-  margin-bottom: 12.5rem;
+  /* margin-bottom: 12.5rem; */
 }
 
 .mouseScroll,

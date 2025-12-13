@@ -31,7 +31,6 @@ function Slider({ images }) {
       };
     }
   }, [currentPicture, nextPicture, images.length]); //Facultatif car les dépendences "[...]" sont déjà dans la fonction "nextPicture"
-
   return (
     <section className="slider">
       <div
@@ -41,7 +40,7 @@ function Slider({ images }) {
         {images.map((picture, index) => (
           <img
             src={picture}
-            alt={`Présentation  ${index + 1} sur ${images.length} des diplômes`}
+            alt={`Présentation ${index + 1} sur ${images.length} des diplômes`}
             key={index}
             className="picturesDegrees"
           />
