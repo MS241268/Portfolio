@@ -54,7 +54,7 @@
 }
 
 .wrapper {
-  min-height: 463vh;
+  min-height: 417vh;
   overflow: hidden;
   padding-top: 1.25rem;
   /* margin-bottom: 12.5rem; */
@@ -109,6 +109,10 @@
   .titleSection0 {
     z-index: 2;
   }
+  .wrapper {
+    min-height: 600vh;
+    margin-bottom: 0rem;
+  }
 }
 /* Fin version commune Mobile de 320px jusqu'à 768px*/
 
@@ -141,7 +145,7 @@
     visibility: hidden;
   }
   .paragraphContainer {
-    max-width: 24.375rem;
+    min-width: 23rem;
   }
   .mouseScroll,
   .arrowScroll {
@@ -177,10 +181,19 @@
   .h1Title {
     scale: 0.8;
   }
+  .wrapper {
+    min-height: 500vh;
+    margin-bottom: 0rem;
+  }
   .mouseScroll,
   .arrowScroll {
     left: 90vw;
     scale: 0.8;
+  }
+}
+@media all and (min-height: 800px) and (max-width: 768px) {
+  .wrapper {
+    min-height: 650vh;
   }
 }
 /* Fin version Mobile de 769px jusqu'à 1024px*/

@@ -32,21 +32,6 @@ const replaceTxt = whoIam
 
 function Paragraph() {
   useLayoutEffect(() => {
-    // if (!document.querySelector('#marker40')) {
-    //   const markerLine = document.createElement('div');
-    //   markerLine.id = 'marker40';
-    //   markerLine.style.position = 'fixed';
-    //   markerLine.style.top = '40vh';
-    //   markerLine.style.left = '0';
-    //   markerLine.style.width = '100vw';
-    //   markerLine.style.height = '2px';
-    //   markerLine.style.backgroundColor = 'red';
-    //   markerLine.style.zIndex = '9999';
-    //   markerLine.style.pointerEvents = 'none';
-    //   document.body.appendChild(markerLine);
-    // }
-
-    // 🔵 ICI — tout au début du useLayoutEffect
     let hasRefreshedOnScroll = false;
 
     const onFirstScroll = () => {
@@ -59,149 +44,42 @@ function Paragraph() {
     window.addEventListener('scroll', onFirstScroll, { passive: true });
 
     const onLoadHandler = () => {
+      const mm = gsap.matchMedia();
+
       const container0 = document.querySelector('.paragraphContainer0');
       const paragraph0 = document.querySelector('.aboutParagraph0');
-      // 🔹 hauteur ouverte réelle (AVANT ScrollTrigger)
-      const openHeight0 = container0.scrollHeight;
-      gsap.set(container0, { height: '6.25rem' });
-      gsap.set(paragraph0, {
-        x: '200%',
-        opacity: 0,
-      });
-
-      // // Création du ScrollTrigger
-
-      ScrollTrigger.create({
-        trigger: container0,
-        start: 'top 40%',
-        // toggleActions: 'play none none reverse',
-        // markers: true,
-        onEnter: () => {
-          // 🔹 CALCUL dynamique de la hauteur au lieu de 'auto'
-          // const targetHeight0 = container0.scrollHeight;
-          gsap.to(container0, {
-            height: openHeight0,
-            // onUpdate: () => ScrollTrigger.refresh(),
-            onComplete: () => ScrollTrigger.refresh(),
-            // RESTAURATION : background + border + boxShadow + marginBottom (remis comme avant)
-            backgroundColor: 'rgba(38, 108, 174, 0.936)',
-            border: '0.1875rem solid rgba(31, 78, 121, 0.936)',
-            borderRadius: '1.5625rem',
-            boxShadow:
-              '0.75rem 0.75rem 1.25rem 0.0625rem rgba(31, 78, 121, 0.8)',
-            marginBottom: '3.75rem',
-          });
-          gsap.to(paragraph0, { x: '0', opacity: 1, duration: 1 });
-        },
-        onLeaveBack: () => {
-          // RESTAURATION ÉTAT FERMÉ : background transparent, border none, boxShadow none, marginBottom 0
-          gsap.to(container0, {
-            height: '6.25rem',
-            duration: 1,
-            // onUpdate: () => ScrollTrigger.refresh(),
-            onComplete: () => ScrollTrigger.refresh(),
-            backgroundColor: 'transparent',
-            border: 'none',
-            boxShadow: 'none',
-            marginBottom: 0,
-          });
-          gsap.to(paragraph0, { x: '200%', opacity: 0, duration: 1 });
-        },
-      });
 
       const container1 = document.querySelector('.paragraphContainer1');
       const paragraph1 = document.querySelector('.aboutParagraph1');
-      const projects1 = container1.querySelector('.projectsContainer');
-
-      if (container1) {
-        gsap.set(paragraph1, {
-          x: '200%',
-          opacity: 0,
-        });
-        if (projects1) {
-          gsap.set(projects1, {
-            x: '-200%',
-            opacity: 0,
-          });
-        }
-        ScrollTrigger.create({
-          trigger: container1,
-          start: 'top 40%',
-          // toggleActions: 'play none none reverse',
-          // markers: true,
-          onEnter: () => {
-            // 🔹 CALCUL dynamique de la hauteur au lieu de 'auto'
-            const targetHeight1 = container1.scrollHeight;
-            gsap.to(container1, {
-              height: targetHeight1,
-              duration: 1,
-              // onUpdate: () => ScrollTrigger.refresh(),
-              onComplete: () => ScrollTrigger.refresh(),
-              // RESTAURATION : background + border + boxShadow + marginBottom
-              backgroundColor: 'rgba(38, 108, 174, 0.936)',
-              border: '0.1875rem solid rgba(31, 78, 121, 0.936)',
-              borderRadius: '1.5625rem',
-              boxShadow:
-                '0.75rem 0.75rem 1.25rem 0.0625rem rgba(31, 78, 121, 0.8)',
-              marginBottom: '3.75rem',
-            });
-            if (paragraph1)
-              gsap.to(paragraph1, { x: '0', opacity: 1, duration: 1 });
-            if (projects1)
-              gsap.to(projects1, { x: 0, opacity: 1, duration: 1 });
-          },
-          onLeaveBack: () => {
-            // RESTAURATION ÉTAT FERMÉ : background transparent, border none, boxShadow none, marginBottom 0
-            gsap.to(container1, {
-              height: '6.25rem',
-              duration: 1,
-              // onUpdate: () => ScrollTrigger.refresh(),
-              onComplete: () => ScrollTrigger.refresh(),
-              backgroundColor: 'transparent',
-              border: 'none',
-              boxShadow: 'none',
-              marginBottom: 0,
-            });
-            if (paragraph1)
-              gsap.to(paragraph1, { x: '200%', opacity: 0, duration: 1 });
-            if (projects1)
-              gsap.to(projects1, { x: '-200%', opacity: 0, duration: 1 });
-          },
-        });
-      }
+      const projects1 = container1?.querySelector('.projectsContainer');
 
       const container2 = document.querySelector('.paragraphContainer2');
       const paragraph2 = document.querySelector('.aboutParagraph2');
-      const skills2 = container2.querySelector('.skillsContainer');
+      const skills2 = container2?.querySelector('.skillsContainer');
 
-      if (container2) {
-        gsap.set(paragraph2, {
-          x: '200%',
-          opacity: 0,
+      gsap.set(container0, { height: '6.25rem' });
+      gsap.set(paragraph0, { x: '200%', opacity: 0 });
+
+      if (paragraph1) gsap.set(paragraph1, { x: '200%', opacity: 0 });
+      if (projects1) gsap.set(projects1, { x: '-200%', opacity: 0 });
+
+      if (paragraph2) gsap.set(paragraph2, { x: '200%', opacity: 0 });
+      if (skills2) {
+        gsap.set(skills2, { x: '-200%', opacity: 0 });
+        gsap.set(skills2.querySelectorAll('.progressbarWrapper'), {
+          paddingRight: '80%',
         });
+      }
 
-        if (skills2) {
-          gsap.set(skills2, {
-            x: '-200%',
-            opacity: 0,
-          });
-          // Remettre les jauges à 0 au chargement
-          gsap.set(skills2.querySelectorAll('.progressbarWrapper'), {
-            paddingRight: '80%',
-          });
-        }
+      const createScrollTriggers = (startValue) => {
+        /* ---------- CONTAINER 0 ---------- */
         ScrollTrigger.create({
-          trigger: container2,
-          start: 'top 40%',
-          toggleActions: 'play none none reverse',
-          // markers: true,
+          trigger: container0,
+          start: startValue,
+          //markers: true,
           onEnter: () => {
-            // 🔹 CALCUL dynamique de la hauteur au lieu de 'auto'
-            const targetHeight2 = container2.scrollHeight;
-            gsap.to(container2, {
-              height: targetHeight2,
-              duration: 1,
-              // onUpdate: () => ScrollTrigger.refresh(),
+            gsap.to(container0, {
+              height: 'auto',
               onComplete: () => ScrollTrigger.refresh(),
               backgroundColor: 'rgba(38, 108, 174, 0.936)',
               border: '0.1875rem solid rgba(31, 78, 121, 0.936)',
@@ -210,57 +88,157 @@ function Paragraph() {
                 '0.75rem 0.75rem 1.25rem 0.0625rem rgba(31, 78, 121, 0.8)',
               marginBottom: '3.75rem',
             });
-
-            if (paragraph2)
-              gsap.to(paragraph2, { x: '0', opacity: 1, duration: 1 });
-
-            if (skills2) {
-              gsap.to(skills2, { x: 0, opacity: 1, duration: 1 });
-
-              // Animation des icônes et des jauges
-              gsap.fromTo(
-                skills2.querySelectorAll('.languageIcons'),
-                { rotationY: '0deg' },
-                { rotationY: '360deg', duration: 1, ease: 'none', repeat: -1 }
-              );
-
-              // Jauge : se remplit et reste remplie
-              skills2.querySelectorAll('.progressbarWrapper').forEach((bar) => {
-                gsap.to(bar, {
-                  paddingRight: '0%',
-                  duration: 1.2,
-                  delay: 1.5,
-                  overwrite: 'auto',
-                });
-              });
-            }
+            gsap.to(paragraph0, { x: '0', opacity: 1, duration: 1 });
           },
           onLeaveBack: () => {
-            // Fermeture de la section
-            gsap.to(container2, {
-              height: '6.75rem',
+            gsap.to(container0, {
+              height: '6.25rem',
               duration: 1,
-              // onUpdate: () => ScrollTrigger.refresh(),
               onComplete: () => ScrollTrigger.refresh(),
               backgroundColor: 'transparent',
               border: 'none',
               boxShadow: 'none',
               marginBottom: 0,
             });
-
-            if (paragraph2)
-              gsap.to(paragraph2, { x: '200%', opacity: 0, duration: 1 });
-
-            if (skills2) {
-              gsap.to(skills2, { x: '-200%', opacity: 0, duration: 1 });
-              // Remettre la jauge à 0 quand le container se ferme
-              skills2.querySelectorAll('.progressbarWrapper').forEach((bar) => {
-                gsap.set(bar, { paddingRight: '80%' });
-              });
-            }
+            gsap.to(paragraph0, { x: '200%', opacity: 0, duration: 1 });
           },
         });
-      }
+
+        /* ---------- CONTAINER 1 ---------- */
+        if (container1) {
+          ScrollTrigger.create({
+            trigger: container1,
+            start: startValue,
+            onEnter: () => {
+              gsap.to(container1, {
+                height: 'auto',
+                duration: 1,
+                onComplete: () => ScrollTrigger.refresh(),
+                backgroundColor: 'rgba(38, 108, 174, 0.936)',
+                border: '0.1875rem solid rgba(31, 78, 121, 0.936)',
+                borderRadius: '1.5625rem',
+                boxShadow:
+                  '0.75rem 0.75rem 1.25rem 0.0625rem rgba(31, 78, 121, 0.8)',
+                marginBottom: '3.75rem',
+              });
+              if (paragraph1)
+                gsap.to(paragraph1, { x: '0', opacity: 1, duration: 1 });
+              if (projects1)
+                gsap.to(projects1, { x: 0, opacity: 1, duration: 1 });
+            },
+            onLeaveBack: () => {
+              gsap.to(container1, {
+                height: '6.25rem',
+                duration: 1,
+                onComplete: () => ScrollTrigger.refresh(),
+                backgroundColor: 'transparent',
+                border: 'none',
+                boxShadow: 'none',
+                marginBottom: 0,
+              });
+              if (paragraph1)
+                gsap.to(paragraph1, {
+                  x: '200%',
+                  opacity: 0,
+                  duration: 1,
+                });
+              if (projects1)
+                gsap.to(projects1, {
+                  x: '-200%',
+                  opacity: 0,
+                  duration: 1,
+                });
+            },
+          });
+        }
+
+        /* ---------- CONTAINER 2 ---------- */
+        gsap.set(skills2.querySelectorAll('.progressbarWrapper'), {
+          paddingRight: '80%',
+        });
+        if (container2) {
+          ScrollTrigger.create({
+            trigger: container2,
+            start: startValue,
+            onEnter: () => {
+              gsap.to(container2, {
+                height: 'auto',
+                duration: 1,
+                onComplete: () => ScrollTrigger.refresh(),
+                backgroundColor: 'rgba(38, 108, 174, 0.936)',
+                border: '0.1875rem solid rgba(31, 78, 121, 0.936)',
+                borderRadius: '1.5625rem',
+                boxShadow:
+                  '0.75rem 0.75rem 1.25rem 0.0625rem rgba(31, 78, 121, 0.8)',
+                marginBottom: '3.75rem',
+              });
+
+              if (paragraph2)
+                gsap.to(paragraph2, { x: '0', opacity: 1, duration: 1 });
+
+              if (skills2) {
+                gsap.to(skills2, { x: 0, opacity: 1, duration: 1 });
+
+                gsap.fromTo(
+                  skills2.querySelectorAll('.languageIcons'),
+                  { rotationY: '0deg' },
+                  {
+                    rotationY: '360deg',
+                    duration: 1,
+                    ease: 'none',
+                    repeat: -1,
+                  }
+                );
+                // Jauge : se remplit et reste remplie
+                skills2
+                  .querySelectorAll('.progressbarWrapper')
+                  .forEach((bar) => {
+                    gsap.to(bar, {
+                      paddingRight: '0%',
+                      duration: 1.2,
+                      delay: 1.5,
+                      overwrite: 'auto',
+                    });
+                  });
+              }
+            },
+            onLeaveBack: () => {
+              gsap.to(container2, {
+                height: '6.75rem',
+                duration: 1,
+                onComplete: () => ScrollTrigger.refresh(),
+                backgroundColor: 'transparent',
+                border: 'none',
+                boxShadow: 'none',
+                marginBottom: 0,
+              });
+
+              if (paragraph2)
+                gsap.to(paragraph2, {
+                  x: '200%',
+                  opacity: 0,
+                  duration: 1,
+                });
+
+              if (skills2) {
+                gsap.to(skills2, {
+                  x: '-200%',
+                  opacity: 0,
+                  duration: 1,
+                });
+                // Remettre la jauge à 0 quand le container se ferme
+                skills2
+                  .querySelectorAll('.progressbarWrapper')
+                  .forEach((bar) => gsap.set(bar, { paddingRight: '80%' }));
+              }
+            },
+          });
+        }
+      };
+
+      mm.add('(min-width: 1200px)', () => createScrollTriggers('top 40%'));
+      mm.add('(max-width: 1199px)', () => createScrollTriggers('top 30%'));
+
       ScrollTrigger.refresh();
     };
 
@@ -273,8 +251,7 @@ function Paragraph() {
     return () => {
       window.removeEventListener('scroll', onFirstScroll);
       window.removeEventListener('load', onLoadHandler);
-      ScrollTrigger.getAll().forEach((t) => t.kill());
-      gsap.killTweensOf('*');
+      gsap.matchMedia().revert();
     };
   }, []);
 

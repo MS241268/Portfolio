@@ -46,9 +46,9 @@ function Home() {
       display: 'block',
       scrollTrigger: {
         trigger: lastRow,
-        start: 'top bottom',
+        start: 'top 40%',
         // markers: true,
-        toggleActions: 'play none none reverse',
+        // toggleActions: 'play none none reverse',
         onEnter: () => {
           // Empêcher l'empilement → ton bug venait d’ici
           if (scrollHandlerAdded) return;
@@ -62,7 +62,7 @@ function Home() {
               lastRow.getBoundingClientRect().top + window.scrollY;
 
             // Déclenchement légèrement avant le top
-            if (mouseTop >= lastRowTop - 20) {
+            if (mouseTop >= lastRowTop - 350) {
               gsap.set('.mouseScroll', { display: 'none' });
               gsap.set('.arrowScroll', {
                 display: 'block',
