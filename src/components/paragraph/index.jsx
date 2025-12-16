@@ -169,8 +169,8 @@ function Paragraph() {
 
         container2ST = ScrollTrigger.create({
           trigger: '.paragraphContainer1',
-          start: '94.5% 55%',
-          // markers: true,
+          start: '94.5% 60%',
+          markers: true,
           onEnter: () => {
             gsap.to(container2, {
               height: 'auto',
@@ -252,11 +252,11 @@ function Paragraph() {
 
       // large desktop classique 1200–1999 px
       mm.add('(min-width: 1200px) and (max-width: 1999px)', () =>
-        createScrollTriggers('top 40%')
+        createScrollTriggers('top 45%')
       );
 
       // medium desktop / laptop ≤ 1199 px
-      mm.add('(max-width: 1199px)', () => createScrollTriggers('top 35%'));
+      mm.add('(max-width: 1199px)', () => createScrollTriggers('top 40%'));
 
       ScrollTrigger.refresh();
     };
@@ -385,5 +385,4 @@ function Paragraph() {
     </section>
   ));
 }
-
 export default Paragraph;
