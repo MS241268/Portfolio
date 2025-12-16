@@ -170,7 +170,7 @@ function Paragraph() {
         container2ST = ScrollTrigger.create({
           trigger: '.paragraphContainer1',
           start: '94.5% 60%',
-          markers: true,
+          // markers: true,
           onEnter: () => {
             gsap.to(container2, {
               height: 'auto',
@@ -256,7 +256,7 @@ function Paragraph() {
       );
 
       // medium desktop / laptop ≤ 1199 px
-      mm.add('(max-width: 1199px)', () => createScrollTriggers('top 40%'));
+      mm.add('(max-width: 1199px)', () => createScrollTriggers('top 37.5%'));
 
       ScrollTrigger.refresh();
     };
