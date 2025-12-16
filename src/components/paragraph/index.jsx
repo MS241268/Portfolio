@@ -2,7 +2,7 @@ import './index.css';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { FaDirections } from 'react-icons/fa';
-import { PiWarningFill } from 'react-icons/pi';
+// import { PiWarningFill } from 'react-icons/pi';
 import { useLayoutEffect } from 'react';
 import Datas from '../../datas/about';
 
@@ -309,40 +309,40 @@ function Paragraph() {
               <p className="projectDescription">{det.projectDescription}</p>
               <h4 className="pragraphTitle">OBJECTIFS</h4>
               {Array.isArray(parag.details[index].projectObjective) ? (
-                det.warning !== undefined ? (
-                  <div className="projectObjectiveWarningContainer">
-                    <ul className="projectObjectiveWarningUl">
-                      {parag.details[index].projectObjective.map(
-                        (obj, index) => (
-                          <li key={index} className="projectObjectiveLi">
-                            <i className="arrowStyle">
-                              <FaDirections />
-                            </i>
-                            <span>{obj.objectif}</span>
-                          </li>
-                        )
-                      )}
-                    </ul>
-                    <p className="warning">
-                      <i>
-                        <PiWarningFill className="warningStyle" />
+                // det.warning !== undefined ? (
+                //   <div className="projectObjectiveWarningContainer">
+                //     <ul className="projectObjectiveWarningUl">
+                //       {parag.details[index].projectObjective.map(
+                //         (obj, index) => (
+                //           <li key={index} className="projectObjectiveLi">
+                //             <i className="arrowStyle">
+                //               <FaDirections />
+                //             </i>
+                //             <span>{obj.objectif}</span>
+                //           </li>
+                //         )
+                //       )}
+                //     </ul>
+                //     <p className="warning">
+                //       <i>
+                //         <PiWarningFill className="warningStyle" />
+                //       </i>
+                //       <span>: {det.warning}</span>
+                //     </p>
+                //   </div>
+                // ) : (
+                <ul className="projectObjectiveUl">
+                  {parag.details[index].projectObjective.map((obj, index) => (
+                    <li key={index} className="projectObjectiveLi">
+                      <i className="arrowStyle">
+                        <FaDirections />
                       </i>
-                      <span>: {det.warning}</span>
-                    </p>
-                  </div>
-                ) : (
-                  <ul className="projectObjectiveUl">
-                    {parag.details[index].projectObjective.map((obj, index) => (
-                      <li key={index} className="projectObjectiveLi">
-                        <i className="arrowStyle">
-                          <FaDirections />
-                        </i>
-                        <span>{obj.objectif}</span>
-                      </li>
-                    ))}
-                  </ul>
-                )
-              ) : null}
+                      <span>{obj.objectif}</span>
+                    </li>
+                  ))}
+                </ul>
+              ) : // )
+              null}
               <div className="linkContainer">
                 <a href={det.projectCode} className="projectLink">
                   Code

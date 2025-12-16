@@ -102,7 +102,7 @@
   width: 2.5rem;
   font-size: 1.25rem;
 }
-.projectObjectiveWarningContainer {
+/* .projectObjectiveWarningContainer {
   margin-bottom: 3.4375rem;
 }
 .projectObjectiveWarningUl {
@@ -123,7 +123,7 @@
 .warning span {
   padding-top: 0.3125rem;
   padding-left: 0.3125rem;
-}
+} */
 .linkContainer {
   position: absolute;
   width: 80%;
