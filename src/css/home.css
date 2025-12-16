@@ -54,7 +54,7 @@
 }
 
 .wrapper {
-  min-height: 417vh;
+  /* min-height: 417vh; */
   overflow: hidden;
   padding-top: 1.25rem;
   /* margin-bottom: 12.5rem; */
@@ -110,7 +110,7 @@
     z-index: 2;
   }
   .wrapper {
-    min-height: 600vh;
+    /* min-height: 600vh; */
     margin-bottom: 0rem;
   }
 }
@@ -182,7 +182,7 @@
     scale: 0.8;
   }
   .wrapper {
-    min-height: 500vh;
+    /* min-height: 350vh; */
     margin-bottom: 0rem;
   }
   .mouseScroll,
@@ -192,8 +192,8 @@
   }
 }
 @media all and (min-height: 800px) and (max-width: 768px) {
-  .wrapper {
-    min-height: 650vh;
-  }
+  /* .wrapper {
+    min-height: 715vh;
+  } */
 }
 /* Fin version Mobile de 769px jusqu'à 1024px*/

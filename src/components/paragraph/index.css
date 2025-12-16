@@ -60,7 +60,7 @@
   object-fit: contain;
 }
 .projectTitle {
-  width: 13.75rem;
+  width: 17.75rem;
   margin: 0.625rem auto 3.125rem auto;
   padding: 0.9375rem 1.875rem;
   text-align: center;
@@ -265,11 +265,11 @@
 }
 /* Fin version de 769px à 1024px*/
 
-/* @media (min-height: 1000px) and (min-width: 1024px) {
-    .paragraphContainer {
-      margin-bottom: 12rem;
-    }
-  } */
+@media (min-width: 2000px) {
+  .paragraphContainer {
+    margin-bottom: 12rem !important;
+  }
+}
 /* } */
 /* Fin version au delà de 1024 px*/
 @media all and (min-height: 800px) {

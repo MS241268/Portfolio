@@ -1,7 +1,6 @@
 import './index.css';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-// import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 import { FaDirections } from 'react-icons/fa';
 import { PiWarningFill } from 'react-icons/pi';
 import { useLayoutEffect } from 'react';
@@ -37,6 +36,7 @@ function Paragraph() {
     const onFirstScroll = () => {
       if (hasRefreshedOnScroll) return;
       hasRefreshedOnScroll = true;
+      // micro-tempo avant d'activer
       ScrollTrigger.refresh();
       window.removeEventListener('scroll', onFirstScroll);
     };
@@ -45,18 +45,15 @@ function Paragraph() {
 
     const onLoadHandler = () => {
       const mm = gsap.matchMedia();
-
       const container0 = document.querySelector('.paragraphContainer0');
       const paragraph0 = document.querySelector('.aboutParagraph0');
-
       const container1 = document.querySelector('.paragraphContainer1');
       const paragraph1 = document.querySelector('.aboutParagraph1');
       const projects1 = container1?.querySelector('.projectsContainer');
-
       const container2 = document.querySelector('.paragraphContainer2');
       const paragraph2 = document.querySelector('.aboutParagraph2');
       const skills2 = container2?.querySelector('.skillsContainer');
-
+      let container2ST = null;
       gsap.set(container0, { height: '6.25rem' });
       gsap.set(paragraph0, { x: '200%', opacity: 0 });
 
@@ -76,7 +73,7 @@ function Paragraph() {
         ScrollTrigger.create({
           trigger: container0,
           start: startValue,
-          //markers: true,
+          // markers: true,
           onEnter: () => {
             gsap.to(container0, {
               height: 'auto',
@@ -109,11 +106,15 @@ function Paragraph() {
           ScrollTrigger.create({
             trigger: container1,
             start: startValue,
+            // markers: true,
             onEnter: () => {
               gsap.to(container1, {
                 height: 'auto',
                 duration: 1,
-                onComplete: () => ScrollTrigger.refresh(),
+                onComplete: () => {
+                  ScrollTrigger.refresh();
+                  createContainer2Trigger(); /*permet l'apparation du trigger à 45% pour déclencher l'animation du paragraphContainer2 si et seulement si le paragraphContainer1 est totalement ouvert*/
+                },
                 backgroundColor: 'rgba(38, 108, 174, 0.936)',
                 border: '0.1875rem solid rgba(31, 78, 121, 0.936)',
                 borderRadius: '1.5625rem',
@@ -148,96 +149,114 @@ function Paragraph() {
                   opacity: 0,
                   duration: 1,
                 });
-            },
-          });
-        }
-
-        /* ---------- CONTAINER 2 ---------- */
-        gsap.set(skills2.querySelectorAll('.progressbarWrapper'), {
-          paddingRight: '80%',
-        });
-        if (container2) {
-          ScrollTrigger.create({
-            trigger: container2,
-            start: startValue,
-            onEnter: () => {
-              gsap.to(container2, {
-                height: 'auto',
-                duration: 1,
-                onComplete: () => ScrollTrigger.refresh(),
-                backgroundColor: 'rgba(38, 108, 174, 0.936)',
-                border: '0.1875rem solid rgba(31, 78, 121, 0.936)',
-                borderRadius: '1.5625rem',
-                boxShadow:
-                  '0.75rem 0.75rem 1.25rem 0.0625rem rgba(31, 78, 121, 0.8)',
-                marginBottom: '3.75rem',
-              });
-
-              if (paragraph2)
-                gsap.to(paragraph2, { x: '0', opacity: 1, duration: 1 });
-
-              if (skills2) {
-                gsap.to(skills2, { x: 0, opacity: 1, duration: 1 });
-
-                gsap.fromTo(
-                  skills2.querySelectorAll('.languageIcons'),
-                  { rotationY: '0deg' },
-                  {
-                    rotationY: '360deg',
-                    duration: 1,
-                    ease: 'none',
-                    repeat: -1,
-                  }
-                );
-                // Jauge : se remplit et reste remplie
-                skills2
-                  .querySelectorAll('.progressbarWrapper')
-                  .forEach((bar) => {
-                    gsap.to(bar, {
-                      paddingRight: '0%',
-                      duration: 1.2,
-                      delay: 1.5,
-                      overwrite: 'auto',
-                    });
-                  });
-              }
-            },
-            onLeaveBack: () => {
-              gsap.to(container2, {
-                height: '6.75rem',
-                duration: 1,
-                onComplete: () => ScrollTrigger.refresh(),
-                backgroundColor: 'transparent',
-                border: 'none',
-                boxShadow: 'none',
-                marginBottom: 0,
-              });
-
-              if (paragraph2)
-                gsap.to(paragraph2, {
-                  x: '200%',
-                  opacity: 0,
-                  duration: 1,
-                });
-
-              if (skills2) {
-                gsap.to(skills2, {
-                  x: '-200%',
-                  opacity: 0,
-                  duration: 1,
-                });
-                // Remettre la jauge à 0 quand le container se ferme
-                skills2
-                  .querySelectorAll('.progressbarWrapper')
-                  .forEach((bar) => gsap.set(bar, { paddingRight: '80%' }));
+              if (container2ST) {
+                /*permet la disparation du trigger à 45% pour ne pas déclencher l'animation du paragraphContainer2 lorsque le paragraphContainer1 est fermé*/
+                container2ST.kill();
+                container2ST = null;
               }
             },
           });
         }
       };
+      /* ---------- CONTAINER 2 ---------- */
+      /* Fontion qui permet l'apparation du trigger à 45% pour déclencher l'animation du paragraphContainer2 si et seulement si le paragraphContainer1 est totalement ouvert*/
+      skills2
+        .querySelectorAll('.progressbarWrapper')
+        .forEach((bar) => gsap.set(bar, { paddingRight: '80%' }));
 
-      mm.add('(min-width: 1200px)', () => createScrollTriggers('top 40%'));
-      mm.add('(max-width: 1199px)', () => createScrollTriggers('top 30%'));
+      const createContainer2Trigger = () => {
+        if (container2ST || !container2) return;
+
+        container2ST = ScrollTrigger.create({
+          trigger: '.paragraphContainer1',
+          start: '94.5% 55%',
+          // markers: true,
+          onEnter: () => {
+            gsap.to(container2, {
+              height: 'auto',
+              duration: 1,
+              onComplete: () => ScrollTrigger.refresh(),
+              backgroundColor: 'rgba(38, 108, 174, 0.936)',
+              border: '0.1875rem solid rgba(31, 78, 121, 0.936)',
+              borderRadius: '1.5625rem',
+              boxShadow:
+                '0.75rem 0.75rem 1.25rem 0.0625rem rgba(31, 78, 121, 0.8)',
+              marginBottom: '3.75rem',
+            });
+
+            if (paragraph2) {
+              gsap.to(paragraph2, { x: '0', opacity: 1, duration: 1 });
+            }
+
+            if (skills2) {
+              gsap.to(skills2, { x: 0, opacity: 1, duration: 1 });
+
+              gsap.fromTo(
+                skills2.querySelectorAll('.languageIcons'),
+                { rotationY: '0deg' },
+                {
+                  rotationY: '360deg',
+                  duration: 1,
+                  ease: 'none',
+                  repeat: -1,
+                }
+              );
+
+              skills2.querySelectorAll('.progressbarWrapper').forEach((bar) => {
+                gsap.to(bar, {
+                  paddingRight: '0%',
+                  duration: 1.2,
+                  delay: 1.5,
+                  overwrite: 'auto',
+                });
+              });
+            }
+          },
+
+          onLeaveBack: () => {
+            gsap.to(container2, {
+              height: '6.75rem',
+              duration: 1,
+              overwrite: 'auto',
+              onComplete: () => ScrollTrigger.refresh(),
+              backgroundColor: 'transparent',
+              border: 'none',
+              boxShadow: 'none',
+              marginBottom: 0,
+            });
+
+            if (paragraph2) {
+              gsap.to(paragraph2, {
+                x: '200%',
+                opacity: 0,
+                duration: 1,
+              });
+            }
+
+            if (skills2) {
+              gsap.to(skills2, {
+                x: '-200%',
+                opacity: 0,
+                duration: 1,
+              });
+
+              skills2
+                .querySelectorAll('.progressbarWrapper')
+                .forEach((bar) => gsap.set(bar, { paddingRight: '80%' }));
+            }
+          },
+        });
+      };
+      // écran très large > 2000 px
+      mm.add('(min-width: 2000px)', () => createScrollTriggers('top 20%'));
+
+      // large desktop classique 1200–1999 px
+      mm.add('(min-width: 1200px) and (max-width: 1999px)', () =>
+        createScrollTriggers('top 40%')
+      );
+
+      // medium desktop / laptop ≤ 1199 px
+      mm.add('(max-width: 1199px)', () => createScrollTriggers('top 35%'));
 
       ScrollTrigger.refresh();
     };

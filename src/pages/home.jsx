@@ -46,23 +46,19 @@ function Home() {
       display: 'block',
       scrollTrigger: {
         trigger: lastRow,
-        start: 'top 40%',
+        start: 'top 70%',
         // markers: true,
-        // toggleActions: 'play none none reverse',
         onEnter: () => {
-          // Empêcher l'empilement → ton bug venait d’ici
+          // Empêcher l'empilement
           if (scrollHandlerAdded) return;
           scrollHandlerAdded = true;
 
           window.addEventListener('scroll', function () {
-            const mouseScroll = document.querySelector('.mouseScroll');
-            const mouseTop =
-              mouseScroll.getBoundingClientRect().top + window.scrollY;
-            const lastRowTop =
-              lastRow.getBoundingClientRect().top + window.scrollY;
-
             // Déclenchement légèrement avant le top
-            if (mouseTop >= lastRowTop - 350) {
+            if (
+              lastRow.getBoundingClientRect().top <=
+              window.innerHeight * 0.7
+            ) {
               gsap.set('.mouseScroll', { display: 'none' });
               gsap.set('.arrowScroll', {
                 display: 'block',
@@ -84,7 +80,6 @@ function Home() {
                   });
                 },
               });
-              ScrollTrigger.refresh();
             }
           });
         },
